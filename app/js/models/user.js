@@ -219,23 +219,15 @@ define([
 			// Check to see if the user is anonymous
 			if( this.get('isLoggedIn') === 0 )
 			{
-				// Get the value of the current anon meter status
-				var anon_meter = this.get('anon_meter');
+				this.anon_meter = ( this.anon_meter <= 0 ) ? 0 : this.anon_meter - 1;
 
-				if( anon_meter === this.defaults.anon_meter )
-				{
-					// Set the anon_meter timestamp so we know when to expire.
-					this.set({ anon_meter_ts : this.get('today') });
-					this.store_user({ anon_meter_ts : this.get('today') });
-				}
+				localStorage.setItem('CD.UserMeterInformation', 
+					JSON.stringify({ 
+						anon_meter : this.anon_meter,
+						anon_meter_ts : this.get('anon_meter_ts')
+					}) 
+				);
 
-				anon_meter = ( anon_meter < 0 ) ? 0 : anon_meter - 1;
-
-				this.set({ anon_meter : anon_meter });
-				this.store_user({ anon_meter : anon_meter });
-
-				return anon_meter;
-				
 			}
 
 		},
