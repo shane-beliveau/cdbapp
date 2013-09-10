@@ -1,0 +1,18 @@
+<div id="thenews" class="app-page thenews">
+  <!-- Page Begin -->
+  {{#heroArticle}}
+  <div id="heroContainer">
+    <div class="scroll-wrapper scroll-horizontal"> <!-- Scroll Wrapper -->
+      <div class="stories scroller">
+        {{&heroArticle}}
+      </div>
+    </div>
+  </div>
+  {{/heroArticle}}
+  <div id="hero-indicatorContainer">
+  {{&dots}}
+  </div>
+  <div class="clearfix"></div>
+  {{&content}}
+  <!-- Page End -->
+</div>

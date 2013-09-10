@@ -1,0 +1,10 @@
+{{#items}}
+<div class="story scroll-item {{picOrientation}}" data-id="{{id}}" {{#image}}style="background-image:url({{image}});"{{/image}}>
+  <div class="story-title {{^image}}no-image{{/image}}" data-id="{{id}}">
+  	{{#kicker}}<span class="kicker" data-id="{{id}}">{{kicker}}</span>{{/kicker}}
+    <span class="date" data-id="{{id}}">{{pubDate}}{{#page}} Page {{page}}{{/page}}</span>
+    <strong data-id="{{id}}">{{title}}</strong>
+    {{^image}}<p data-id="{{id}}">{{description}}</p>{{/image}}
+  </div>
+</div>
+{{/items}}

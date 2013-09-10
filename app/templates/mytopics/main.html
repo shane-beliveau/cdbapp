@@ -1,0 +1,16 @@
+<div id="mytopics" class="app-page mytopics">
+  <!-- Page Begin -->
+  <div class="scroll-wrapper"> <!-- Scroll Wrapper -->
+    <div class="scroller"> <!-- Scrolled Content -->
+      <ul id="MyTopicsFeed">
+        {{#content}}
+        {{&.}}
+        {{/content}}
+        {{^content}}
+            <li class="scroll-item no-content">Click Edit Topics button to add Topics to this page.</li>
+        {{/content}}
+      </ul>
+    </div>
+  </div>
+  <!-- Page End -->
+</div>

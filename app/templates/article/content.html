@@ -1,0 +1,27 @@
+<div class="towerad ad" data-position=""></div>
+<div class="article-content">
+  {{#article.blogLanding}}
+  <div class="blogHeader" style="background-image: url('/Assets/cd/blogs/cropped/{{article.blogLanding}}.png');">
+    <span><strong>{{article.blogTitle}}</strong></span>
+  </div>
+  {{/article.blogLanding}}
+  <h1>{{article.title}}</h1>
+  {{#article.shareUrl}}
+  <div class="social-media-sharing">
+    <ul class="social-share">
+      <li class="linkedin">{{#linkedin}}<a href="{{linkedin}}" class="linkedin">Linkedin</a>{{/linkedin}}</li>
+      <li class="twitter">{{#twitter}}<a href="{{twitter}}" class="twitter">Twitter</a>{{/twitter}}</li>
+      <li class="facebook">{{#facebook}}<a href="{{facebook}}" class="facebook">Facebook</a>{{/facebook}}</li>
+      <!-- <li class="google">{{#google}}<a href="{{google}}" class="google">Google+</a>{{/google}}</li> -->
+      <li class="email">{{#email}}<a href="{{email}}" class="email">Email</a>{{/email}}</li>
+    </ul>
+  </div>
+  {{/article.shareUrl}}
+  <span class="author">{{article.author}}</span>
+  {{#videoid}}<div class="widescreenVideo"><iframe src="/section/bc_{{videoindividual}}_player&videoid={{videoid}}" scrolling="no"></iframe></div>{{/videoid}}
+  {{#mp3audio}}<audio controls style="width:100%"><source src="{{mp3audio}}" type="audio/mpeg" style="width:100%"><a href="{{mp3audio}}" target="_blank">Click here to download</a></audio>{{/mp3audio}}
+  {{#article.image}}<img src="{{article.image}}" class="article-image" />{{/article.image}}
+  {{#article.paragraphs}}
+    <p>{{{.}}}</p>
+  {{/article.paragraphs}}
+</div>

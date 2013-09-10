@@ -1,0 +1,18 @@
+<div id="ArticlesContainer">
+  <div class="scroll-wrapper scroll-horizontal"> <!-- Scroll Wrapper -->
+    <div class="scroller">
+        {{#articles}}
+        <div id="article-{{id}}" data-id="{{id}}" class="article scroll-item">
+            <div class="article-header">
+              <div class="article-date">{{pubDate}}</div>
+              <div class="utility-nav">
+                <!-- <a href="#" class="sharethis">Share This Article</a> -->
+                <a class="addtobriefcase">Add To Briefcase</a>
+                <a class="closearticle">Close Article</a>
+              </div>
+            </div>
+        </div>
+        {{/articles}}
+    </div>
+  </div>
+</div>

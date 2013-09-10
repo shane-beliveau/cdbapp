@@ -1,0 +1,199 @@
+{
+    "rss": {
+        "channel": {
+            "title": "Modern Healthcare Breaking News RSS Feed",
+            "link": "http://stage.crainsdetroit.com",
+            "description": "Latest News from Modern Healthcare",
+            "language": "en-us",
+            "image": {
+                "title": "Modern Healthcare",
+                "width": "144",
+                "height": "21",
+                "link": "http://stage.crainsdetroit.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
+                "url": "http://stage.crainsdetroit.com/graphics/icons/rss.gif"
+            },
+            "items": [
+                {
+                    "id": "1",
+                    "title": "Last day to vote for doc execs",
+                    "link": "http://stage.crainsdetroit.com/article/20130208/INFO/302069937/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3Wk04WGZCRGh3bEJOTHNqbk9WYUZt",
+                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130208/INFO/302069937/AR/0/AR-302069937.jpg",
+                    "pubDate": "Fri, 8 Feb 2013 00:01:00 EST",
+                    "description": "Voting is now open in the Modern Healthcare/Modern Physician 50 Most Influential Physician Executives recognition program for 2013.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130208/INFO/302069937"
+                    }
+                },
+                {
+                    "id": "2",
+                    "title": "Share your thoughts on today's health IT news",
+                    "link": "http://stage.crainsdetroit.com/article/20130208/NEWS/302089951/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3Wk04TFVGU1J3bEJOTHNqZk9WYWRn",
+                    "image": "",
+                    "pubDate": "Fri, 8 Feb 2013 00:01:00 EST",
+                    "description": "Comment on today's news and share your opinions with other readers. Submit your letter to the HITS Reader Forum at hitsdaily@modernhealthcare.com. Submissions must include name, title, affiliation,...",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130208/NEWS/302089951"
+                    }
+                },
+                {
+                    "id": "3",
+                    "title": "Tell us what you think",
+                    "link": "http://stage.crainsdetroit.com/article/20130208/NEWS/302089944/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3Wk04TFVGU1J3bEJOTHNqZk9WYVps",
+                    "image": "",
+                    "pubDate": "Fri, 8 Feb 2013 00:01:00 EST",
+                    "description": "Click here to comment on today's news or other matters. Or submit your comments below.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130208/NEWS/302089944"
+                    }
+                },
+                {
+                    "id": "4",
+                    "title": "Tavenner nomination could face ACA resistance",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079957/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYWRt",
+                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130207/NEWS/302079957/AR/0/Marilyn-Tavenner.jpg",
+                    "pubDate": "Thu, 7 Feb 2013 19:15:00 EST",
+                    "description": "President Barack Obama's re-nomination of Marilyn Tavenner as administrator of the CMS on Thursday drew wide support from health industry leaders but an uncertain outlook on Capitol Hill.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079957"
+                    }
+                },
+                {
+                    "id": "5",
+                    "title": "Catholic bishops reject Obama birth control move",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079949/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYVpv",
+                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130207/NEWS/302079949/AR/0/AR-302079949.jpg",
+                    "pubDate": "Thu, 7 Feb 2013 18:00:00 EST",
+                    "description": "The U.S. Conference of Catholic Bishops is not satisfied with the Obama administration's attempt to defuse opposition to mandatory birth-control coverage under the healthcare reform law.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079949"
+                    }
+                },
+                {
+                    "id": "6",
+                    "title": "Bill seeks to bolster mental health services",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079960/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYVJo",
+                    "image": "",
+                    "pubDate": "Thu, 7 Feb 2013 00:01:00 EST",
+                    "description": "Mental health legislation introduced by a bipartisan group of seven senators would establish criteria for the designation of healthcare facilities as Federally Qualified Community Behavioral Health Centers, giving them the type of Medicaid...",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079960"
+                    }
+                },
+                {
+                    "id": "7",
+                    "title": "FDA issues new draft guidance on Alzheimer's drug testing",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079968/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYVJw",
+                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130207/NEWS/302079968/AR/0/AR-302079968.jpg",
+                    "pubDate": "Thu, 7 Feb 2013 15:15:00 EST",
+                    "description": "The Food and Drug Administration issued draft guidance today outlining how drug manufacturers could enroll patients who are in the early stages of Alzheimer's disease in clinical trials in an effort to urge development of new treatments.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079968"
+                    }
+                },
+                {
+                    "id": "8",
+                    "title": "Medicare enrollment boosts Cigna forecast",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/INFO/302089987/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004WGZCRGh3bEJOTHNqZk9WYXBt",
+                    "image": "",
+                    "pubDate": "Thu, 7 Feb 2013 15:00:00 EST",
+                    "description": "Cigna Corp., the third-biggest health insurer by market value, raised its forecast for 2013 profit and said fourth-quarter earnings swelled 49%, boosted by higher enrollment in its Medicare plans for seniors.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/INFO/302089987"
+                    }
+                },
+                {
+                    "id": "9",
+                    "title": "Prices of cardiac imaging systems fall -- for now",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079965/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYVJr",
+                    "image": "",
+                    "pubDate": "Thu, 7 Feb 2013 15:00:00 EST",
+                    "description": "The average cost of cardiac cath lab imaging systems fell to about $885,000 over the past year, but the cost decreases will most likely be short-lived, according to the Modern Healthcare/ECRI Institute Technology Price Index.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079965"
+                    }
+                },
+                {
+                    "id": "10",
+                    "title": "Bellevue resumes admitting patients",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079964/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYVJs",
+                    "image": "",
+                    "pubDate": "Thu, 7 Feb 2013 14:30:00 EST",
+                    "description": "Bellevue Hospital Center in New York announced it has started to admit patients again after damage from superstorm Sandy in late October forced the hospital to evacuate more than 700 patients and close.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079964"
+                    }
+                },
+                {
+                    "id": "11",
+                    "title": "5-year integrity agreement for WakeMed ",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079967/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYVJt",
+                    "image": "",
+                    "pubDate": "Thu, 7 Feb 2013 15:30:00 EST",
+                    "description": "WakeMed Health and Hospitals' 647-bed campus in Raleigh, N.C., has come under a five-year corporate integrity agreement with HHS, even though the hospital is still waiting for word from a federal judge on whether it can settle a felony charge of...",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079967"
+                    }
+                },
+                {
+                    "id": "12",
+                    "title": "Dickson named CEO of UMass Memorial ",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079946/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYVpu",
+                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130207/NEWS/302079946/AR/0/Dr.-Eric-Dickson",
+                    "pubDate": "Thu, 7 Feb 2013 11:30:00 EST",
+                    "description": "Dr. Eric Dickson was named to replace John O'Brien as president and CEO of UMass Memorial Health Care, effective Feb. 25.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079946"
+                    }
+                },
+                {
+                    "id": "13",
+                    "title": "AHRQ, CMS unveil children's EHR format",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079955/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYWRr",
+                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130207/NEWS/302079955/AR/0/AR-302079955.jpg",
+                    "pubDate": "Thu, 7 Feb 2013 13:45:00 EST",
+                    "description": "The Agency for Healthcare Research and Quality and the CMS have unveiled a new electronic health-record format for children's healthcare, which the agencies say will help EHR vendors to create customized modules for pediatric patients.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/NEWS/302079955"
+                    }
+                },
+                {
+                    "id": "14",
+                    "title": "Utah lawmakers OK data security bill",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/INFO/302079989/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004WGZCRGh3bEJOTHNqak9WYXBv",
+                    "image": "",
+                    "pubDate": "Thu, 7 Feb 2013 14:00:00 EST",
+                    "description": "Following two security breaches in the past year, Utah lawmakers want to alert participants in the state Medicaid program or Children's Health Insurance Program that their personal information will be stored in state databases.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/INFO/302079989"
+                    }
+                },
+                {
+                    "id": "15",
+                    "title": "N.Y. hospitals transition to e-records",
+                    "link": "http://stage.crainsdetroit.com/article/20130207/INFO/302079990/1138/nitf2&template=nitf&mime=application%2Fjson&AllowView=RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004WGZCRGh3bEJOTHNqak9WYXRo",
+                    "image": "",
+                    "pubDate": "Thu, 7 Feb 2013 10:00:00 EST",
+                    "description": "Little Falls (N.Y.) Hospital was one of four hospitals in the Bassett Healthcare Network that went live with electronic health records this past weekend.",
+                    "guid": {
+                        "-isPermaLink": "true",
+                        "url": "http://stage.crainsdetroit.com/article/20130207/INFO/302079990"
+                    }
+                }
+            ]
+        }
+    }
+}

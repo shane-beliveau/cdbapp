@@ -1,0 +1,104 @@
+/* CSS Media Queries */
+
+/*Kindle Styles*/
+/*  body.kindle.landscape .loading-ads {
+    position: relative;
+    top:25%;
+  }
+
+  body.kindle.landscape .loading-ads .break {
+    clear:both;
+    display:block;
+  }
+*/
+  body.kindle.landscape .towerad {
+    height:600px;
+    width:250px;
+  }
+  
+  body.kindle .loading-screen {
+	  padding:50px 0 0 0;
+	  }
+  
+  body.kindle.landscape .loading-screen .logo{
+  	margin: 50px 0;
+  }
+
+ body.kindle.portrait .topnav a {
+	 font-size:0.95em;
+	 }
+ 
+ body.kindle #fullPageAd .close span
+ {
+	 background-position:55px -280px;
+	 width:65px;	
+	 }
+ 
+  body.kindle.portrait .towerad {
+    width: 500px;
+    height: 60px;
+  	margin:10px;
+  }
+  
+   body.kindle.portrait .towerad img,  body.kindle.landscape .towerad img {
+	width:100%;
+	}
+  
+  
+
+  body.kindle.portrait span.breadcrumb-large-label { display: none; }
+  body.kindle.portrait span.breadcrumb-small-label { display: inline-block; }
+
+  body.kindle.portrait .settings-screen .external-links a.sendfeedback {
+    display: inline-block;
+    height: 20px;
+    margin:0;
+    text-indent: -9999px;
+    width: 0;
+  }
+
+  body.kindle.portrait .thenews .hero .hero-img {
+    width:470px;
+    background-size:470px auto;
+  }
+
+  body.kindle.portrait .mybriefcase .briefcase-text {
+    width: 66%;
+  }
+/*End Kindle Styles*/
+
+/* Android tablet 1280x736 (landscape) ----------- */
+@media only screen and (max-device-width : 1280px) and (orientation : landscape) {}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /*body.landscape .loading-ads {
+    position: static;
+  }
+  
+  body.landscape .loading-ads .break {
+    clear:none;
+    display:none;
+  }
+*/
+  body.portrait span.breadcrumb-large-label { display: inline-block; }
+  body.portrait span.breadcrumb-small-label { display: none; }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {}

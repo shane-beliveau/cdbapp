@@ -1,0 +1,400 @@
+/* CSS Media Queries */
+
+/* Hide Smartphones Markup ----------- */
+body .wrap-menu, .nav-logo, body #-nav, body #smartphone-nav {
+ display:none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 640px) {
+
+
+body .loading-screen .logo,body .loading-screen .loading-icon, body .loading-screen .loading-ads{
+	display:none;
+	}
+
+body.portrait .loading-screen .logo, body.portrait .loading-screen .loading-icon, body.portrait .loading-screen .loading-ads,
+body.landscape .loading-screen .logo, body.landscape .loading-screen .loading-icon, body.landscape .loading-screen .loading-ads{
+	display:block;
+	}
+
+
+body .loading-screen .logo span{
+	display:inline-block;
+	}
+ 
+body .loading-screen .logo {
+ background-size:300px auto !important;
+ font-size: 14px;
+ margin: 25px 0;
+ padding: 50px 0 0;
+}
+body .loading-screen .loading-icon {
+ margin: 40px 0 0 0;
+}
+
+
+body.landscape .loading-screen .logo {
+ margin: 20px 0;
+ display:none;
+}
+body.landscape .loading-screen .loading-icon {
+ margin: 70px 0 20px;
+}
+
+body .article-date {
+ display:none;
+}
+
+body.portrait .article .article-content img.article-image {
+ width:auto;
+ margin:10px 0 10px 12px ;
+ max-height: auto !important;
+ max-width: 90%;
+ clear:both;
+ float:none;
+}
+
+
+body.landscape .article-content {
+	width:100%;
+	}
+
+body.portrait .article .article-content, body.landscape .article .article-content {
+	padding-bottom:40px;
+	}
+
+body.landscape .article-content {
+	width:100%;
+	}
+
+body.landscape .article .article-content {
+	width:100%;
+	}
+
+body .article .utility-nav {
+ float:none;
+}
+body .article .utility-nav a.addtobriefcase {
+ float:left;
+ margin:0px;
+}
+body .article .utility-nav a.closearticle {
+ float:right;
+ margin:0px;
+}
+
+/*
+body.landscape .towerad,body.portrait .towerad{
+height:50px;
+width:100%;
+clear:both;
+margin:0px auto;
+float:none;
+text-align:center;
+}
+
+body.landscape .towerad img,body.portrait .towerad img{
+	width:320px;
+	height:50px;
+	}
+*/
+
+body.landscape div.ad { display: block; }
+    
+body.landscape .towerad { float: none; height: 80px; margin: 0 auto; }
+    
+body.portrait .towerad, body.lanscape .towerad {
+    clear: both;
+    margin: 10px auto;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+
+body #main-navigation {
+ display:none !important;
+}
+body .nav-logo {
+ display:block !important;
+ float:left;
+ display:inline-block;
+ padding:15px 0 8px 10px;
+}
+body .nav-logo img {
+ width:200px;
+}
+body .wrap-menu {
+ float:right;
+ display:inline-block !important;
+}
+body .wrap-menu img {
+ width:32px;
+ margin:15px 10px -1px 0;
+}
+
+/*
+body .breadcrumbs {
+    display: block;
+    height: 22px;
+    padding: 4px 0;
+}
+*/
+
+body .breadcrumbs { display: none; }
+    
+body .breadcrumbs .subscribe {
+        padding: 0;
+        margin: 0 10px;
+}    
+
+body #breadcrumbs-container {
+    display: none;
+}
+    
+.new-member {padding: 0 10px;}
+        
+.subscription-bar .offer1, .subscription-bar .offer2 {
+        display: block;
+        float: none;
+        clear: both;
+        width: auto;
+        padding: 12px 0;
+        margin: 0 auto;
+}
+    
+.subscription-bar .offer1 p, .subscription-bar .offer2 p {
+    display: block;
+    float: left;
+    width: 45%;
+}
+    
+.subscription-bar .offer1 img, .subscription-bar .offer2 img {
+    float:left;
+    width: 45%;
+    padding-bottom: 1em;
+    margin-right: 12px;
+}
+    
+body .button#subscribe-toggle {
+    color: #fff;
+    background-color: #ab151f;
+    background-image: -o-linear-gradient(top, #d91d2a 0%, #ab151f 100%);
+    background-image: -moz-linear-gradient(top, #d91d2a 0%, #ab151f 100%);
+    background-image: -webkit-linear-gradient(top, #d91d2a 0%, #ab151f 100%);
+    background-image: -ms-linear-gradient(top, #d91d2a 0%, #ab151f 100%);
+    background-image: -webkit-gradient( linear, top, bottom, color-stop(0, #d91d2a), color-stop(1, #ab151f));
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#d91d2a, endColorstr=#ab151f, GradientType=1);
+    background-image: linear-gradient(top, #d91d2a 0%, #ab151f 100%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: .55em;
+}
+    body .button.white#subscribe-toggle { font-size: .55em; }
+    #subscribe-toggle.button i, #editTopics i, #backToMyTopics i { padding: 8px 6px 6px 8px; }
+    
+body #subscription .button { padding: 5px 10px !important; }
+
+body #smartphone-nav {
+ /*display:block;*/
+ clear:both;
+ margin-top:-7px;
+ position:fixed;
+ z-index:1000000;
+ top:56px;
+ left:0;
+ width:100%;
+ height: 100%;
+ background: rgba(0,0,0,0.8);
+}
+
+body.portrait #smartphone-nav a:nth-child(1),body.portrait #smartphone-nav a:nth-child(2), body.landscape #smartphone-nav a:nth-child(1), body.landscape #smartphone-nav a:nth-child(2) {
+ background-color: #2c3946;
+ background-image: -o-linear-gradient(top, #222c37 0%, #2c3946 20%);
+ background-image: -moz-linear-gradient(top, #222c37 0%, #2c3946 20%);
+ background-image: -webkit-linear-gradient(top, #222c37 0%, #2c3946 20%);
+ background-image: -ms-linear-gradient(top, #222c37 0%, #2c3946 20%);
+ background-image: -webkit-gradient( linear, top, bottom, color-stop(0, #222c37), color-stop(0.2, #2c3946));
+ filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#222c37, endColorstr=#2c3946, GradientType=0.2);
+ background-image: linear-gradient(top, #222c37 0%, #2c3946 20%);
+}
+
+body #smartphone-nav a {
+ display:block;
+ background-color:#2c3946;
+ color:#fff;
+ font-size:14px;
+ font-weight:bold;
+padding:11px 0;
+ border-bottom:1px solid #000;
+ float:left;
+ width:50%;
+ text-align:center;
+}
+
+body #smartphone-nav a:nth-child(2n){
+	border-left:1px solid #000;
+	width:49.5%;
+	}
+
+body.portrait #smartphone-nav a{
+	padding:25px 0%;
+	}
+
+
+body #heroContainer .image-container, .thenews .hero .hero-img { display: none !important; }
+    
+#content-wrapper {
+ margin-top: 50px;
+}
+.content-area { border-top: 1px solid #3d4858; }
+body .thenews .news-category h3, body .mytopics .news-category h3 {
+ background-color: #d81d2a;
+ background-image: -o-linear-gradient(top, #d81d2a 0%, #a4151f 100%);
+ background-image: -moz-linear-gradient(top, #d81d2a 0%, #a4151f 100%);
+ background-image: -webkit-linear-gradient(top, #d81d2a 0%, #a4151f 100%);
+ background-image: -ms-linear-gradient(top, #d81d2a 0%, #a4151f 100%);
+ background-image: -webkit-gradient( linear, top, bottom, color-stop(0, #d81d2a), color-stop(1, #a4151f));
+ filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#d81d2a, endColorstr=#a4151f, GradientType=1);
+ background-image: linear-gradient(top, #d81d2a 0%, #a4151f 100%);
+ font-size:14px;
+}
+body .utility-nav span:nth-child(2), body .utility-nav span:nth-child(4) {
+ display:none;
+}
+body .about-modern-healthcare, body .subscribe-to-mhc, body .sendfeedback {
+ display:none;
+}
+body .briefcase-thumb {
+ display:none;
+}
+body .mybriefcase ul li h4, body ul#topicsfeeds li h4 {
+ padding:10px 10px;
+}
+
+body #authorScroll {
+ width:30%;
+}
+
+body.portrait #authorScroll {
+ width:40%;
+}
+
+body.portrait #tweetsScroll {
+ width:60%;
+}
+
+
+body.portrait .mhwire .tweets li img{
+	display:none;
+	}
+body.portrait .mhwire .tweets .date {
+	border:0px;
+	padding-left:0px;
+	margin:0px;
+	}
+
+body.portrait .mhwire .tweets p{
+	margin-left:0px;
+	padding:0px;
+	}	
+
+body .div.story-title.no-image p {
+ font-size:14px;
+}
+body .button {
+ color:#AB151F;
+ padding:0px;
+ background:transparent;
+ border:0px;
+}
+body ul#topicsfeeds li h4 .icon {
+ background-position:right -280px;
+}
+body ul#topicsfeeds li h4 .icon.selected {
+ background-position:right -330px;
+}
+
+.error-message {
+	width:80%;
+	text-align:center;
+	line-height:24px;
+	margin:auto auto;
+	padding-top:30px;
+	}
+	
+.thenews .hero{
+	background:transparent;
+	}	
+	
+
+body.portrait #fullPageAd{
+	width:100% !important;
+	}
+	
+body.portrait #fullPageAd img{
+	width:auto;
+	height:auto;
+	}
+
+
+body.landscape #fullPageAd img{
+	height:auto;
+	width:auto;
+	}
+    
+a.closesubscription {
+    display: block;
+    float: right;
+    padding: 5px 0 0 20px;
+    color: #fff;
+    margin: 12px 10px 0 0px;
+    background: transparent url(images/sprite.png) no-repeat 0 -314px;
+    background-size: 20px auto;
+}
+    a.closesubscription:hover { cursor: pointer;}
+    
+.social-media-sharing ul.social-share li {
+        margin: 0;
+    }
+    
+.social-media-sharing ul.social-share li a {
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (max-width : 320px) {
+    
+    .nav-logo img { max-width: 140px; width: 100% !important; height: auto; }
+    .wrap-menu img { max-width: 26px; width: 100% !important; height: auto;  }
+    body .breadcrumbs { text-align: center; }
+    body .button#subscribe-toggle { float: none; }
+    .subscription-bar .offer1, .subscription-bar .offer2 { text-align: center; }
+    .subscription-bar .new-member { min-height: auto; }
+    .subscription-bar .offer1 p, .subscription-bar .offer2 p {
+        display: block;
+        float: none;
+        clear: both;
+        width: 90%;
+        text-align: left;
+        margin: 0 auto;
+    }
+        
+    .subscription-bar .offer1 img, .subscription-bar .offer2 img {
+        /*
+        float: none;
+        clear: both;
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        */
+        display: none;
+    }
+    
+    body #smartphone-nav a { font-size: 11px; }
+    
+}

@@ -1,0 +1,18 @@
+<div id="editTopics" class="app-page app-page-fixed">
+<!-- Page Begin -->
+  <div class="scroll-wrapper"> <!-- Scroll Wrapper -->
+    <div class="scroller"> <!-- Scrolled Content -->
+      <ul id="topicsfeeds">
+        {{#topics}}
+        <li class="scroll-item topic" data-id="{{id}}">
+          <h4 data-id="{{id}}" class="{{#subscribed}}selected{{/subscribed}}">{{name}} <span class="icon"  data-id="{{id}}"></span></h4>
+        </li>
+        {{/topics}}
+        {{^topics}}
+          <li class="scroll-item no-content">There is no content for this section.</li>
+        {{/topics}}
+      </ul>
+    </div> <!-- Scrolled Content End -->
+  </div> <!-- Scroll Wrapper End -->
+  <!-- Page End -->
+</div>

@@ -1,0 +1,11 @@
+{{#feeds}}
+<li class="scroll-item">
+  <img src="{{profile_image_url}}"/>
+  <h4>{{from_user_name}}</h4>
+  <div class="date">{{created_at}}</div> 
+  <p>{{&text}}</p>
+</li>
+{{/feeds}}
+{{^feeds}}
+  <li class="scroll-item no-content">The Person has no recent activity.</li>
+{{/feeds}}

@@ -1,0 +1,15 @@
+{{#filmstrips}}
+<div id="{{filmStipID}}" class="news-category">
+  <h3>&raquo; {{title}}</h3>
+  <div class="scroll-wrapper scroll-horizontal"> <!-- Scroll Wrapper -->
+    <div class="stories scroller">
+    {{#content}}
+      {{&content}}
+    {{/content}}
+    {{^content}}
+      <div class="scroll-item no-content">There is no content available.</div>
+    {{/content}}
+    </div> <!-- Scrolled Content End -->
+  </div> <!-- Scroll Wrapper End -->
+</div>
+{{/filmstrips}}
