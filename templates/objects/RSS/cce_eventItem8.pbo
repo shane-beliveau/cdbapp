@@ -1,0 +1,11 @@
+<%title$w(1,70)$S("cci/util/serialize.js")$r("^(.+)-$=$1")$V(seotitle)%><%CurrentDate$d("yyyymmdd")$V(today)%>
+<div class="newsitemAwards"[%{Logolink} style="min-height: 155px;"%]>
+<!--headline --><h2><a href="/event/crains/<%id%>/<%seotitle%>"><%Title%></a></h2>
+<!--image -->[%{Logolink}<a href="/event/crains/<%id%>/<%seotitle%>"><img src="<%LogoLink%>&amp;MaxW=180&amp;MaxH=120" style="float: right; display: block; margin:4px 0px 5px 15px;" alt="<%title$t$r("""=&quot;")$j%>" /></a>%]
+	<div style="margin-bottom:10px;">
+	<!--sub head -->[%<%EventFromDate$d("dddd, mmmm d, yyyy")%>%]
+	<!--kicker -->[%{today>#EventFromDate#}[%<span class="linkColorBrick" style="font-size:12px; text-transform:uppercase;">&nbsp;<a href="<%register%>" target="_blank"><strong>Click here to register</strong></a></span>%]%]
+	</div>
+<!--summary -->[%{today>#EventFromDate#}<%pasttext$w(1,1000)$S("summary.php5","PHPScript",0)%>%|%<%Text$w(1,1000)$S("summary.php5","PHPScript",0)%>%]
+<!--call out --><div class="buttonBreeze" style="letter-spacing:1px; margin:7px 0 0;"><a href="/event/crains/<%id%>/<%seotitle%>">Click here for details on this event</a></div>
+</div>

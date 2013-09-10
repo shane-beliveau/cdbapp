@@ -1,0 +1,44 @@
+<pbs:!macro cachetime=1440 cachequalifiers="category" name="blogSetGuidArt" before>
+[%{AccessControlIdentifier}<%?cci_ac=#AccessControlIdentifier#%>%|%[%{SingleSaleID}<%?cci_ac=#SingleSaleID#%>%]%]
+<%cci_ac$S("cci/util/getStoryGroupID.js")%>
+<%Category$r("(^.*)BLOG(.+)=1")$V(cd_isblog)%>
+{
+  "nitf": {
+    "baselang": "en-US",
+    "head": {
+      "docdata": {
+        "managementStatus": "usable",
+        "dateRelease": { "norm": "<%ISOPublishedDate$E(172800)$d(yyyymmdd)%>T<%ISOPublishedDate$d(hhnnss)%>-06000" },
+        "id" : "<%IsoDate%><%ArtNo%>",
+        "shareurl" : {"linkedin" : "http://www.linkedin.com/shareArticle?summary=&title=<%@cd_heading$j%>&mini=true&url=http%3A%2F%2Fwww.crainsdetroit.com/article/<%ISOPublishedDate$d("yyyymmdd")%>/<%category%>/<%ArtNo%>&ro=false&source=",
+                      "twitter" : "https://twitter.com/intent/tweet?text=<%@cd_heading$t$w(1,100)$j$x("%20","+")%>+%40crainsdetroit&url=http%3A%2F%2Fwww.crainsdetroit.com/article/<%isodate$d("yyyymmdd")%>/<%category%>/<%ArtNo%>",
+                      "facebook" : "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.crainsdetroit.com/article/<%ISOPublishedDate$d("yyyymmdd")%>/<%category%>/<%ArtNo%>",
+                      "googleplus" : "https://plus.google.com/share?url=http%3A%2F%2Fwww.crainsdetroit.com/article/<%ISOPublishedDate$d("yyyymmdd")%>/<%category%>/<%ArtNo%>",
+                      "email" : "mailto:?body=<%ParagraphItems$t$r("^""(.*)""$=$1")r("\\""=$quot;")$w(0,500)$j%>%0A%0Ahttp%3A%2F%2Fwww.crainsdetroit.com/article/<%ISOPublishedDate$d("yyyymmdd")%>/<%category%>/<%ArtNo%>&subject=<%@cd_heading$j%>%20%7C%20Crain's%20Detroit%20Business"
+        }[%,[%{cd_isblog=1}
+<pbs:!macro cachetime=1440 cachequalifiers="category" name="blogInfoJSON">%]
+        "isMetered": <%cci_storyIsMetered%>%][%,
+        "groupID": <%cci_storyGroupID%>%]
+      }
+    },
+    "body": {
+      "bodyHead" : {
+        <%Head$r("&#9;=")$r("	=")$r("&amp;=&")$r("(&)([^\#])=$1amp;$2")%>
+        "pubdate" : "<%ISOPublishedDate$d("ddd, d mmm yyyy")%>",
+        "pubtime" : "<%ISOPublishedDate$d("hh:nn")%> EST",
+        "byline" : "[%By <%ByLine$t$r("""=\\""")$r("By *=")$r("&amp;=&")$r("(&)([^\#])=$1amp;$2")%>%]"[%,
+        "abstract" : "<%Summary$t&r("&#9;=")&r("	=")$r("""=\\""")$r("&amp;=&")$r("(&)([^\#])=$1amp;$2")%>"%]
+      },
+      "bodyContent": {
+        "textParagraphs" : [
+        [%<%ParagraphItems%>%|%""%][%,
+        <%facts$S("bodyJSON.php5","PHPScript")%>%][%,
+        <%ConnectedMedia$S("bodyJSON.php5","PHPScript")%>%]
+        ]<%MainPicture$r("&amp;=&")$r("(&)([^\#])=$1amp;$2")%>
+      },
+      "bodyEnd": {
+        "tagline": { "typ": "std" }
+      }
+    }
+  }
+}

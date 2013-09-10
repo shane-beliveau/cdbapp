@@ -1,0 +1,3 @@
+[%{Counter!1},
+%]<%Body$S("bodyJSON.php5","PHPScript")%>[%,
+<%Facts$S("bodyJSON.php5","PHPScript")%>%]

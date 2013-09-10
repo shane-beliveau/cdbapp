@@ -1,0 +1,8 @@
+<%inheritedLink$S("toc.php5","PHPScript",0)%><%Category$r("[M]?RSS[0-9]+$=1")$V(isrss)%>
+<%?categories="\"NEWS%,BLOG%,AWARDS%,FEATURE%,VIDEO,AUDIO,LIST\""%>
+<pbs:newslist startDate="<%startDate%>" endDate="<%endDate%>" start=1 count=100 leadin=500 priosort=1 priosortonly fields=EmailHeadline,VideoID,VideoDescription,Page useobjects=1 categories="<%categories%>" taxonomywords="19005015,19005875,19005540,19005539,19005541,19005111,19005879,19005031,19005878,19005094,19005120,19005035,19005033,19005533,19005366,19005371,19005019,19005030,19005016,19005037,19005027,19005028,19005029,19005024,19005023,19005022,19005287,19005119,19005039,19005014,19005017,19005025,19005036,19005034" kwor=1 objectclass=[%{oc}<%oc%>%|%502%]>
+[%{isrss!1}<script>
+<!--
+var dpCurrentDate = "<%endDate%>";
+//-->
+</script>%]

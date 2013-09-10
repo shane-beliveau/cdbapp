@@ -1,0 +1,9 @@
+<%Imagelink$r("http://CDweb.cr.atl.publicus.com=")$V(tempImageLink)%>
+<%?tempImageLinkSmall=0%>
+<%tempImageLinkSmall$x("0","http://stage.crainsdetroit.com"+#tempImageLink#+"&MaxH=400&MaxW=600")$V(ImageLinkSmall)%>
+<%ImageLinkSmall$S("imageInfo.php5","PHPScript",0)%>
+[%{Counter=1}
+            "image" : "http://stage.crainsdetroit.com<%ImageLink$r("http://CDweb.cr.atl.publicus.com=")%>[%{ImgOrientation=L}&MaxW=256&ImageVersion=thenews%|%&MaxW=128%]",
+            "caption" : "<%Body$t$r("\r\n=")$r("""=\\""")%>",
+            "picOrientation" : "[%{@videoid}horizontal%|%[%<%ImgOrientation$r("L=horizontal")$r("P=vertical")%>%|%[%{@cd_isblog=1}blog%]%]%]"
+%]

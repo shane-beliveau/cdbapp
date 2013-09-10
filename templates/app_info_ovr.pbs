@@ -1,0 +1,17 @@
+<div class="settings-screen">
+  <div class="settings-header">
+    <div id="utility-nav" class="utility-nav">
+      <pbs:newslist date=99999999 category="STATIC" taxonomywords=19006080 count=10 useobjects=1 objectclass=101 Priosort=1>
+    </div>
+    <div class="external-links">
+      <a href="mailto:nhanus@crain.com?subject=Feedback+from+Crains+Detroit+App" target="_blank" class="sendfeedback">Send Us Your Feedback</a>
+    </div>
+  </div>
+  <div id="settingsContainer">
+    <div class="scroll-wrapper scroll-horizontal">
+      <div class="scroller">
+        <pbs:newslist date=99999999 category="STATIC" taxonomywords=19006080 count=10 useobjects=1 objectclass=102 alltext=1 images=1 Priosort=1>
+      </div>
+    </div>
+  </div>
+</div>

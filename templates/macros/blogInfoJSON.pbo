@@ -1,0 +1,2 @@
+        "blogTitle" : "<%@blog_title%>[% - <%@blog_blogtitle%>%]",
+        "blogLanding" : "<%@blog_landing%>",

@@ -1,0 +1,19 @@
+<%inheritedLink$S("cci/tags/newsitem.js")%>
+<%category$V(BlogCategoryToAuthor)%>
+<%Category$r("(^.*)BLOG(.+)=1")$V(cd_isblog)%>
+
+          {
+            "id" : "<%IsoPubDate%><%ID%>",[%{field_videoid}
+            "videoid" : "<%field_videoid%>",
+            "videoindividual" : "[%<%field_Videoindividual%>%|%single%]",%]
+            "title" : "<%Title$t$r("""=\\""")&r("	=")$r("(&)([^\#])=$1amp;$2")&r("&amp;=&")$r("&#8220;|and#8220;|&#8221;|and#8221;=\\""")$r("&#8212;|and#8212;= -- ")$r("&#8230;|and#8230=...")$r("&#8217;|and#8217;|&#8216;|and#8216;='")%>",
+            "link": "<%cci_shortBypassLink$r("/article/=/app/js/feeds/article.js?AID=/")r("\?AllowView=&AllowView")%>&sectioncat=nitf2&template=nitf2",[%{cd_isblog=1|Heading2}
+            "kicker" : "[%{cd_isblog=1}<%BlogCategoryToAuthor$K%>%|%<%Heading2%>%]",%][%
+            "page" : "<%field_Page$f("0")%>",%][%{imagelink|cd_isblog=1|field_videoid|category=audio}
+            "image" : "[%{imagelink}http://stage.crainsdetroit.com<%Imagelink$r("http://CDweb.cr.atl.publicus.com=")r("'=%27")%>[%{ImageOrientation=L}&MaxW=256&ImageVersion=thenews%|%&MaxW=128%]%|%[%{cd_isblog=1}http://stage.crainsdetroit.com/Assets/cd/blogs/square/<%category%>.png%|%[%{category=audio}http://stage.crainsdetroit.com/app/images/podcast-icon.gif%]%]%]",[%
+            "caption" : "<%CaptionBody$t$r("\r\n=")$r("""=\\""")%>",%]
+            "picOrientation" : "[%<%ImageOrientation$r("L=horizontal")$r("P=vertical")%>%|%[%{cd_isblog=1|category=audio}blog%]%]",%][%
+            "mp3audio" : "<%MultiMediaItem%>",%]
+            "pubDate" : "<%ISOPubDateTime$d("ddd, d mmm yyyy hh:nn:ss")%> EST",
+            "description": "<%Summary$t$w(0,250)$r("&#9;=")r("  =")r("""=\\""")r("&amp;=&#38;")r("(&)([^\#])=$1amp;$2")r("&#38;=&")r("&#8220;|and#8220;|&#8221;|and#8221;=\\""")r("&#8212;|and#8212;= -- ")r("&#8230;|and#8230=...")r("&#8217;|and#8217;|&#8216;|and#8216;='")%>"
+          }[%{islastitem!1},%]

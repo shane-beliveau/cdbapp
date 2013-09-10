@@ -1,0 +1,22 @@
+{
+
+    "rss": {
+        "channel": {
+            "title": "Crain's Detroit Business My Topics Feed",
+            "link": "http://stage.crainsdetroit.com",
+            "description": "Latest News from Crain's Detroit Business",
+            "language": "en-us",
+            "image": {
+                "title": "Crain's Detroit Business",
+                "width": "144",
+                "height": "21",
+                "link": "http://stage.crainsdetroit.com/",
+                "url": "http://stage.crainsdetroit.com/graphics/icons/rss.gif"
+            },
+            "topics": [
+<pbs:cce module=340 class=3401 Type=3401103 count=50 objectclass=1 DateRange="20120101-20121231" SortOrder="Title(ASC)">
+            ]
+        }
+    }
+
+}
