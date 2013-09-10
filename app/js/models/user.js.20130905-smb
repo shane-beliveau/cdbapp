@@ -15,16 +15,11 @@ define([
 			storageKey 		: 'CD.UserInformation',
 			lastError		: "",
 			anon_meter		: 3,
-			anon_meter_ts	: null,
 			isRegistrant	: false,
-			isSubscriber	: false,
-			expireMeterDays : 30,
-			today			: +new Date()
+			isSubscriber	: false
 		},
 
-		initialize: function() {
-			this.initializeMeter();
-		},
+		initialize: function() {},
 
 		/** 
 		*	Determine the extAPI url to use in authentication calls
@@ -91,7 +86,7 @@ define([
 			{
 				// Get the actual user node
 				user = user.response[0].CSAccount;
-				user.timestamp = this.get('today');
+				user.timestamp = +new Date();
 
 				// Store user
 				this.set({
@@ -216,71 +211,11 @@ define([
 
 		countAnonMeter: function ()
 		{
-			// Check to see if the user is anonymous
-			if( this.get('isLoggedIn') === 0 )
-			{
-				// Get the value of the current anon meter status
-				var anon_meter = this.get('anon_meter');
+			// Get the value of the current anon meter status
+			var anon_meter = this.get('anon_meter');
 
-				if( anon_meter === this.defaults.anon_meter )
-				{
-					// Set the anon_meter timestamp so we know when to expire.
-					this.set({ anon_meter_ts : this.get('today') });
-					this.store_user({ anon_meter_ts : this.get('today') });
-				}
+			return ( anon_meter < 0 ) ? 0 : anon_meter - 1;
 
-				anon_meter = ( anon_meter < 0 ) ? 0 : anon_meter - 1;
-
-				this.set({ anon_meter : anon_meter });
-				this.store_user({ anon_meter : anon_meter });
-
-				return anon_meter;
-				
-			}
-
-		},
-
-		initializeMeter: function ()
-		{
-			var local       = JSON.parse(localStorage.getItem('CD.UserMeterInformation')) || {},
-				timestamp 	= ( local.hasOwnProperty('anon_meter_ts') ) ? local.anon_meter_ts : 0,
-				meter		= ( local.hasOwnProperty('anon_meter') ) ? local.anon_meter : 0,
-				expires		= ( timestamp ) ? Math.ceil( ( timestamp + ( this.get('expireMeterDays') * 24 * 60 * 60 * 1000 ) ) - this.get('today') ) : null;
-
-			console.dir({
-				timestamp : timestamp,
-				meter : meter,
-				expires : expires,
-				today: this.get('today')
-			});
-
-			// Check if the meter exists or if timestamp is past expiration date. If so, reset the meter.
-			if( expires == null || expires <= 0 )
-			{
-				this.set({ 
-					anon_meter : this.defaults.anon_meter,
-					anon_meter_ts : this.get('today')
-				});
-
-				localStorage.setItem('CD.UserMeterInformation', 
-					JSON.stringify({ 
-						anon_meter : this.defaults.anon_meter,
-						anon_meter_ts : this.get('today')
-					}) 
-				);
-			}
-			else
-			{
-				this.set({ 
-					anon_meter : meter,
-					anon_meter_ts : timestamp
-				});
-			}
-
-			console.dir({
-				anon_meter : 'Clicks left: ' + this.get('anon_meter'),
-				anon_meter_ts : 'Timestamp: ' + this.get('anon_meter_ts')
-			});
 		}
 
 	});

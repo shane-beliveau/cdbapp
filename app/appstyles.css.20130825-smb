@@ -96,6 +96,20 @@ only screen and (max-width: 760px),
     padding-right: 10px; 
     white-space: nowrap;
   }
+  
+  /*
+  Label the data
+  */
+  td:nth-of-type(1):before { content: "First Name"; }
+  td:nth-of-type(2):before { content: "Last Name"; }
+  td:nth-of-type(3):before { content: "Job Title"; }
+  td:nth-of-type(4):before { content: "Favorite Color"; }
+  td:nth-of-type(5):before { content: "Wars of Trek?"; }
+  td:nth-of-type(6):before { content: "Porn Name"; }
+  td:nth-of-type(7):before { content: "Date of Birth"; }
+  td:nth-of-type(8):before { content: "Dream Vacation City"; }
+  td:nth-of-type(9):before { content: "GPA"; }
+  td:nth-of-type(10):before { content: "Arbitrary Data"; }
 }
   
 #app-wrapper{
@@ -816,7 +830,7 @@ body.portrait .thenews .hero .hero-img{
   padding:15px;
   height:30px;
   font-size:0.8em;
-  margin:0;
+  margin:0 0 25px 0;
 }
   
 .article .article-date{
@@ -918,10 +932,6 @@ body.portrait .article .article-content {
   margin: 0 15px 15px 15px;
   max-height: 200px;
   max-width: 400px;
-}
-
-.article .article-content h1 { 
-  margin-top: 25px; 
 }
 
 .article-content p a {
@@ -1349,105 +1359,6 @@ body.portrait #fullPageAd{
 .widescreenVideo { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; margin: 15px; }
 .widescreenVideo iframe, .widescreenVideo object, .widescreenVideo embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none; }
 
-div.download_item { margin: 20px 0 0 5px; }
+div.download_item { margin-left: 5px; }
 div.download_item a { background-color: #eee; padding: 5px; border: 1px solid #666; }
 div.download_item a img { margin-right:5px; }
-
-.blogHeader { height: 75px; background-repeat: no-repeat; background-position: right top; border-bottom: 1px solid #e5e5e5; }
-.blogHeader span { color: #666; display: table-cell; vertical-align: middle; height: 75px; padding-left: 10px; }
-
-/* 
-=================================================================
-ADDITIONS BY SHANE ON STAGING
-=================================================================
-*/
-
-#CSLogin { padding: 10px; }
-
-.form .field { margin: 0 0 10px; }
-.form .field label { display: block; font-weight: bold; margin: 0 0 5px; font-size: 14px; }
-
-.form .field input[type="email"],
-.form .field input[type="password"] { width: 75%; padding: 10px 10px 8px; font-size: 16px; font-family: monospace;  }
-
-.form .field.submit { margin-top: 10px; }
-
-.article .loading {
-    background: url("images/loading.gif") no-repeat scroll 50% 50% #00477F;
-    border-radius: 32px;
-    color: #00477F;
-    display: none;
-    font-size: 14px;
-    font-weight: bold;
-    height: 64px;
-    left: 50%;
-    line-height: 160px;
-    margin: -32px 0 0 -32px;
-    position: absolute;
-    text-indent: 0.25em;
-    top: 40%;
-    width: 64px;
-}
-
-.fix-fixed .header-dock { position: absolute; }
-
-#console { position: absolute; top: 30px; left: 10px; padding: 20px; background: rgba(0,0,0,0.75); color: white; font-size: 11px; z-index: 10000; }
-
-a.closesubscription { display: none; }
-
-/* 
-=================================================================
-*/
-
-.staticText h3 { font-weight: bold; }
-.staticText ul { list-style: disc; padding-left: 1.1em; }
-
-.expand_item { border-bottom: 1px solid #fff; min-height: 32px; position: relative; }
-.expand_item:first-child { border-top: 0; }
-.expand_item a { display: block; color:#506873; padding: 8px 32px 8px 10px; background: #e6ecf2 url('/Assets/cd/plus_grey.png') no-repeat scroll right center; border-right: 7px solid transparent; }
-.expand_contents { display: none; }
-.expand_contents .link_item a, .expand_contents .info_item { padding-left: 30px; }
-
-#main_header { background: #fff url('/assets/cd/mobile/main-header-bg.png') repeat-x scroll left bottom; color:#333; padding:10px 15px 10px; font-size: 1em; font-weight: bold; text-align: center; border-bottom:1px solid #94a0a5; border-top:1px solid #94a0a5; line-height:1em; }
-#main_header a { color: #333; background: transparent url('/assets/cd/mobile/backArrowGray.png') no-repeat scroll left center; display:block; padding:0px 10px; }
-
-.main_header { background: #fff url('/assets/cd/mobile/main-header-bg.png') repeat-x scroll left bottom; color:#333; padding:10px 15px 10px; font-size: 1em; font-weight: bold; text-align: center; border-bottom:1px solid #94a0a5; border-top:1px solid #94a0a5; line-height:1em; }
-.main_header a { color: #333; background: transparent url('/assets/cd/mobile/backArrowGray.png') no-repeat scroll left center; display:block; padding:0px 10px; }
-
-.section_header { background: #ccc; border: 0; color: #000; font-size: 1.1em; margin: 0; padding: 0; min-height: 32px; position: relative; text-align: center; padding-top: 8px; font-weight: bold; }
-.section_header a,
-.section_header span { color: #fff; display: block; font-weight: bold; text-decoration: none; padding: 12px 32px 12px 10px; margin: 0; background: transparent url('/graphics/mobile/touch/listArrowWhite.png') no-repeat scroll right center; }
-.section_header span { background: none; }
-
-.link_bar { background: #ccc; border: 0; color: #000; margin: 0; padding: 0; min-height: 32px; position: relative; border-bottom:1px solid #fff; }
-.link_bar a { color: #333; display: block; font-weight: bold; text-decoration: none; padding: 8px 32px 8px 10px; margin: 0; background: transparent url('/assets/cd/mobile/listArrowGray.png') no-repeat scroll right center; }
-
-.info_bar { background: #ccc; border: 0; color: #000; min-height: 22px; position: relative; border-bottom:1px solid #fff; font-weight: bold; text-decoration: none; padding: 8px 10px; margin: 0; }
-
-.link_item { border-bottom: 1px solid #fff; min-height: 32px; position: relative; }
-.link_item:first-child, .link_item.top_story { border-top: 0; }
-.link_item a { display: block; color:#506873; padding: 8px 32px 8px 10px; background: #e6ecf2 url('/assets/cd/mobile/listArrowBlue.png') no-repeat scroll right center; }
-.link_item.top_story a { display: block; padding: 10px 0px 10px 10px; background: none; font-weight: bold; font-size: 1.3em; }
-.link_item.top_story img { margin: 0 auto; border: 1px solid #ccc; }
-.link_item.top_story span { display: block; padding: 5px 32px 0 0; background: transparent url('/assets/cd/mobile/listArrowGray.png') no-repeat scroll right center; }
-
-.info_item { background-color: #e6ecf2; border-bottom: 1px solid #fff; position: relative; display: block; color:#506873; padding: 8px 32px 8px 10px; }
-.info_item:first-child, .link_item.top_story { border-top: 1px solid #fff; }
-
-.return_item { border-bottom: 1px solid #fff; min-height: 32px; position: relative; }
-.return_item:first-child { border-top: 0; }
-.return_item a { display: block; color:#506873; padding: 8px 10px 8px 32px; background: #e6ecf2 url('/assets/cd/mobile/listArrowBlueleft.png') no-repeat scroll left center; }
-
-.nav_item { border-bottom: 1px solid #fff; min-height: 32px; position: relative; }
-.nav_item:first-child { border-top: 0; }
-.nav_item a:nth-child(1) { float: right; display: block; color:#506873; padding: 8px 32px 8px 10px; background: #e6ecf2 url('/assets/cd/mobile/listArrowBlue.png') no-repeat scroll right center; }
-.nav_item a:nth-child(2) { display: block; color:#506873; padding: 8px 10px 8px 32px; background: #e6ecf2 url('/assets/cd/mobile/listArrowBlueLeft.png') no-repeat scroll left center; }
-
-.videoPlayer { width: 300px; height: 169px; margin: 0 auto; display: block; }
-.sectionHeaderImg { min-width:300px; max-width: 620px; width: 100%; }
-.showcasePhoto { min-width: 300px; max-width: 630px; width: 100%; display: block; margin: 0 auto 1em; border-bottom: 1px solid #666; padding-bottom: 1em; }
-.carouselImage { min-width: 300px; max-width: 630px; width: 100%; display: block; margin: 0; padding: 0; }
-.ocarouselContainer { width: 300px; height:144px;  margin: 0 auto; }
-.callToAction { width: 300px; height: 100px; margin: 0 auto; display: block; } 
-
-#AdvertiseWithCrains .staticText p { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #666; }

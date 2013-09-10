@@ -1,0 +1,25 @@
+<div class="new-member">
+  <h3>SELECT SUBSCRIPTION</h3>
+    <p>Please select one of the subscriptions below.</p>
+    <div class="offer1">
+      <img src="images/offer1.png" />
+      <p>Premium Web: Digital Magazine + Research + Data<br/>
+      <a href="#" class="button white">$399/Year</a></p> 
+    </div>
+    <div class="offer2">
+      <img src="images/offer2.png"/>
+      <p>Print + Digital Magazine + Web <br/>
+      <a href="#" class="button white">$164/Year</a>
+      </p>
+    </div>
+</div>
+<div class="already-a-member">
+  <h3>ALREADY A SUBSCRIBER?</h3>
+    <p>Existing Modern Healthcare subscribers can activate their subscriptions by using one of the methods below.</p>
+    <p>
+      <a href="#" class="button white">Print Subscription</a>
+      <a href="#" class="button white">Digital Subscription</a>
+      <a href="#" class="button white">Premium Web Subscription</a>
+    </p>
+</div>
+<div class="clearfix"></div>
