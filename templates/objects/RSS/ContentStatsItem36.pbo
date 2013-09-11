@@ -5,13 +5,13 @@
 
           {
             "id" : "<%ISOPublishedDateTime$d("yyyymmdd")%><%ID%>",
-            "title" : "<%Title$t$r("""=\\""")&r("	=")$r("(&)([^\#])=$1amp;$2")&r("&amp;=&")$r("&#8220;|and#8220;|&#8221;|and#8221;=\\""")$r("&#8212;|and#8212;= -- ")$r("&#8230;|and#8230=...")$r("&#8217;|and#8217;|&#8216;|and#8216;='")%>",
+            "title" : "<%Title$t$r("""=\\""")&r("   =")$r("(&)([^\#])=$1amp;$2")&r("&amp;=&")$r("&#8220;|and#8220;|&#8221;|and#8221;=\\""")$r("&#8211;|and#8211;= - ")$r("&#8212;|and#8212;= -- ")$r("&#8230;|and#8230=...")$r("&#8217;|and#8217;|&#8216;|and#8216;='")%>",
             "link": "<%cci_shortBypassLink$r("/article/=/app/js/feeds/article.js?AID=/")r("\?AllowView=&AllowView")%>&sectioncat=nitf2&template=nitf2",
-            "kicker" : "[%{@cd_isblog=1}<%BlogCategoryToAuthor$K%>%|%<%Heading2%>%]",
             "pubDate" : "<%ISOPublishedDateTime$d("ddd, d mmm yyyy hh:nn:ss")%> EST",
             "description": "<%Summary$t$w(0,250)$r("&#9;=")r("	=")r("[\r\n]= ")r("""=\\""")r("(&)([^\#])=$1amp;$2")r("&#8220;|and#8220;|&#8221;|and#8221;=\\""")r("&#8212;|and#8212;= -- ")r("&#8230;|and#8230=...")r("&#8217;|and#8217;|&#8216;|and#8216;='")%>",
-            <pbs:query name="CD_GetStoryExtraFields" parameters="@AStoryGUID=<%GUID%>">[%<%Images%>%|%
-            "image" : "[%{@cd_isblog=1}http://stage.crainsdetroit.com/Assets/cd/blogs/square/<%category%>.png%]",
-            "caption" : "[%{@cd_isblog=1}<%BlogCategoryToAuthor$K%>%]",
-            "picOrientation" : "[%{@cd_isblog=1}blog%]"%]
+            <pbs:query name="CD_GetStoryExtraFields" parameters="@AStoryGUID=<%GUID%>">[%<%Images%>%|%[%{@cd_isblog=1}
+            "image" : "http://stage.crainsdetroit.com/Assets/cd/blogs/square/<%category%>.png",
+            "caption" : "<%BlogCategoryToAuthor$K%>",
+            "picOrientation" : "blog",%]%]
+            "kicker" : "[%{@cd_isblog=1}<%BlogCategoryToAuthor$K%>%|%<%Heading2%>%]"
           } [%{islastitem!1},%]
