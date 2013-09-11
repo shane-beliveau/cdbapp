@@ -13,6 +13,7 @@
       <div class="scroller">
         <pbs:newslist date=99999999 category="STATIC" taxonomywords=19006080 count=10 useobjects=1 objectclass=102 alltext=1 images=1 Priosort=1>
         <div id="AdvertiseWithCrains" class="scroll-item">
+          <h1>Media Kit</h1>
           <pbs:macro name="media_kit">
         </div>
       </div>
