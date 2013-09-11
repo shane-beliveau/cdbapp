@@ -773,7 +773,7 @@ body.portrait .thenews .hero .hero-img{
   background:#333;
   border-right:1px solid #000;
   width:255px;
-  height:238px;
+  height:250px;
   float:left;
   background-size:255px auto;
   background-position:top center;
@@ -786,7 +786,7 @@ body.portrait .thenews .hero .hero-img{
   padding:5px 10px;
   position:relative;
   overflow:hidden;
-  height:70px;
+  height:82px;
   top:158px;
   }
 
