@@ -47,12 +47,12 @@ body .article-date {
 }
 
 body.portrait .article .article-content img.article-image {
- width:auto;
- margin:10px 0 10px 12px ;
+ width: auto;
+ margin: 0 10px 10px;
  max-height: auto !important;
  max-width: 90%;
- clear:both;
- float:none;
+ clear: both;
+ float: left;
 }
 
 

@@ -197,7 +197,7 @@ define([
           $('#CSLogin').html('<strong>Logged in as: ' + this.UserModel.get('username') + '</strong> <br/><br/> <strong>Current GID: ' + this.UserModel.get('effectiveGID') + '</strong> <br/><br/> <form id="logout"><input type="submit" class="button white" value="Logout" /></form>');
 
           var first_name = ( this.UserModel.get('name_first') ) ? this.UserModel.get('name_first') : 'Guest'
-          $('#subscribe-toggle').html('<i></i> Welcome ' + first_name );
+          $('#subscribe-toggle, #subscribe-toggle-nav').html('Welcome ' + first_name );
 
           // Prevent from multiple events attaching
           $('#logout').off('submit.logout');
@@ -219,7 +219,7 @@ define([
           });
 
           this.$('div#subscription', this.$el).html(subscriptionTemplate);
-          $('#subscribe-toggle').html('<i></i>Login / Subscribe');
+          $('#subscribe-toggle, #subscribe-toggle-nav').html('Login / Subscribe');
           this.loginFormActions();
         }
       },

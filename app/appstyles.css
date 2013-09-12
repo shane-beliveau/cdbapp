@@ -388,7 +388,7 @@ span.breadcrumb-small-label { display: none; }
 }
 .subscription-bar .already-a-member {
   float:left;
-  width:33%;
+  /*width:33%;*/
   min-height:300px;
   padding-top: 20px;
 }
@@ -1346,11 +1346,11 @@ body.portrait #fullPageAd{
 .articleFactBoxText p { margin:0 0 .8em; }
 
 
-.widescreenVideo { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; margin: 15px; }
+.widescreenVideo { position: relative; padding-bottom: 56.25%; padding-top: 1px; height: 0; overflow: hidden; margin: 15px; }
 .widescreenVideo iframe, .widescreenVideo object, .widescreenVideo embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none; }
 
-div.download_item { margin: 20px 0 0 5px; }
-div.download_item a { background-color: #eee; padding: 5px; border: 1px solid #666; }
+div.download_item { margin: 10px 5px; }
+div.download_item a { background-color: #eee; padding: 5px; border: 1px solid #666; display: table-cell; }
 div.download_item a img { margin-right:5px; }
 
 .blogHeader { height: 75px; background-repeat: no-repeat; background-position: right top; border-bottom: 1px solid #e5e5e5; }
