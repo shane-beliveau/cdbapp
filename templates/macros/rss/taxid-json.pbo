@@ -18,9 +18,9 @@
     [%{section=mytopics}"topics" : [
 <pbs:cce cached=0 module=340 class=3401 Type=3401103 count=50 objectclass=1 DateRange="20120101-20121231" SortOrder="Title(ASC)" fields="profid">
     ]}%|%"items": [
-      [%{tagid}<pbs:newslist profile=<%tagid%> categories="<%categories%>" count=15 sort="Date desc" days=365 leadin=250  useobjects=1 objectclass=36 fields="VideoID,VideoDescription,Videoindividual">%|%
-      [%{section=topstories}<pbs:newslist profile=1404 categories="<%categories%>" count=15 sort="Date desc" days=7 leadin=250 useobjects=1 objectclass=37 fields="VideoID,VideoDescription,Videoindividual">%|%
-      [%{section=blogs}<pbs:newslist days=180 categories="STAFFBLOG%,BLOG%" ExcludeCategories="STAFFBLOG99" leading=250 images=1 count=15 start=1 useobjects=1 objectclass=36 fields="VideoID,VideoDescription,Videoindividual">%|%
+      [%{tagid}<pbs:newslist profile=<%tagid%> categories="<%categories%>" count=15 sort="Date desc" days=365 leadin=1000  useobjects=1 objectclass=36 fields="VideoID,VideoDescription,Videoindividual">%|%
+      [%{section=topstories}<pbs:newslist profile=1404 categories="<%categories%>" count=15 sort="Date desc" days=7 leadin=1000 useobjects=1 objectclass=37 fields="VideoID,VideoDescription,Videoindividual">%|%
+      [%{section=blogs}<pbs:newslist days=30 categories="BLOG%" leadin=1000 images=1 count=15 start=1 useobjects=1 objectclass=36 fields="VideoID,VideoDescription,Videoindividual">%|%
       [%{section=mostread}<pbs:contentstats interval="24hours" categories="<%categories%>" days=-1 types="stories" objectclass=36 count=15>%|%
       <pbs:newslist days=7 count=15 sort="Date desc" categories="<%categories%>" profile=1066 leadin=1000 useobjects=1 objectclass=36 fields="VideoID,VideoDescription,Videoindividual">%]
       %]

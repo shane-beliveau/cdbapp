@@ -92,7 +92,7 @@ js/router.js
 js/feeds/main.js?section=mytopics
 
 #Stories
-<pbs:newslist categories="<%categories%>" days=7 count=100 useobjects=1 objectclass=3>
+#<!-- pbs:newslist categories="<%categories%>" days=7 count=100 useobjects=1 objectclass=3 --> 
 
 #BlogImages
 <pbs:cce module=330 class=3301 Types="33011,33012" fields="landing,blogdescription" count=99 objectclass=1 DateRange=20120821 fields="landing">

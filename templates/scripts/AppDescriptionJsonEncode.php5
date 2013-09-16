@@ -1,0 +1,28 @@
+//<?php //Converts html entities to characters formatted in Western European character-set.
+$tValue = $SOSE->GetVar($SOSE->GetVar("_Variable"));
+$pattern[] = "/&bull;/";	$replacement[] = "•";
+$pattern[] = "/&#8226;/";	$replacement[] = "•";
+$pattern[] = "/&amp;/";		$replacement[] = "&";
+$pattern[] = "/&#38;/";		$replacement[] = "&";
+$pattern[] = "/&mdash;/";	$replacement[] = "--";
+$pattern[] = "/&#8212;/";	$replacement[] = "--";
+$pattern[] = "/&ndash;/"; 	$replacement[] = "-";
+$pattern[] = "/&#8211;/";	$replacement[] = "-";
+$pattern[] = "/&nbsp;/";	$replacement[] = " ";
+$pattern[] = "/&#160;/"; 	$replacement[] = " ";
+$pattern[] = "/&hellip;/";	$replacement[] = "...";
+$pattern[] = "/&#8230;/";	$replacement[] = "...";
+$pattern[] = "/&raquo;/";	$replacement[] = "»";
+$pattern[] = "/&#187;/";	$replacement[] = "»";
+$pattern[] = "/&laquo;/";	$replacement[] = "«";
+$pattern[] = "/&#171;/";	$replacement[] = "«";
+$pattern[] = "/&ldquo;/";	$replacement[] = "\"";
+$pattern[] = "/&#8220;/";	$replacement[] = "\"";
+$pattern[] = "/&rdquo;/";	$replacement[] = "\"";
+$pattern[] = "/&#8220;/";	$replacement[] = "\"";
+$pattern[] = "/&rsquo;/";	$replacement[] = "'";
+$pattern[] = "/&#8217;/";	$replacement[] = "'";
+$pattern[] = "/&lsquo;/";	$replacement[] = "'";
+$pattern[] = "/&#8216;/";	$replacement[] = "'";
+$tValue = preg_replace ($pattern, $replacement, $tValue);
+$SOSE->Echo(json_encode($tValue));
