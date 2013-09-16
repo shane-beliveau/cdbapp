@@ -7,10 +7,11 @@ define([
   'text!templates/article/main.html',
   'text!templates/article/content.html',
   'text!templates/article/preview.html',
+  'text!templates/article/meter_expired.html',
   'text!templates/dots.html',
   'utils'
 ],
-  function (Backbone, _, Mustache, iscrollHelper, ArticlesCollection, MyBriefcaseCollection, FullPageAdView, UserModel, MainTemplate, ArticleContentTemplate, ArticlePreviewTemplate, DotsTemplate, Utils) {
+  function (Backbone, _, Mustache, iscrollHelper, ArticlesCollection, MyBriefcaseCollection, FullPageAdView, UserModel, MainTemplate, ArticleContentTemplate, ArticlePreviewTemplate, ArticleMeterExpiredTemplate, DotsTemplate, Utils) {
 
     return Backbone.View.extend({
       el: '#content',
@@ -60,12 +61,20 @@ define([
         // Add the user model to object and set up events
         this.mainView.UserModel.on('userStored.article userLoggedOut.article', 
           function() {
-            this.dontRenderAds = true;
+            this.renderAds = false;
             this.render();
           }, this);
 
         // Set ad rendering option
-        this.dontRenderAds = false;
+        this.renderAds = true;
+
+        // Metering options
+        if( !this.meterExpired && !this.mainView.UserModel.get('isLoggedIn') )
+        {
+            this.mainView.UserModel.countAnonMeter();
+            this.checkMeter();
+        }
+        this.meterExpired = ( !this.mainView.UserModel.get('anon_meter') ) ? true : false;
 
         // Render the article
         this.render();
@@ -156,39 +165,59 @@ define([
                 isRender = currentPageEl.hasClass('render');
                 _this.model = _this.collection.get(modelID);
 
-              if ( previousPageIndex !== this.currPageX ) {
+              if ( previousPageIndex !== this.currPageX && !currentPageEl.hasClass('active') ) {
+                
                 _this.pageSwipesCount++
                 _this.checkSwipes();
-              }
 
-              previousPageIndex = this.currPageX;
+                console.dir({
+                  "Page Swipes: " : _this.pageSwipesCount,
+                  "Index" : this.currPageX,
+                  "Previous" : previousPageIndex
+                }); 
+              
+                previousPageIndex = this.currPageX;
 
-              $('#indicator li.active').removeClass('active');
-              $('#indicator li:eq(' + (this.currPageX) + ')').addClass('active');
+                $('#indicator li.active').removeClass('active');
+                $('#indicator li:eq(' + (this.currPageX) + ')').addClass('active');
 
-              $('div.article.active', _this.$el).removeClass('active');
-              currentPageEl.addClass('active');
+                $('div.article.active', _this.$el).removeClass('active');
+                currentPageEl.addClass('active');
 
-              if ( !isRender ) {
-                if ( !_this.model.get('article') ) {
-                  _this.collection.getArticle(_this.model);
-                } else {
-                  _this.renderArticle(_this.model);
+                if ( !isRender ) 
+                {
+                  if ( !_this.model.get('article') ) 
+                  {
+                    _this.collection.getArticle(_this.model);
+                  } 
+                  else 
+                  {
+                    _this.renderArticle(_this.model);
+                  }
+                } 
+                else 
+                {
+                  var ContentHeight = currentPageEl.outerHeight();
+                  $('#ArticlesContainer').css({
+                    height: ContentHeight + 'px',
+                    overflow: 'hidden'
+                  });
+                  _this.mainView.trigger('refreshMainScroll', (ContentHeight + 35));
+                  
+                  if(_this.renderAds) _this.renderAdsInView();
+
+                  // Count against the meter after 10 seconds if the user
+                  // is still on the same article.
+                  if( !_this.meterExpired && !_this.mainView.UserModel.get('isLoggedIn') )
+                  {
+                      _this.mainView.UserModel.countAnonMeter();
+                      _this.checkMeter();
+                  }
                 }
-              } else {
-                var ContentHeight = currentPageEl.outerHeight();
-                $('#ArticlesContainer').css({
-                  height: ContentHeight + 'px',
-                  overflow: 'hidden'
-                });
-                _this.mainView.trigger('refreshMainScroll', (ContentHeight + 35));
-                
-                if(!_this.dontRenderAds) _this.renderAdsInView();
-
               }
 
               // Reset the ad rendering
-              _this.dontRenderAds = false;
+              _this.renderAds = true;
 
               _this.updateBriefcaseButton();
               _this.mainView.updateBreadcrumbs([_this.name]);
@@ -210,7 +239,9 @@ define([
           groupid         = model.get('groupid'),
           container       = $('#ArticlesContainer div#article-' + id),
           parsedTemplate  = Mustache.to_html(ArticleContentTemplate, model.toJSON()),
-          previewTemplate = Mustache.to_html(ArticlePreviewTemplate, model.toJSON());
+          previewTemplate = Mustache.to_html(ArticlePreviewTemplate, model.toJSON()),
+          meterExpiredTemplate = Mustache.to_html(ArticleMeterExpiredTemplate, model.toJSON()),
+          _this           = this;
 
           // Set the user access for this story
           this.setUserAccess();
@@ -219,7 +250,7 @@ define([
           if( model.get('processed') )
           {
             // Determine which template to show based on the user's access levels
-            parsedTemplate  = (this.hasAccess) ? parsedTemplate : previewTemplate;
+            parsedTemplate  = (this.hasAccess || !this.meterExpired ) ? parsedTemplate : (this.meterExpired) ? meterExpiredTemplate : previewTemplate;
 
             // Load the content into the article container
             $('#ArticlesContainer div#article-' + id).addClass('render');
@@ -261,7 +292,20 @@ define([
       // Gets the user info and decides whether the user has access to story
       setUserAccess: function() {
         this.usergid   = this.mainView.UserModel.get('effectiveGID');
-        this.hasAccess = ( this.model.get('groupid') === null ) ? 1 : ( (this.model.get('groupid') & this.usergid) <= 0 ) ? 0 : 1;
+        this.hasAccess = ( this.model.get('groupid') === null || this.model.get('groupid') === undefined ) ? 1 : ( (this.model.get('groupid') & this.usergid) <= 0 ) ? 0 : 1;
+      },
+
+      checkMeter: function ()
+      {
+          this.meterExpired = ( this.mainView.UserModel.get('anon_meter') == 0 ) ? true : false;
+
+          // Re-render the article templates if the meter is expired.
+          if( this.meterExpired && !this.mainView.UserModel.get('isLoggedIn') )
+          {
+            this.renderAds = false;
+            this.render();
+            console.log('Rendered from checkMeter');
+          }
       },
 
       checkSwipes: function () {
@@ -279,7 +323,7 @@ define([
             is_open: true
           });
 
-          this.fullPageAdView.render();
+          if(this.renderAds) this.fullPageAdView.render();
           this.pageSwipesCount = 0;
         }
         

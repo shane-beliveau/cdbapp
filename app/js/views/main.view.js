@@ -23,6 +23,13 @@ define([
 
         // Add a user model instance
         this.UserModel = new UserModel();
+
+        // Hide briefcase if not a subscriber
+        if( !this.UserModel.get('isSubscriber') )
+        {
+          $('.section-link[href="#mybriefcase"]').hide();
+        }
+
         this.UserModel.on({
           'loginFailed'   : this.render,
           'userStored.main'   : function() {
@@ -32,9 +39,20 @@ define([
                 slideup: true
               });
             }
+            if( this.UserModel.get('isSubscriber') )
+            {
+              $('.section-link[href="#mybriefcase"]').show();
+            }
           },
           'userLoggedOut.main' : function() {
             this.toggleUserInfo();
+
+            // Hide briefcase if not a subscriber
+            if( !this.UserModel.get('isSubscriber') )
+            {
+              $('.section-link[href="#mybriefcase"]').hide();
+            }
+            
           }
         }, this);
 
