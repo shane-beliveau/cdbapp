@@ -15,7 +15,7 @@ function(Backbone, _) {
 			pos: '',
 			is_open: false,
 			isOffline: false,
-			ad_key: 'MH.Advertisements.',
+			ad_key: 'CD.Advertisements.',
 			showStored: true,
 			stored: '',
 			countImpression: false

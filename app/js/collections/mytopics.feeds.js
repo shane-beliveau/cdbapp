@@ -6,8 +6,8 @@ define([
   function (Backbone, _, MyTopicsModel, NewsFilmstripCollection) {
 
     return Backbone.Collection.extend({
-      storageKey: 'MH.MyTopics',
-      mainStorageKey: 'MH.ArticlesCollection.',
+      storageKey: 'CD.MyTopics',
+      mainStorageKey: 'CD.ArticlesCollection.',
 
       url: 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=mytopics',
       // url: 'http://stage.crainsdetroit.com/section/rss36&mytopics=1&mime=application%2Fjson',

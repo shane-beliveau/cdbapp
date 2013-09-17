@@ -170,12 +170,6 @@ define([
                 _this.pageSwipesCount++
                 _this.checkSwipes();
 
-                console.dir({
-                  "Page Swipes: " : _this.pageSwipesCount,
-                  "Index" : this.currPageX,
-                  "Previous" : previousPageIndex
-                }); 
-              
                 previousPageIndex = this.currPageX;
 
                 $('#indicator li.active').removeClass('active');
@@ -304,7 +298,6 @@ define([
           {
             this.renderAds = false;
             this.render();
-            console.log('Rendered from checkMeter');
           }
       },
 

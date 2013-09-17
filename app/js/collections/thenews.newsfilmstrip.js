@@ -8,7 +8,7 @@ define([
     return Backbone.Collection.extend({
 
       storageKey: function (key) {
-        return this.storageKey = 'MH.ArticlesCollection.' + key;
+        return this.storageKey = 'CD.ArticlesCollection.' + key;
       },
 
       isFetched: false,

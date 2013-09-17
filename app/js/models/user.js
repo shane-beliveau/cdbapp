@@ -19,10 +19,16 @@ define([
 			isRegistrant	: false,
 			isSubscriber	: false,
 			expireMeterDays : 30,
-			today			: +new Date()
+			today			: +new Date(),
+			isOffline		: false
 		},
 
-		initialize: function() {},
+		initialize: function() {
+			if( !window.navigator.onLine )
+			{
+				this.set('isOffline', true);
+			}
+		},
 
 		/** 
 		*	Determine the extAPI url to use in authentication calls
@@ -43,7 +49,38 @@ define([
 		**/
 		authenticate: function(opts) 
 		{
-			if( !this.loginStatus() )
+			if( this.get('isOffline') )
+			{
+				// Check if user login has been stored in localStorage
+				var userStored = localStorage.getItem( this.get('storageKey') );
+
+				// Apply the user's credentials to the app if they exist
+				if (userStored !== null) 
+				{
+					var user = JSON.parse(userStored);
+
+					// Store user
+					this.set({
+						username		: user.username,
+						email			: user.email,
+						name_first		: user.name_first,
+						name_last		: user.name_first,
+						effectiveGID	: +user.effectiveGID,
+						isLoggedIn		: user.isLoggedIn,
+						timestamp		: user.timestamp,
+						isRegistrant	: ( +user.effectiveGID & 64 || +user.effectiveGID & 512 ) ? true : false,
+						isSubscriber	: ( +user.effectiveGID & 1 ) ? true : false
+					});
+
+					// Trigger the event to let the app know that the
+					// user has been stored
+					this
+						.trigger('userStored.main')
+						.trigger('userStored.article');
+				}
+			}
+
+			if( !this.loginStatus() && !this.get('isOffline') )
 			{
 				// Determine which method to use; authenticateUser by default
 				var _opts			= opts || {};
