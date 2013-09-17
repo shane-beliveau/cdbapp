@@ -27,7 +27,7 @@ define([
         // Hide briefcase if not a subscriber
         if( !this.UserModel.get('isSubscriber') )
         {
-          $('.section-link[href="#mybriefcase"]').hide();
+          $('a[href="#mybriefcase"]').hide();
         }
 
         this.UserModel.on({
@@ -41,7 +41,7 @@ define([
             }
             if( this.UserModel.get('isSubscriber') )
             {
-              $('.section-link[href="#mybriefcase"]').show();
+              $('a[href="#mybriefcase"]').show();
             }
           },
           'userLoggedOut.main' : function() {
@@ -50,7 +50,7 @@ define([
             // Hide briefcase if not a subscriber
             if( !this.UserModel.get('isSubscriber') )
             {
-              $('.section-link[href="#mybriefcase"]').hide();
+              $('a[href="#mybriefcase"]').hide();
             }
             
           }
