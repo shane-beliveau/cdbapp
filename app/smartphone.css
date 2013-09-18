@@ -102,13 +102,13 @@ body.landscape .towerad img,body.portrait .towerad img{
 
 body.landscape div.ad { display: block; }
     
-body.landscape .towerad { float: none; height: 80px; margin: 0 auto; }
+body.landscape .towerad { float: none; height: 50px; margin: 10px auto; }
     
 body.portrait .towerad, body.lanscape .towerad {
     clear: both;
     margin: 10px auto;
     width: 100%;
-    height: 90px;
+    height: 50px;
     text-align: center;
 }
 
