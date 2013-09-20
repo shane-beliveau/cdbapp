@@ -362,15 +362,16 @@ span.breadcrumb-small-label { display: none; }
 /* Subscription Screen Styles */
 .subscription-bar,
 .settings-bar {
-  background:#000;
+  background: rgba(0,0,0,0.9);
   color:#fff;
-  clear: both;
-  float: left;
+  position: absolute;
+  top: 100px;
   border-bottom:1px solid #333;
   padding:0;
   display: none;
   box-shadow: 0 15px 25px #000;
   width:100%;
+  z-index: 100000;
 }
 .subscription-bar h3,
 .settings-bar h3 {
@@ -1353,7 +1354,7 @@ div.download_item { margin: 10px 5px; }
 div.download_item a { background-color: #eee; padding: 5px; border: 1px solid #666; display: table-cell; }
 div.download_item a img { margin-right:5px; }
 
-.blogHeader { height: 75px; background-repeat: no-repeat; background-position: right top; border-bottom: 1px solid #e5e5e5; }
+.blogHeader { height: 75px; background-repeat: no-repeat; background-position: right top; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; }
 .blogHeader span { color: #666; display: table-cell; vertical-align: middle; height: 75px; padding-left: 10px; }
 
 /* 

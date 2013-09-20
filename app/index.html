@@ -107,10 +107,13 @@ if(s_code)document.write(s_code);
       </div>
       <!-- Scroller -->
       <div class="clearfix"></div>
+      
+      <div id="subscription" class="subscription-bar scroll-wrapper scroll-horizontal"></div>
+
       <div id="content-wrapper" class="scroll-wrapper scroll-horizontal">
         <div class="scroller">
           <div>
-            <div id="subscription" class="subscription-bar"></div>
+            
             <div id="content" class="content-area"></div>
           </div>
         </div>
@@ -154,7 +157,30 @@ $('#smartphone-nav a').click(function() {
 
 $('#subscribe-toggle-nav').click(function() {
   if ($("#subscription").is(":hidden")) {
-    $("#subscription").slideDown();
+    $("#subscription").slideDown(function(){
+
+      if( !$(this).hasClass('has-scroller') )
+      {
+        $('#subscription > div.scroller').css({
+          height: $('#subscription:visible').outerHeight(true) + 'px'
+        });
+
+        $('#subscription').css({
+          height: ($('html')[0].clientHeight - 100) + 'px'
+        });
+
+        var subScroll = new iScroll($('#subscription')[0],{
+          momentum: true,
+          hScrollbar: false,
+          vScrollbar: false,
+          hScroll: false
+        });
+
+        $(this).addClass('has-scroller');
+      }
+      
+    
+    });
   } else {
     $("#subscription").hide();
   }

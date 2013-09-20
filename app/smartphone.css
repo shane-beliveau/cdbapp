@@ -102,13 +102,13 @@ body.landscape .towerad img,body.portrait .towerad img{
 
 body.landscape div.ad { display: block; }
     
-body.landscape .towerad { float: none; height: 80px; margin: 0 auto; }
+body.landscape .towerad { float: none; height: 50px; margin: 10px auto; }
     
 body.portrait .towerad, body.lanscape .towerad {
     clear: both;
     margin: 10px auto;
     width: 100%;
-    height: 90px;
+    height: 50px;
     text-align: center;
 }
 
@@ -153,6 +153,10 @@ body #breadcrumbs-container {
 }
     
 .new-member {padding: 0 10px;}
+
+.subscription-bar {
+    top: 50px;
+}
         
 .subscription-bar .offer1, .subscription-bar .offer2 {
         display: block;
@@ -200,10 +204,9 @@ body #subscription .button { padding: 5px 10px !important; }
 body #smartphone-nav {
  /*display:block;*/
  clear:both;
- margin-top:-7px;
  position:fixed;
  z-index:1000000;
- top:56px;
+ top:50px;
  left:0;
  width:100%;
  height: 100%;
@@ -234,10 +237,12 @@ padding:11px 0;
  text-align:center;
 }
 
-body #smartphone-nav a:nth-child(2n){
-	border-left:1px solid #000;
-	width:49.5%;
-	}
+body #smartphone-nav a:nth-child(1n){
+	border-right:1px solid #000;
+	width: 50%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 body.portrait #smartphone-nav a{
 	padding:25px 0%;
@@ -393,6 +398,10 @@ a.closesubscription {
         margin: 0 auto;
         */
         display: none;
+    }
+
+    .subscription-bar {
+        top: 50px;
     }
     
     body #smartphone-nav a { font-size: 11px; }

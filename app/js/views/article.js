@@ -256,6 +256,16 @@ define([
               height: ContentHeight + 'px',
               overflow: 'hidden'
             });
+            // Hide briefcase if not a subscriber
+            if( !this.mainView.UserModel.get('isSubscriber') )
+            {
+              $('a.addtobriefcase').hide();
+            }
+            else
+            {
+              $('a.addtobriefcase').show();
+            }
+
             this.mainView.trigger('refreshMainScroll', (ContentHeight + 35));
 
             this.renderAdsInView();
