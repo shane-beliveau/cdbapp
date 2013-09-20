@@ -1,5 +1,5 @@
 
 <div id="<%Superheading%>" class="scroll-item">
 	<h1><%title%></h1>
-	<%Text%>
+	<%Text$x("<p>","<br />")x("<br><br><br>","<br />")x("<br><br>","<br />")x("<br>","<br />")x("<hardreturn>","<p>")x("<br class="hardreturn" />","</p>")%>
 </div>
