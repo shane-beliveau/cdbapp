@@ -192,6 +192,9 @@ define([
 		{
 			var _this = this;
 
+			// Reset the object to defaults
+			_this.clear().set(_this.defaults);
+
 			// Make a logout call to the extAPI1Direct on Clickshare
 			$.ajax({
 			
@@ -201,11 +204,6 @@ define([
 
 				success : function (response) 
 				{
-					// Reset the object to defaults
-					_this
-						.clear()
-						.set(_this.defaults);
-
 					// Trigger any connected actions
 					_this
 						.trigger('userLoggedOut.main')
@@ -220,12 +218,6 @@ define([
 					// even though an error was thrown ( from 302 redirect )
 					if( AccessCookie === '""' ||  AccessCookie === null)
 					{
-						
-						// Reset the object to defaults
-						_this
-							.clear()
-							.set(_this.defaults);
-
 						// Trigger any connected actions
 						_this
 							.trigger('userLoggedOut.main')

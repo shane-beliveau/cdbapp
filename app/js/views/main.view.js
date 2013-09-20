@@ -118,6 +118,7 @@ define([
         // Render ads
         this.renderAds(this.$('.ad'));
 
+        /*
         // Ads focus to inputs when testing on desktop
         $(document).off('click.text_inputs');
         $(document).off('focus.text_inputs');
@@ -129,6 +130,7 @@ define([
         $(document).on('click.text_inputs', '.field.submit input', function(){
             $('input[type="email"],input[type="password"]').blur();
         });
+
         $(document).on('focus.text_inputs', 'input[type="email"],input[type="password"]', function(){
             $('body').addClass('fix-fixed');
         });
@@ -141,6 +143,7 @@ define([
               );
 
         });
+        */
       },
 
       loginFormActions: function() {
