@@ -459,7 +459,7 @@ span.breadcrumb-small-label { display: none; }
 .loading-screen .logo{
 	background: #f4f4f4 url(images/logo.png) no-repeat center top;
 	background-size: 500px auto;
-	padding: 85px 0 0 0;
+	padding: 375px 0 0 0;
 	font-size: 18px;
 	margin: 100px 0;
 	clear:both;
