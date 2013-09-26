@@ -18,16 +18,29 @@ define([
 			anon_meter_ts	: null,
 			isRegistrant	: false,
 			isSubscriber	: false,
+			isAnonymous		: true,
 			expireMeterDays : 30,
 			today			: +new Date(),
-			isOffline		: false
+			isOffline		: false,
+			meter_product   : 'crainsdetroit-metered',
+			reg_meter		: 0,
+			reg_meter_ts	: null,
+			reg_default     : 12
 		},
 
 		initialize: function() {
+			
+			var _this = this;
+
 			if( !window.navigator.onLine )
 			{
 				this.set('isOffline', true);
 			}
+
+			$(window).off('beforeunload');
+			$(window).on('beforeunload', function() {
+				this.updateRegMeterAtClickshare();
+			});
 		},
 
 		/** 
@@ -52,7 +65,7 @@ define([
 			if( this.get('isOffline') )
 			{
 				// Check if user login has been stored in localStorage
-				var userStored = localStorage.getItem( this.get('storageKey') );
+				var userStored = this.loginStored();
 
 				// Apply the user's credentials to the app if they exist
 				if (userStored !== null) 
@@ -69,7 +82,8 @@ define([
 						isLoggedIn		: user.isLoggedIn,
 						timestamp		: user.timestamp,
 						isRegistrant	: ( +user.effectiveGID & 64 || +user.effectiveGID & 512 ) ? true : false,
-						isSubscriber	: ( +user.effectiveGID & 1 ) ? true : false
+						isSubscriber	: ( +user.effectiveGID & 1 ) ? true : false,
+						isAnonymous		: false
 					});
 
 					// Trigger the event to let the app know that the
@@ -78,9 +92,13 @@ define([
 						.trigger('userStored.main')
 						.trigger('userStored.article');
 				}
+				else 
+				{
+					// Reset the object to defaults
+					this.clear().set(this.defaults);
+				}
 			}
-
-			if( !this.loginStatus() && !this.get('isOffline') )
+			else
 			{
 				// Determine which method to use; authenticateUser by default
 				var _opts			= opts || {};
@@ -138,7 +156,10 @@ define([
 					isLoggedIn		: 1,
 					timestamp		: user.timestamp,
 					isRegistrant	: ( +user.effectivegid & 64 || +user.effectivegid & 512 ) ? true : false,
-					isSubscriber	: ( +user.effectivegid & 1 ) ? true : false
+					isSubscriber	: ( +user.effectivegid & 1 ) ? true : false,
+					isAnonymous		: false,
+					reg_meter		: ( user['crainsdetroit-metered'] ) ? user['crainsdetroit-metered'].split('|')[0] : this.defaults.reg_default,
+					reg_meter_ts	: ( user['crainsdetroit-metered'] ) ? user['crainsdetroit-metered'].split('|')[1] : new Date().toISOString().replace(/([A-Z]+)/gi,' ').trim()
 				});
 
 				// Store in localStorage as well
@@ -151,8 +172,17 @@ define([
 					isLoggedIn		: this.get('isLoggedIn'),
 					timestamp		: user.timestamp,
 					isRegistrant	: this.get('isRegistrant'),
-					isSubscriber	: this.get('isSubscriber')
+					isSubscriber	: this.get('isSubscriber'),
+					isAnonymous		: this.get('isAnonymous')
 				});
+
+				// Store reg meter info in it's own key
+				localStorage.setItem('CD.RegMeterInformation', 
+					JSON.stringify({ 
+						reg_meter 		: this.get('reg_meter'),
+						reg_meter_ts 	: this.get('reg_meter_ts')
+					}) 
+				);
 
 				// Trigger the event to let the app know that the
 				// user has been stored
@@ -186,14 +216,27 @@ define([
 		},
 
 		/** 
+		*	Checks if a user has login stored locally
+		*	@return boolean
+		**/
+		loginStored: function() 
+		{
+			return localStorage.getItem( this.get('storageKey') );
+		},
+
+		/** 
 		*	Logs a user out from the app
 		**/
 		logoutUser: function(opts) 
 		{
 			var _this = this;
 
-			// Reset the object to defaults
+			// Update Clickshare meter before clearing settings
+			this.updateRegMeterAtClickshare();
+
+			// Reset the object to defaults and remove localStorage item
 			_this.clear().set(_this.defaults);
+			localStorage.removeItem( this.get('storageKey') );
 
 			// Make a logout call to the extAPI1Direct on Clickshare
 			$.ajax({
@@ -241,16 +284,50 @@ define([
 			return null;
 		},
 
-		countAnonMeter: function ()
+		countMeter: function ()
 		{
-			this.initializeMeter();
+			this.initializeAnonMeter();
+
+			var anon_meter 	= this.get('anon_meter'),
+				reg_meter 	= this.get('reg_meter');
+
+			// Check if the user is a registrant and make sure to expire their anonymous meter
+			// before dipping into their registrant meter count.
+			if( this.get('isRegistrant') && !anon_meter )
+			{
+				reg_meter = ( reg_meter <= 0 ) ? 0 : reg_meter - 1;
+
+				this.set({ 
+					reg_meter : reg_meter,
+					reg_meter_ts : this.get('reg_meter_ts')
+				});
+				
+				localStorage.setItem('CD.RegMeterInformation', 
+					JSON.stringify({ 
+						reg_meter : reg_meter,
+						reg_meter_ts : this.get('reg_meter_ts')
+					}) 
+				);
+
+				if( reg_meter === 0 )
+				{
+					var meter 	= this.get('reg_meter'),
+						time  	= this.get('reg_meter_ts'),
+						string 	= meter + '|' + time;
+
+					$.ajax({
+						url: this.extAPI(),
+						type: 'post',
+						dataType: 'jsonp',
+						data: { 'CSOp': 'updateAccount', 'selection.crainsdetroit-metered' : string }
+					});
+					
+				}
+			}
 
 			// Check to see if the user is anonymous
-			if( this.get('isLoggedIn') === 0 )
+			else
 			{
-				// Get the value of the current anon meter status
-				var anon_meter = this.get('anon_meter');
-
 				anon_meter = ( anon_meter <= 0 ) ? 0 : anon_meter - 1;
 
 				this.set({ 
@@ -266,9 +343,11 @@ define([
 				);				
 			}
 
+			
+
 		},
 
-		initializeMeter: function ()
+		initializeAnonMeter: function ()
 		{
 			var local       = JSON.parse(localStorage.getItem('CD.UserMeterInformation')) || {},
 				timestamp 	= ( local.hasOwnProperty('anon_meter_ts') ) ? local.anon_meter_ts : 0,
@@ -297,6 +376,22 @@ define([
 					anon_meter_ts : timestamp
 				});
 			}
+		},
+
+		updateRegMeterAtClickshare: function()
+		{
+			// Call Clickshare to update the user's meter count
+			// if they were logged in as a metered member.
+			var meter 	= this.get('reg_meter'),
+				time  	= this.get('reg_meter_ts'),
+				string 	= meter + '|' + time;
+
+			$.ajax({
+				url: this.extAPI(),
+				type: 'post',
+				dataType: 'jsonp',
+				data: { 'CSOp': 'updateAccount', 'selection.crainsdetroit-metered' : string }
+			});
 		}
 
 	});

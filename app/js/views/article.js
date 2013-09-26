@@ -61,20 +61,14 @@ define([
         // Add the user model to object and set up events
         this.mainView.UserModel.on('userStored.article userLoggedOut.article', 
           function() {
-            this.renderAds = false;
-            this.render();
+            this.applyMeter();
           }, this);
 
         // Set ad rendering option
         this.renderAds = true;
 
         // Metering options
-        if( !this.meterExpired && !this.mainView.UserModel.get('isLoggedIn') )
-        {
-            this.mainView.UserModel.countAnonMeter();
-            this.checkMeter();
-        }
-        this.meterExpired = ( !this.mainView.UserModel.get('anon_meter') ) ? true : false;
+        this.checkMeterExpiry();
 
         // Render the article
         this.render();
@@ -165,10 +159,12 @@ define([
                 isRender = currentPageEl.hasClass('render');
                 _this.model = _this.collection.get(modelID);
 
-              if ( previousPageIndex !== this.currPageX && !currentPageEl.hasClass('active') ) {
+              if ( previousPageIndex !== this.currPageX && !currentPageEl.hasClass('active') ) 
+              {
                 
-                _this.pageSwipesCount++
+                _this.pageSwipesCount++;
                 _this.checkSwipes();
+                _this.checkMeterExpiry();
 
                 previousPageIndex = this.currPageX;
 
@@ -191,6 +187,7 @@ define([
                 } 
                 else 
                 {
+
                   var ContentHeight = currentPageEl.outerHeight();
                   $('#ArticlesContainer').css({
                     height: ContentHeight + 'px',
@@ -200,14 +197,10 @@ define([
                   
                   if(_this.renderAds) _this.renderAdsInView();
 
-                  // Count against the meter after 10 seconds if the user
-                  // is still on the same article.
-                  if( !_this.meterExpired && !_this.mainView.UserModel.get('isLoggedIn') )
-                  {
-                      _this.mainView.UserModel.countAnonMeter();
-                      _this.checkMeter();
-                  }
                 }
+
+                _this.applyMeter({ skipRender: true });
+
               }
 
               // Reset the ad rendering
@@ -244,7 +237,7 @@ define([
           if( model.get('processed') )
           {
             // Determine which template to show based on the user's access levels
-            parsedTemplate  = (this.hasAccess || !this.meterExpired ) ? parsedTemplate : (this.meterExpired) ? meterExpiredTemplate : previewTemplate;
+            parsedTemplate  = ( this.hasAccess || !this.anonMeterExpired || !this.regMeterExpired ) ? parsedTemplate : ( this.anonMeterExpired || this.regMeterExpired ) ? meterExpiredTemplate : previewTemplate;
 
             // Load the content into the article container
             $('#ArticlesContainer div#article-' + id).addClass('render');
@@ -299,16 +292,41 @@ define([
         this.hasAccess = ( this.model.get('groupid') === null || this.model.get('groupid') === undefined ) ? 1 : ( (this.model.get('groupid') & this.usergid) <= 0 ) ? 0 : 1;
       },
 
-      checkMeter: function ()
+      checkMeterExpiry: function()
       {
-          this.meterExpired = ( this.mainView.UserModel.get('anon_meter') == 0 ) ? true : false;
+        // Get the meter count.
+        this.anonMeterExpired = ( this.mainView.UserModel.get('anon_meter') === 0 ) ? true : false;
+        this.regMeterExpired  = ( this.mainView.UserModel.get('reg_meter') === 0 ) ? true : false;    
+      },
 
-          // Re-render the article templates if the meter is expired.
-          if( this.meterExpired && !this.mainView.UserModel.get('isLoggedIn') )
+      applyMeter: function (opts)
+      {
+          var skipRender    = ( typeof opts == 'object' && opts.hasOwnProperty('skipRender') ) ? opts.skipRender : false,
+              skipCount     = ( typeof opts == 'object' && opts.hasOwnProperty('skipCount') ) ? opts.skipCount : false,
+              reRender      = false,
+              countMeter    = this.model.get('isMetered') || false,
+              isRegistrant  = this.mainView.UserModel.get('isRegistrant'),
+              isAnonymous   = this.mainView.UserModel.get('isAnonymous');
+
+          // Check if the anonymous meter or registered meter is expired
+          if( ( this.anonMeterExpired && isAnonymous ) || ( this.regMeterExpired && isRegistrant ) )
+          {
+            reRender = true;
+          }
+
+          // Count the meter.
+          if( countMeter  && !skipCount )
+          {
+            this.mainView.UserModel.countMeter();
+          }
+
+          // Re-render the article templates if either meter is expired.
+          if(reRender && !skipRender)
           {
             this.renderAds = false;
             this.render();
           }
+          
       },
 
       checkSwipes: function () {
