@@ -24,13 +24,13 @@ define([
       },
 
       subscriptionMap: {
-        0 : 'Special Content',
-        1 : 'Premium Content',
-        32 : 'DMIH Content',
-        64 : 'Free Registration-Required Content',
-        128 : 'NXT Content',
-        256 : 'College Content',
-        512 : 'Metered Content'
+        0 : 'Add message here for special content items.',
+        1 : 'Add message here for Premium Content',
+        32 : 'Add message here for DMIH Content',
+        64 : 'Add message here for Free Registration-Required Content',
+        128 : 'Add message here for NXT Content',
+        256 : 'Add message here for College Content',
+        512 : 'Add message here for Metered Content'
       },
 
       initialize: function () {

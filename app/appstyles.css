@@ -371,7 +371,7 @@ span.breadcrumb-small-label { display: none; }
   display: none;
   box-shadow: 0 15px 25px #000;
   width:100%;
-  z-index: 100000;
+  z-index: 10000;
 }
 .subscription-bar h3,
 .settings-bar h3 {
@@ -461,7 +461,7 @@ span.breadcrumb-small-label { display: none; }
 	background-size: 500px auto;
 	padding: 375px 0 0 0;
 	font-size: 18px;
-	margin: 100px 0;
+	margin: 20px 0;
 	clear:both;
 }
  
@@ -1267,7 +1267,7 @@ ul#topicsfeeds li span{
 #fullPageAd {
 	display:none;
 	position:absolute;
-	z-index:10000;	
+	z-index:1000000;	
 	background-color:#fff;
 	text-align:center;
 	width:100%;
