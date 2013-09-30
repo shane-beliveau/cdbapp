@@ -37,7 +37,6 @@ define([
 				this.set('isOffline', true);
 			}
 
-<<<<<<< HEAD
 			// Call Clickshare before unloading the window to 
 			// update the user's meter if applicable.
 			$(window).off('beforeunload');
@@ -45,12 +44,6 @@ define([
 				_this.updateRegMeterAtClickshare();
 			});
 
-=======
-			$(window).off('beforeunload');
-			$(window).on('beforeunload', function() {
-				this.updateRegMeterAtClickshare();
-			});
->>>>>>> upstream/master
 		},
 
 		/** 
@@ -167,13 +160,8 @@ define([
 					isRegistrant	: ( +user.effectivegid & 64 || +user.effectivegid & 512 ) ? true : false,
 					isSubscriber	: ( +user.effectivegid & 1 ) ? true : false,
 					isAnonymous		: false,
-<<<<<<< HEAD
 					reg_meter		: ( user[ this.defaults.meter_product ] ) ? user[ this.defaults.meter_product ].split('|')[0] : this.defaults.reg_default,
 					reg_meter_ts	: ( user[ this.defaults.meter_product ] ) ? user[ this.defaults.meter_product ].split('|')[1] : new Date().toISOString().replace(/([A-Z]+)/gi,' ').trim()
-=======
-					reg_meter		: ( user['crainsdetroit-metered'] ) ? user['crainsdetroit-metered'].split('|')[0] : this.defaults.reg_default,
-					reg_meter_ts	: ( user['crainsdetroit-metered'] ) ? user['crainsdetroit-metered'].split('|')[1] : new Date().toISOString().replace(/([A-Z]+)/gi,' ').trim()
->>>>>>> upstream/master
 				});
 
 				// Store in localStorage as well
@@ -294,12 +282,7 @@ define([
 				return this;
 			}
 
-<<<<<<< HEAD
 			// Set up the anonymous meter
-=======
-		countMeter: function ()
-		{
->>>>>>> upstream/master
 			this.initializeAnonMeter();
 
 			var anon_meter 	= this.get('anon_meter'),
@@ -309,48 +292,19 @@ define([
 			// before dipping into their registrant meter count.
 			if( this.get('isRegistrant') && !anon_meter )
 			{
-<<<<<<< HEAD
 				// Count against the meter minus one.
 				reg_meter = ( reg_meter <= 0 ) ? 0 : reg_meter - 1;
 
 				// Set the meter up in the model
-=======
-				reg_meter = ( reg_meter <= 0 ) ? 0 : reg_meter - 1;
-
->>>>>>> upstream/master
 				this.set({ 
 					reg_meter : reg_meter,
 					reg_meter_ts : this.get('reg_meter_ts')
 				});
-<<<<<<< HEAD
 			
 				// If the meter is expired, let Clickshare know.
 				if( reg_meter === 0 )
 				{
 					this.updateRegMeterAtClickshare();
-=======
-				
-				localStorage.setItem('CD.RegMeterInformation', 
-					JSON.stringify({ 
-						reg_meter : reg_meter,
-						reg_meter_ts : this.get('reg_meter_ts')
-					}) 
-				);
-
-				if( reg_meter === 0 )
-				{
-					var meter 	= this.get('reg_meter'),
-						time  	= this.get('reg_meter_ts'),
-						string 	= meter + '|' + time;
-
-					$.ajax({
-						url: this.extAPI(),
-						type: 'post',
-						dataType: 'jsonp',
-						data: { 'CSOp': 'updateAccount', 'selection.crainsdetroit-metered' : string }
-					});
-					
->>>>>>> upstream/master
 				}
 			}
 
@@ -411,7 +365,6 @@ define([
 		{
 			// Call Clickshare to update the user's meter count
 			// if they were logged in as a metered member.
-<<<<<<< HEAD
 			var meter 		= this.get('reg_meter'),
 				time  		= this.get('reg_meter_ts'),
 				string 		= meter + '|' + time,
@@ -423,17 +376,10 @@ define([
 			ajaxData['CSOp'] = 'updateAccount';
 
 			// Make the call
-=======
-			var meter 	= this.get('reg_meter'),
-				time  	= this.get('reg_meter_ts'),
-				string 	= meter + '|' + time;
-
->>>>>>> upstream/master
 			$.ajax({
 				url: this.extAPI(),
 				type: 'post',
 				dataType: 'jsonp',
-<<<<<<< HEAD
 				data: ajaxData,
 
 				// << Debug >>
@@ -456,10 +402,6 @@ define([
 				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
 			}
 			return null;
-=======
-				data: { 'CSOp': 'updateAccount', 'selection.crainsdetroit-metered' : string }
-			});
->>>>>>> upstream/master
 		}
 
 	});
