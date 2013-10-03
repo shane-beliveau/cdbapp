@@ -1,6 +1,6 @@
 [%{ImgLink},
     "image" : "http://stage.crainsdetroit.com<%ImgLink$r("http://CDweb.cr.atl.publicus.com=")%>&MaxH=400&MaxW=600",
     "picOrientation" : "<%Orientation$r("L=horizontal")$r("P=vertical")%>"[%,
-    "caption" : "<%Caption&r("&#9;=")&r("	=")%>"%][%,
-    "altText" : "<%AltText%>"%]
+    "caption" : <%Caption$t$S("AppDescriptionJsonEncode.php5","PHPScript")%>%][%,
+    "altText" : <%AltText$t$S("AppDescriptionJsonEncode.php5","PHPScript")%>%]
 %]

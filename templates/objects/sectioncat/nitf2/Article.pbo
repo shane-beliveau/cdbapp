@@ -27,14 +27,14 @@
         "pubdate" : "<%ISOPublishedDate$d("ddd, d mmm yyyy")%>",
         "pubtime" : "<%ISOPublishedDate$d("hh:nn")%> EST",
         "byline" : "[%By <%ByLine$t$r("""=\\""")$r("By *=")$r("&amp;=&")$r("(&)([^\#])=$1amp;$2")%>%]"[%,
-        "abstract" : [%<%Summary$t$S("AppDescriptionJsonEncode.php5","PHPScript")%>%|%null%]
+        "abstract" : <%Summary$t$S("AppDescriptionJsonEncode.php5","PHPScript")%>%]
       },
       "bodyContent": {
         "textParagraphs" : [
         [%<%ParagraphItems%>%|%""%][%,
         <%facts$S("bodyJSON.php5","PHPScript")%>%][%,
         <%ConnectedMedia$S("bodyJSON.php5","PHPScript")%>%]
-        ]<%MainPicture$r("&amp;=&")$r("(&)([^\#])=$1amp;$2")%>
+        ]<%MainPicture%>
       },
       "bodyEnd": {
         "tagline": { "typ": "std" }
