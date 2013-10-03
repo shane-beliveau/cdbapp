@@ -29,7 +29,7 @@ define([
 		},
 
 		initialize: function() {
-			
+
 			var _this = this;
 
 			if( !window.navigator.onLine )
@@ -109,7 +109,7 @@ define([
 
 				// Make the request to Clickshare
 				var fetchOptions = _.extend({
-						
+
 						url			: this.extAPI(),
 						dataType	: 'jsonp',
 						data 		: _opts,
@@ -127,7 +127,7 @@ define([
 
 				this.fetch(fetchOptions);
 			}
-			
+
 		},
 
 		/** 
@@ -242,7 +242,7 @@ define([
 
 			// Make a logout call to the extAPI1Direct on Clickshare
 			$.ajax({
-			
+
 				url			: this.extAPI(),
 				dataType	: 'jsonp',
 				data 		: { 'CSOp' : 'logout' },
@@ -271,7 +271,7 @@ define([
 				}
 
 			});
-				
+
 		},
 
 		countMeter: function ()
@@ -300,7 +300,7 @@ define([
 					reg_meter : reg_meter,
 					reg_meter_ts : this.get('reg_meter_ts')
 				});
-			
+
 				// If the meter is expired, let Clickshare know.
 				if( reg_meter === 0 )
 				{
@@ -317,7 +317,7 @@ define([
 					anon_meter : anon_meter,
 					anon_meter_ts : this.get('anon_meter_ts')
 				});
-				
+
 				localStorage.setItem('CD.UserMeterInformation', 
 					JSON.stringify({ 
 						anon_meter : anon_meter,
@@ -326,7 +326,7 @@ define([
 				);				
 			}
 
-			
+
 
 		},
 
