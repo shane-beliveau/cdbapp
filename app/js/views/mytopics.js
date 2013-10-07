@@ -82,18 +82,18 @@ define([
         parsedTemplate = Mustache.to_html(MainTemplate, { content: html });
         this.$el.html(parsedTemplate);
 
-        /* Disable ads
+        
         parsedAdPlaceholder = Mustache.to_html(AdPlaceholder, {
           class: 'story scroll-item',
           position: 'x88'
         });
-        */
 
         this.$('.news-category').each(function (index, container){
           var container = $(container);
           $('div.story:eq(1), div.story:eq(5), div.story:eq(9)', container).after(parsedAdPlaceholder);
         });
-        //this.mainView.renderAds(this.$('.ad'), { hasLabel: true }); // Disable Ads
+        
+        this.mainView.renderAds(this.$('.ad'), { hasLabel: true });
 
         if ( content.length ) {
           setTimeout(function(){

@@ -195,10 +195,17 @@ define([
             this.Advertisements.fetchAds();
           }
 
+          parsedAdPlaceholder = Mustache.to_html(AdPlaceholder, {
+              class: 'story scroll-item',
+              position: 'x88' // Or whatever the correct filmstrip position is
+          });
+
           this.$('.news-category').each(function(index, container) {
             var container = $(container);
             $('div.story:eq(1), div.story:eq(5), div.story:eq(9)', container).after(parsedAdPlaceholder);
           });
+          
+          this.mainView.renderAds(this.$('.ad'), { hasLabel: true });
 
           setTimeout(function() {
             _this.updateLayout();
