@@ -1,2 +1,2 @@
 
-<a href="#<%superheading%>"[%{counter=1} class="active"%]><%Title%></a>[%{islastitem!1} | %]
+<a href="#<%superheading%>"[%{counter=1} class="active"%]><%Title%></a>

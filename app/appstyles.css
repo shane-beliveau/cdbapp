@@ -1084,22 +1084,49 @@ ul#topicsfeeds li span{
   margin-bottom:20px;
   }
 
+a.settings-open {
+    display: block;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1;
+    padding: 10px 5px 10px 14px;
+    color: #fff;
+    background-color: #4a576a;
+    background-image: -o-linear-gradient(top, #8491a7 0%, #4a576a 100%);
+    background-image: -moz-linear-gradient(top, #8491a7 0%, #4a576a 100%);
+    background-image: -webkit-linear-gradient(top, #8491a7 0%, #4a576a 100%);
+    background-image: -ms-linear-gradient(top, #8491a7 0%, #4a576a 100%);
+    background-image: -webkit-gradient( linear, top, bottom, color-stop(0, #8491a7), color-stop(1, #4a576a));
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#8491a7, endColorstr=#4a576a, GradientType=1);
+    background-image: linear-gradient(top, #8491a7 0%, #4a576a 100%);
+    border-radius: 5px;
+}
+    a.settings-open span { 
+        padding: 6px 6px 8px 8px;
+        background: url(images/sprite.png) no-repeat transparent;
+        background-size: 15px auto;
+        background-position: 3px -39px;
+    }
+    a.settings-open span.active { background-position: 0px -279px; }
+
 .settings-screen .settings-header{
   border-bottom:1px solid #333;
   padding:15px;
-  height:20px;
   font-size:0.8em;
 }
 
 .settings-screen .utility-nav  {
-  margin:0 0 0 -10px;
-  float:left;
+    /* display: none; */
+    /*margin-top: 12px;*/
   }
 
 .settings-screen .utility-nav a{
+  display: block;
   padding:5px 10px 0px 0px;
   color:#000;
-  margin:0 0 0 10px;
+  margin:0;
   }
 
 .settings-screen .utility-nav a.active{
@@ -1108,14 +1135,14 @@ ul#topicsfeeds li span{
 
 
 .settings-screen .external-links{
-  float:right;
+
 }
 
 
 .settings-screen .external-links a{
-  padding:5px 0 0 18px;
+  padding:2px 0 0 18px;
   color:#000;
-  margin:0 0 0 30px;
+  margin: 3px 0 0 0;
 }
 
 .settings-screen .external-links .sendfeedback{

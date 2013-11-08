@@ -1,10 +1,23 @@
 <div class="settings-screen">
   <div class="settings-header">
+    <script>
+        $('.settings-open').click(function() {
+            if ($("#utility-nav").is(":hidden")) {
+                $(".settings-open span").addClass("active");
+                $("#utility-nav").slideDown();
+                
+            } else {
+                $(".settings-open span").removeClass("active");
+                $("#utility-nav").slideUp();
+            }
+            return false;
+        });
+    </script>
     <div id="utility-nav" class="utility-nav">
       <pbs:newslist date=99999999 category="STATIC" taxonomywords=19006080 count=10 useobjects=1 objectclass=101 Priosort=1>
     </div>
     <div class="external-links">
-      <a href="mailto:nhanus@crain.com?subject=Feedback+from+Crains+Detroit+App" target="_blank" class="sendfeedback">Send Us Your Feedback</a>
+      <a href="mailto:nhanus@crain.com?subject=Feedback%20from%20Crains%20Detroit%20App" target="_blank" class="sendfeedback">Send Us Your Feedback</a>
     </div>
   </div>
   <div id="settingsContainer">

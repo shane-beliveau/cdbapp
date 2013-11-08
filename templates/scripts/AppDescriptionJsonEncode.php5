@@ -1,5 +1,6 @@
 //<?php //Converts html entities to characters formatted in Western European character-set.
 $tValue = $SOSE->GetVar($SOSE->GetVar("_Variable"));
+$tValue = utf8_encode($tValue);
 $pattern[] = "/&bull;/";	$replacement[] = "•";
 $pattern[] = "/&#8226;/";	$replacement[] = "•";
 $pattern[] = "/&amp;/";		$replacement[] = "&";

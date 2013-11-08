@@ -1,0 +1,6 @@
+<%title$r("&amp;=&")$w(1,70)$S("cci/util/serialize.js")$r("-= ")$n$V(idtitle)%>
+                {
+                    "id": "<%idtitle$r("\s=")%>",
+                    "name": "<%title$r("&amp;= and ")r("\/= ")%>",
+                    "feedlink": "js/feeds/main.js?tagid=<%profid%>"
+                }[%{islastitem!1},%]
