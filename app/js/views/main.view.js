@@ -286,6 +286,7 @@ define([
         'click div.header-dock a.section-link': 'navigate',
         'click div.header-dock a#backToMyTopics': 'backToMyTopics',
         'click #main-navigation a.refresh': 'refresh',
+        'click #loading-screen a.refresh': 'refresh',
         'click #subscribe-toggle': 'subscribeToggle',
         'click .login-toggle': 'subscribeToggle'
       },
