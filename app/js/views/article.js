@@ -217,6 +217,8 @@ define([
 
           _this.mainView.trigger('createMainScroll');
           _this.mainView.trigger('hideLoading');
+          _this.linkAttrBlank();
+          _this.engageVideo();
         }, 0);
       },
 
@@ -283,7 +285,6 @@ define([
         		this.mainView.renderAds( render_this_ad );
         	}
         }
-        $(".article-content a").attr("target","_blank");
       },
 
       // Gets the user info and decides whether the user has access to story
@@ -388,6 +389,23 @@ define([
           label = (exists) ? 'Remove From Briefcase' : 'Add To Briefcase';
 
         this.$('div.article.active .addtobriefcase').text(label);
+      },
+
+      linkAttrBlank: function() {
+        $(".article-content a").attr("target","_blank");
+      },
+
+      engageVideo: function () {
+        $(".widescreenVideo a").click(function(e) {
+          e.preventDefault();
+          if ($("body").hasClass("isOffline")) { 
+            //DO Nothing
+          } else {
+            var playerUrl = $(this).attr("href");
+            var videoHtml = '<iframe src="' + playerUrl + '" scrolling="no"></iframe>';
+            $(this).parent().html(videoHtml);
+          }
+        });
       }
 
     });

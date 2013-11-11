@@ -5,6 +5,7 @@
           {
             "id" : "<%IsoPubDate%><%ID%>",[%{field_videoid}
             "videoid" : "<%field_videoid%>",
+            "videoStill" : "<%field_videoid$S("videoStill.php5","PHPScript",0)%>",
             "videoindividual" : "[%<%field_Videoindividual%>%|%single%]",%]
             "title" : [%<%Title$t$S("AppDescriptionJsonEncode.php5","PHPScript")%>%|%null%],
             "link": "<%cci_shortBypassLink$r("/article/=/app/js/feeds/article.js?AID=/")r("\?AllowView=&AllowView")%>&sectioncat=nitf2&template=nitf2",[%{cd_isblog=1|Heading2}
