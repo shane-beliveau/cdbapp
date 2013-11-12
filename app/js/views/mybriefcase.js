@@ -67,7 +67,10 @@ define([
 
       renderFeeds: function () {
         var _this = this,
-          parsedTemplate = Mustache.to_html(FeedTemplate, { feeds: (this.collection.length) ? this.collection.contentToArray() : '' });
+            parsedTemplate = Mustache.to_html(FeedTemplate, { 
+                feeds: (this.collection.length) ? this.collection.contentToArray() : '',
+                showBriefcase: this.mainView.showBriefcase
+            });
 
         this.$('ul#briefcasefeeds', this.$el).html(parsedTemplate);
 

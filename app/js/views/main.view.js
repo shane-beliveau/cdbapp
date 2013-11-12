@@ -25,10 +25,7 @@ define([
         this.UserModel = new UserModel();
 
         // Hide briefcase if not a subscriber
-        if( !this.UserModel.get('isSubscriber') )
-        {
-          $('a[href="#mybriefcase"]').hide();
-        }
+        this.showBriefcase = this.UserModel.get('isSubscriber');
 
         this.UserModel.on({
           'loginFailed'   : this.render,

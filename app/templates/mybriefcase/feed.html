@@ -1,13 +1,18 @@
-{{#feeds}}
-<li class="scroll-item story" data-id="{{id}}">
-  <div class="briefcase-text" data-id="{{id}}">
-    <div class="briefcase-thumb" {{#image}}style="background-image:url({{image}});"{{/image}} data-id="{{id}}"></div>
-    <h4 data-id="{{id}}">{{title}}</h4>
-    <p data-id="{{id}}">{{pubDate}}</p>
-  </div>
-  <span data-id="{{id}}" class="remove"></span>
-</li>
-{{/feeds}}
-{{^feeds}}
-  <li class="scroll-item no-content">There is no content for this section.</li>
-{{/feeds}}
+{{#showBriefcase}}
+    {{#feeds}}
+    <li class="scroll-item story" data-id="{{id}}">
+      <div class="briefcase-text" data-id="{{id}}">
+        <div class="briefcase-thumb" {{#image}}style="background-image:url({{image}});"{{/image}} data-id="{{id}}"></div>
+        <h4 data-id="{{id}}">{{title}}</h4>
+        <p data-id="{{id}}">{{pubDate}}</p>
+      </div>
+      <span data-id="{{id}}" class="remove"></span>
+    </li>
+    {{/feeds}}
+    {{^feeds}}
+      <li class="scroll-item no-content">There is no content for this section.</li>
+    {{/feeds}}
+{{/showBriefcase}}
+{{^showBriefcase}}
+<li class="scroll-item no-content">You must be a subscriber in order to use this function.</li>
+{{/showBriefcase}}
