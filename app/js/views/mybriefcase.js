@@ -19,6 +19,19 @@ define([
 
         this.mainView.updateBreadcrumbs([this.name]);
 
+        this.mainView.UserModel.on({
+          'userStored.main'   : function() {
+            this.render();
+            this.renderFeeds();
+            this.mainView.updateLayout();
+          },
+          'userLoggedOut.main' : function() {
+            this.render();
+            this.renderFeeds();
+            this.mainView.updateLayout();
+          }
+        }, this);
+
         this.collection = new MyBriefcaseFeedsCollection();
         this.collection.on('reset', this.renderFeeds, this);
 
