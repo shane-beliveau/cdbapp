@@ -19,6 +19,19 @@ define([
 
         this.mainView.updateBreadcrumbs([this.name]);
 
+        this.mainView.UserModel.on({
+          'userStored.main'   : function() {
+            this.render();
+            this.renderFeeds();
+            this.mainView.updateLayout();
+          },
+          'userLoggedOut.main' : function() {
+            this.render();
+            this.renderFeeds();
+            this.mainView.updateLayout();
+          }
+        }, this);
+
         this.collection = new MyBriefcaseFeedsCollection();
         this.collection.on('reset', this.renderFeeds, this);
 
@@ -67,7 +80,10 @@ define([
 
       renderFeeds: function () {
         var _this = this,
-          parsedTemplate = Mustache.to_html(FeedTemplate, { feeds: (this.collection.length) ? this.collection.contentToArray() : '' });
+            parsedTemplate = Mustache.to_html(FeedTemplate, { 
+                feeds: (this.collection.length) ? this.collection.contentToArray() : '',
+                showBriefcase: this.mainView.showBriefcase
+            });
 
         this.$('ul#briefcasefeeds', this.$el).html(parsedTemplate);
 

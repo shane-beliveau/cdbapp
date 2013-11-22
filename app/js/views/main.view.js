@@ -25,10 +25,7 @@ define([
         this.UserModel = new UserModel();
 
         // Hide briefcase if not a subscriber
-        if( !this.UserModel.get('isSubscriber') )
-        {
-          $('a[href="#mybriefcase"]').hide();
-        }
+        this.showBriefcase = this.UserModel.get('isSubscriber');
 
         this.UserModel.on({
           'loginFailed'   : this.render,
@@ -39,19 +36,16 @@ define([
                 slideup: true
               });
             }
-            if( this.UserModel.get('isSubscriber') )
-            {
-              $('a[href="#mybriefcase"]').show();
-            }
+            
+            // Hide briefcase if not a subscriber
+            this.showBriefcase = this.UserModel.get('isSubscriber');
+
           },
           'userLoggedOut.main' : function() {
             this.toggleUserInfo();
 
             // Hide briefcase if not a subscriber
-            if( !this.UserModel.get('isSubscriber') )
-            {
-              $('a[href="#mybriefcase"]').hide();
-            }
+            this.showBriefcase = this.UserModel.get('isSubscriber');
             
           }
         }, this);
@@ -288,6 +282,7 @@ define([
         'click #main-navigation a.refresh': 'refresh',
         'click #loading-screen a.refresh': 'refresh',
         'click #subscribe-toggle': 'subscribeToggle',
+        'click #subscribe-toggle-briefcase': 'subscribeToggle',
         'click .login-toggle': 'subscribeToggle'
       },
 
