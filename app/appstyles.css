@@ -1041,7 +1041,7 @@ ul#topicsfeeds li h4{
   height: 80px;
   float: left;
   margin: 10px;
-  background-color:#000;
+  background-color:#fff;
   background-image:url(images/default-image.png);
   background-size: 80px auto;
   background-position: center center;
@@ -1378,6 +1378,9 @@ body.portrait #fullPageAd{
 
 .widescreenVideo { position: relative; padding-bottom: 56.25%; padding-top: 1px; height: 0; overflow: hidden; margin: 15px; }
 .widescreenVideo iframe, .widescreenVideo object, .widescreenVideo embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none; }
+.widescreenVideo img { z-index: 1; }
+.playButton { position: absolute; bottom: 13px; height: 72px; line-height: 72px; text-align: center;}
+.playButton img { width: 72px; height: 72px; }
 
 div.download_item { margin: 10px 5px; }
 div.download_item a { background-color: #eee; padding: 5px; border: 1px solid #666; display: table-cell; }

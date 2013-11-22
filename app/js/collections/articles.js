@@ -53,7 +53,7 @@ define([
           items.push({
             id: model.get('id'),
             videoid: model.get('videoid'),
-            videostill: model.get('videostill'),
+            videoStill: model.get('videoStill'),
             title: model.get('title'),
             description: model.get('description'),
             pubDate: moment(model.get('pubDate')).format('dddd, MMMM Do YYYY'),

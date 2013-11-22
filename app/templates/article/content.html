@@ -18,7 +18,12 @@
   </div>
   {{/article.shareUrl}}
   <span class="author">{{article.author}}</span>
-  {{#videoid}}<div class="widescreenVideo"><a href="/section/bc_{{videoindividual}}_player&videoid={{videoid}}&autostart=true"><img src="{{videostill}}" style="width: 100%;" alt="" /></a></div>{{/videoid}}
+  {{#videoid}}<div class="widescreenVideo">
+    <a href="/section/bc_{{videoindividual}}_player&videoid={{videoid}}&autostart=true">
+      <img src="{{videoStill}}" style="width: 100%;" alt="" />
+      <div class="playButton"><img src="/Assets/cd/Play.png" alt="Play"></div>
+    </a>
+  </div>{{/videoid}}
   {{#mp3audio}}<audio controls style="width:100%"><source src="{{mp3audio}}" type="audio/mpeg" style="width:100%"><a href="{{mp3audio}}" target="_blank">Click here to download</a></audio>{{/mp3audio}}
   {{#article.image}}<img src="{{article.image}}" class="article-image" />{{/article.image}}
   {{#article.paragraphs}}

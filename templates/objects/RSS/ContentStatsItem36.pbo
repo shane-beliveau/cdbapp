@@ -7,11 +7,11 @@
             "id" : "<%ISOPublishedDateTime$d("yyyymmdd")%><%ID%>",
             "title" : [%<%Title$t$S("AppDescriptionJsonEncode.php5","PHPScript")%>%|%null%],
             "link": "<%cci_shortBypassLink$r("/article/=/app/js/feeds/article.js?AID=/")r("\?AllowView=&AllowView")%>&sectioncat=nitf2&template=nitf2",
-            "pubDate" : "<%ISOPublishedDateTime$d("ddd, d mmm yyyy hh:nn:ss")%> EST",
             "description": [%<%Summary$t$w(0,250)$S("AppDescriptionJsonEncode.php5","PHPScript")%>%|%[%<%FirstParagraphBody$t$w(0,250)$S("AppDescriptionJsonEncode.php5","PHPScript")%>%|%null%]%],
             <pbs:query name="CD_GetStoryExtraFields" parameters="@AStoryGUID=<%GUID%>">[%<%Images%>%|%[%{@cd_isblog=1}
             "image" : "http://stage.crainsdetroit.com/Assets/cd/blogs/square/<%category%>.png",
             "caption" : "<%BlogCategoryToAuthor$K%>",
-            "picOrientation" : "blog",%]%]
-            "kicker" : "[%{@cd_isblog=1}<%BlogCategoryToAuthor$K%>%|%<%Heading2%>%]"
+            "picOrientation" : "blog",%]%][%{@cd_isblog=1|byline}
+            "kicker" : [%{@cd_isblog=1}<%BlogCategoryToAuthor$K$S("AppDescriptionJsonEncode.php5","PHPScript")%>%|%<%Byline$S("AppDescriptionJsonEncode.php5","PHPScript")%>%],%]
+            "pubDate" : "<%ISOPublishedDateTime$d("ddd, d mmm yyyy hh:nn:ss")%> EST"
           } [%{islastitem!1},%]
