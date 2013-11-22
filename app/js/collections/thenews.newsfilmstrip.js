@@ -19,23 +19,23 @@ define([
         switch (feed) {
           case 'BreakingNews' :
             this.storageKey('BreakingNews');
-            return 'http://stage.crainsdetroit.com/app/js/feeds/main.js';
+            return 'http://www.crainsdetroit.com/app/js/feeds/main.js';
             break;
           case 'TOC' :
             this.storageKey('TOC');
-            return 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=toc';
+            return 'http://www.crainsdetroit.com/app/js/feeds/main.js?section=toc';
             break;
           case 'Blogs' :
             this.storageKey('Blogs');
-            return 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=blogs';
+            return 'http://www.crainsdetroit.com/app/js/feeds/main.js?section=blogs';
             break;
           case 'TopStories' :
             this.storageKey('TopStories');
-            return 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=topstories';
+            return 'http://www.crainsdetroit.com/app/js/feeds/main.js?section=topstories';
             break;
           case 'MostPopular' :
             this.storageKey('MostPopular');
-            return 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=mostread';
+            return 'http://www.crainsdetroit.com/app/js/feeds/main.js?section=mostread';
             break;
         };
       },

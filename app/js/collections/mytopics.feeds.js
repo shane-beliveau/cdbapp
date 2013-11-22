@@ -9,8 +9,8 @@ define([
       storageKey: 'CD.MyTopics',
       mainStorageKey: 'CD.ArticlesCollection.',
 
-      url: 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=mytopics',
-      // url: 'http://stage.crainsdetroit.com/section/rss36&mytopics=1&mime=application%2Fjson',
+      url: 'http://www.crainsdetroit.com/app/js/feeds/main.js?section=mytopics',
+      // url: 'http://www.crainsdetroit.com/section/rss36&mytopics=1&mime=application%2Fjson',
       // url: 'services/MyTopics.json',
       model: MyTopicsModel,
 

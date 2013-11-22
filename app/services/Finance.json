@@ -3,7 +3,7 @@
     "rss": {
         "channel": {
             "title": "Modern Healthcare Finance JSON Feed",
-            "link": "http://stage.crainsdetroit.com",
+            "link": "http://www.crainsdetroit.com",
             "description": "Latest News from Modern Healthcare - Finance",
             "language": "en-us",
             "category": "Finance",
@@ -11,203 +11,203 @@
                 "title": "Modern Healthcare",
                 "width": "144",
                 "height": "21",
-                "link": "http://stage.crainsdetroit.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
-                "url": "http://stage.crainsdetroit.com/graphics/icons/rss.gif"
+                "link": "http://www.crainsdetroit.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
+                "url": "http://www.crainsdetroit.com/graphics/icons/rss.gif"
             },
             "items": [
                 {
                     "id": "302169970",
                     "title": "Investors eye behavioral health",
-                    "link": "http://stage.crainsdetroit.com/article/20130215/MAGAZINE/302169970/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130215/MAGAZINE/302169970/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU04SFFCVFlGN20wOHJUekhYcU5uMm5MRDlnPT0=",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130215/MAGAZINE/302169970/AR/0/Castlewood-.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130215/MAGAZINE/302169970/AR/0/Castlewood-.jpg",
                     "pubDate": "Fri, 15 Feb 2013 00:01:00 EST",
                     "description": "At Castlewood Treatment Center, patients with eating disorders receive intensive, one-on-one therapy at three estate-like residential campuses nestled in the hills of St. Louis.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130215/MAGAZINE/302169970"
+                        "url": "http://www.crainsdetroit.com/article/20130215/MAGAZINE/302169970"
                     }
                 },
                 {
                     "id": "302159934",
                     "title": "Video Feature: Gerald DeSilva, corporate vice president of supply chain management at NYU Langone Medical Center",
-                    "link": "http://stage.crainsdetroit.com/article/20130215/VIDEO/302159934/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130215/VIDEO/302159934/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU05cllCaklRaUJCSnNEN0NWYXRpMXc9PQ==",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130215/VIDEO/302159934/AR/0/AR-302159934.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130215/VIDEO/302159934/AR/0/AR-302159934.jpg",
                     "pubDate": "Fri, 15 Feb 2013 12:45:00 EST",
                     "description": "Gerald DeSilva, corporate vice president of supply chain management at NYU Langone Medical Center, talks to Modern Healthcare Reporter Jaimy Lee about how the New York hospital has reduced the costs of its medical supplies, including pricey devices...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130215/VIDEO/302159934"
+                        "url": "http://www.crainsdetroit.com/article/20130215/VIDEO/302159934"
                     }
                 },
                 {
                     "id": "302149969",
                     "title": "Baucus demands details on progress toward insurance exchanges ",
-                    "link": "http://stage.crainsdetroit.com/article/20130214/NEWS/302149969/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130214/NEWS/302149969/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVk04TFVGU1J3bEJOTHN6dk9WYVJv",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130214/NEWS/302149969/AR/0/Max-Baucus.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130214/NEWS/302149969/AR/0/Max-Baucus.jpg",
                     "pubDate": "Thu, 14 Feb 2013 14:15:00 EST",
                     "description": "Despite renewed assurances that the federal government will have its insurance exchanges ready to begin enrollments Oct. 1, the senior Senate health policy Democrat demanded more details on the secretive effort.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130214/NEWS/302149969"
+                        "url": "http://www.crainsdetroit.com/article/20130214/NEWS/302149969"
                     }
                 },
                 {
                     "id": "302149965",
                     "title": "Scripps to buy hospital and assume patients, employees from failing hospice ",
-                    "link": "http://stage.crainsdetroit.com/article/20130214/NEWS/302149965/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130214/NEWS/302149965/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVk04TFVGU1J3bEJOTHN6dk9WYVJr",
                     "image": "",
                     "pubDate": "Thu, 14 Feb 2013 15:30:00 EST",
                     "description": "Scripps Health has agreed to buy the inpatient hospice facility and assume the remaining patients and employees of a San Diego hospice organization that filed for Chapter 11 bankruptcy protection last week.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130214/NEWS/302149965"
+                        "url": "http://www.crainsdetroit.com/article/20130214/NEWS/302149965"
                     }
                 },
                 {
                     "id": "302149959",
                     "title": "Cardinal Health to acquire AssuraMed for $2.07 billion",
-                    "link": "http://stage.crainsdetroit.com/article/20130214/NEWS/302149959/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130214/NEWS/302149959/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVk04TFVGU1J3bEJOTHN6dk9WYWRv",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130214/NEWS/302149959/AR/0/AR-302149959.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130214/NEWS/302149959/AR/0/AR-302149959.jpg",
                     "pubDate": "Thu, 14 Feb 2013 08:00:00 EST",
                     "description": "Medical-supply company Cardinal Health plans to pay $2.07 billion to expand its presence in home healthcare with the acquisition of AssuraMed.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130214/NEWS/302149959"
+                        "url": "http://www.crainsdetroit.com/article/20130214/NEWS/302149959"
                     }
                 },
                 {
                     "id": "302099893",
                     "title": "Cost of Kansas Medicaid expansion estimated at $600 million over 10 years",
-                    "link": "http://stage.crainsdetroit.com/article/20130209/INFO/302099893/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130209/INFO/302099893/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3WU04WGZCRGh3bEJOTHNqYk9WS3Rp",
                     "image": "",
                     "pubDate": "Sat, 9 Feb 2013 11:00:00 EST",
                     "description": "Kansas would face about $600 million in additional costs over the next 10 years if it opted to expand Medicaid as encouraged by the federal government's overhaul of healthcare, according to a report released by Republican Gov. Sam Brownback's...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130209/INFO/302099893"
+                        "url": "http://www.crainsdetroit.com/article/20130209/INFO/302099893"
                     }
                 },
                 {
                     "id": "302099912",
                     "title": "Volume on high",
-                    "link": "http://stage.crainsdetroit.com/article/20130209/MAGAZINE/302099912/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130209/MAGAZINE/302099912/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3WU04SFFCVFlGN20wOHJUekhYcUpvMm5MRjlBPT0=",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130209/MAGAZINE/302099912/AR/0/Stacia-Woodcock.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130209/MAGAZINE/302099912/AR/0/Stacia-Woodcock.jpg",
                     "pubDate": "Sat, 9 Feb 2013 00:01:00 EST",
                     "description": "For 10 days in January, Bayhealth Medical Center was near gridlock as patients with winter ailments jammed its emergency department and created bottlenecks that reverberated throughout the facility.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130209/MAGAZINE/302099912"
+                        "url": "http://www.crainsdetroit.com/article/20130209/MAGAZINE/302099912"
                     }
                 },
                 {
                     "id": "302099913",
                     "title": "Slower growth in forecast",
-                    "link": "http://stage.crainsdetroit.com/article/20130209/MAGAZINE/302099913/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130209/MAGAZINE/302099913/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3WU04SFFCVFlGN20wOHJUekhYcUpvMm5MRjlRPT0=",
                     "image": "",
                     "pubDate": "Sat, 9 Feb 2013 00:01:00 EST",
                     "description": "Federal healthcare spending on Medicare and Medicaid will grow slower than previously believed over the next decade, making it a lot cheaper to restore physician pay to current levels.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130209/MAGAZINE/302099913"
+                        "url": "http://www.crainsdetroit.com/article/20130209/MAGAZINE/302099913"
                     }
                 },
                 {
                     "id": "130209998",
                     "title": "Finance companies with largest healthcare loan portfolios",
-                    "link": "http://stage.crainsdetroit.com/article/20130209/DATA/130209998/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130209/DATA/130209998/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3WU04alFGalp3bGhCSnNEL09WYXRw",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130209/DATA/130209998/AR/0/AR-130209998.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130209/DATA/130209998/AR/0/AR-130209998.jpg",
                     "pubDate": "Sat, 9 Feb 2013 00:01:00 EST",
                     "description": "A list of the nation's 20 finance companies with the largest healthcare loan portfolios, ranked by amount of healthcare syndicated loans underwritten in 2012. Source: Dealogic. Published Feb. 11, 2013, p. 34.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130209/DATA/130209998"
+                        "url": "http://www.crainsdetroit.com/article/20130209/DATA/130209998"
                     }
                 },
                 {
                     "id": "302099979",
                     "title": "Championing consumers",
-                    "link": "http://stage.crainsdetroit.com/article/20130209/MAGAZINE/302099979/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130209/MAGAZINE/302099979/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3WU04SFFCVFlGN20wOHJUekhYcUpvMm5MRC93PT0=",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130209/MAGAZINE/302099979/AR/0/Jon-Leibowitz.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130209/MAGAZINE/302099979/AR/0/Jon-Leibowitz.jpg",
                     "pubDate": "Sat, 9 Feb 2013 00:01:00 EST",
                     "description": "Jon Leibowitz is leaving his post this week as chairman of the Federal Trade Commission after presiding over a period of intense scrutiny of the healthcare industry.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130209/MAGAZINE/302099979"
+                        "url": "http://www.crainsdetroit.com/article/20130209/MAGAZINE/302099979"
                     }
                 },
                 {
                     "id": "302089939",
                     "title": "Podcast: FTC Chairman Jon Leibowitz (11:50)",
-                    "link": "http://stage.crainsdetroit.com/article/20130208/PODCAST/302089939/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130208/PODCAST/302089939/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3Wk05emVCalFlOUhkV3NUL0ZYS3BvMm5qTg==",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130208/PODCAST/302089939/AR/0/AR-302089939.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130208/PODCAST/302089939/AR/0/AR-302089939.jpg",
                     "pubDate": "Fri, 8 Feb 2013 00:01:00 EST",
                     "description": "Outgoing Federal Trade Commission Chairman Jon Leibowitz talks with Modern Healthcare legal affairs reporter Joe Carlson about the commission's close scrutiny over healthcare, and how antitrust enforcement affects competition and the prices that...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130208/PODCAST/302089939"
+                        "url": "http://www.crainsdetroit.com/article/20130208/PODCAST/302089939"
                     }
                 },
                 {
                     "id": "302089953",
                     "title": "Alere acquires Canadian diagnostics firm ",
-                    "link": "http://stage.crainsdetroit.com/article/20130208/NEWS/302089953/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130208/NEWS/302089953/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3Wk04TFVGU1J3bEJOTHNqZk9WYWRp",
                     "image": "",
                     "pubDate": "Fri, 8 Feb 2013 14:00:00 EST",
                     "description": "Alere, a Waltham, Mass.-based operator of diagnosis, monitoring and health information technologies, said it acquired Epocal, a Canadian diagnostics firm that developed a point-of-care blood analysis system.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130208/NEWS/302089953"
+                        "url": "http://www.crainsdetroit.com/article/20130208/NEWS/302089953"
                     }
                 },
                 {
                     "id": "302089994",
                     "title": "Ohio system to share records through state's health info exchange",
-                    "link": "http://stage.crainsdetroit.com/article/20130208/INFO/302089994/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130208/INFO/302089994/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3Wk04WGZCRGh3bEJOTHNqZk9WYXRs",
                     "image": "",
                     "pubDate": "Fri, 8 Feb 2013 11:00:00 EST",
                     "description": "University Hospitals Health System in Cleveland is about to start sharing health records with other hospitals.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130208/INFO/302089994"
+                        "url": "http://www.crainsdetroit.com/article/20130208/INFO/302089994"
                     }
                 },
                 {
                     "id": "302069950",
                     "title": "Scripps moves into hospice care as area provider files bankruptcy ",
-                    "link": "http://stage.crainsdetroit.com/article/20130206/NEWS/302069950/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130206/NEWS/302069950/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3WE04TFVGU1J3bEJOTHNqbk9WYWRo",
                     "image": "",
                     "pubDate": "Wed, 6 Feb 2013 17:45:00 EST",
                     "description": "San Diego-based Scripps Health has entered hospice care as the area's biggest hospice provider continues to scale down its operations under bankruptcy protection.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130206/NEWS/302069950"
+                        "url": "http://www.crainsdetroit.com/article/20130206/NEWS/302069950"
                     }
                 },
                 {
                     "id": "302069966",
                     "title": "SunLink to delist shares, sell some facilities",
-                    "link": "http://stage.crainsdetroit.com/article/20130206/NEWS/302069966/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130206/NEWS/302069966/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3WE04TFVGU1J3bEJOTHNqbk9WYVJu",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130206/NEWS/302069966/AR/0/AR-302069966.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130206/NEWS/302069966/AR/0/AR-302069966.jpg",
                     "pubDate": "Wed, 6 Feb 2013 15:00:00 EST",
                     "description": "SunLink Health Systems, the beleaguered Atlanta-based operator of four hospitals and a specialty pharmacy, is planning to delist its shares and sell underperforming facilities.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130206/NEWS/302069966"
+                        "url": "http://www.crainsdetroit.com/article/20130206/NEWS/302069966"
                     }
                 }
             ]

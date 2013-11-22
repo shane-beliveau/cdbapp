@@ -21,7 +21,7 @@ _gaq.push(
 ); 
 </script>
 
-<script language="JavaScript" type="text/javascript" src="http://stage.crainsdetroit.com/global/js/omniture/s_crainsc.js?ver=13"></script> 
+<script language="JavaScript" type="text/javascript" src="http://www.crainsdetroit.com/global/js/omniture/s_crainsc.js?ver=13"></script> 
 <script language="JavaScript" type="text/javascript"> 
 /* You may give each page an identifying name, server, and channel on 
 the next lines. */ 

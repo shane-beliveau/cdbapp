@@ -3,7 +3,7 @@
   "rss": {
     "channel": {
       "title": "Crain's Detroit Business [%{tagid}<pbs:profilename id="<%tagid%>"> %|%[%{section=mostread}Most Popular %|%[%{section=topstories}Top Stories %|%[%{section=blogs}Blogs [%{section=mytopics}My Topics %|%Breaking News %]%]%]%]%]JSON Feed",
-     "link": "http://stage.crainsdetroit.com",
+     "link": "http://www.crainsdetroit.com",
       "description": "Latest News from Crain's Detroit Business[% - <pbs:profilename id="<%tagid%>">%]",
       "language": "en-us",
       [%"category" : "<pbs:profilename id="<%tagid%>">",%]
@@ -11,8 +11,8 @@
         "title": "Crain's Detroit Business",
         "width": "144",
         "height": "21",
-        "link": "http://stage.crainsdetroit.com/",
-        "url": "http://stage.crainsdetroit.com/Assets/cd/rss.gif"
+        "link": "http://www.crainsdetroit.com/",
+        "url": "http://www.crainsdetroit.com/Assets/cd/rss.gif"
       },
       
     [%{section=mytopics}"topics" : [

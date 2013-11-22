@@ -3,7 +3,7 @@
     "rss": {
         "channel": {
             "title": "Modern Healthcare Physicians JSON Feed",
-            "link": "http://stage.crainsdetroit.com",
+            "link": "http://www.crainsdetroit.com",
             "description": "Latest News from Modern Healthcare - Physicians",
             "language": "en-us",
             "category": "Physicians",
@@ -11,203 +11,203 @@
                 "title": "Modern Healthcare",
                 "width": "144",
                 "height": "21",
-                "link": "http://stage.crainsdetroit.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
-                "url": "http://stage.crainsdetroit.com/graphics/icons/rss.gif"
+                "link": "http://www.crainsdetroit.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
+                "url": "http://www.crainsdetroit.com/graphics/icons/rss.gif"
             },
             "items": [
                 {
                     "id": "302169974",
                     "title": "Computing better healthcare",
-                    "link": "http://stage.crainsdetroit.com/article/20130216/MAGAZINE/302169974/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169974/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwWE04SFFCVFlGN20wOHJUekhYcU5uMm5MRDhnPT0=",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169974/AR/0/Dr.-Mark-Kris-and-Manoj-Saxena-",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169974/AR/0/Dr.-Mark-Kris-and-Manoj-Saxena-",
                     "pubDate": "Sat, 16 Feb 2013 00:01:00 EST",
                     "description": "The decades-old quest to bring artificial intelligence to bear on everyday healthcare decisionmaking is moving inexorably forward, according to health informatics experts.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130216/MAGAZINE/302169974"
+                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169974"
                     }
                 },
                 {
                     "id": "302169972",
                     "title": "Loosening the rules",
-                    "link": "http://stage.crainsdetroit.com/article/20130216/MAGAZINE/302169972/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169972/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwWE04SFFCVFlGN20wOHJUekhYcU5uMm5MRDlBPT0=",
                     "image": "",
                     "pubDate": "Sat, 16 Feb 2013 00:01:00 EST",
                     "description": "Thanks to a proposed CMS rule change, dietitians and other clinicians at hospitals will be able to do the jobs they were trained for without having to hunt down a physician to supervise them.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130216/MAGAZINE/302169972"
+                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169972"
                     }
                 },
                 {
                     "id": "302169964",
                     "title": "Outliers: Of Grammy tweets and Gawande",
-                    "link": "http://stage.crainsdetroit.com/article/20130216/MAGAZINE/302169964/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169964/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwWE04SFFCVFlGN20wOHJUekhYcU5uMm5MQzhnPT0=",
                     "image": "",
                     "pubDate": "Sat, 16 Feb 2013 00:01:00 EST",
                     "description": "When it comes to the Grammy Awards, even Dr. Atul Gawande likes to get his Twitter on.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130216/MAGAZINE/302169964"
+                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169964"
                     }
                 },
                 {
                     "id": "302159949",
                     "title": "Senate Dems' plan to avoid health cuts seen as DOA in House",
-                    "link": "http://stage.crainsdetroit.com/article/20130215/NEWS/302159949/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130215/NEWS/302159949/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU04TFVGU1J3bEJOTHN6ck9WYVpv",
                     "image": "",
                     "pubDate": "Fri, 15 Feb 2013 19:30:00 EST",
                     "description": "Senate Democrats floated a new plan to avoid cuts to Medicare and other health programs, but it stands little chance of succeeding.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130215/NEWS/302159949"
+                        "url": "http://www.crainsdetroit.com/article/20130215/NEWS/302159949"
                     }
                 },
                 {
                     "id": "302159950",
                     "title": "Budget fights could hinder action on SGR repeal ",
-                    "link": "http://stage.crainsdetroit.com/article/20130215/NEWS/302159950/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130215/NEWS/302159950/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU04TFVGU1J3bEJOTHN6ck9WYWRo",
                     "image": "",
                     "pubDate": "Fri, 15 Feb 2013 19:15:00 EST",
                     "description": "Momentum is building among House leaders to draft and introduce legislation this year that would repeal Medicare's troublesome sustainable growth-rate formula used to pay physicians, but upcoming budget battles could thwart those efforts.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130215/NEWS/302159950"
+                        "url": "http://www.crainsdetroit.com/article/20130215/NEWS/302159950"
                     }
                 },
                 {
                     "id": "302169953",
                     "title": "Losing preferential treatment ",
-                    "link": "http://stage.crainsdetroit.com/article/20130215/MAGAZINE/302169953/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130215/MAGAZINE/302169953/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU04SFFCVFlGN20wOHJUekhYcU5uMm5MQjlRPT0=",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130215/MAGAZINE/302169953/AR/0/Medical-device-spending.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130215/MAGAZINE/302169953/AR/0/Medical-device-spending.jpg",
                     "pubDate": "Fri, 15 Feb 2013 00:01:00 EST",
                     "description": "Gagged by their supply contracts, some hospitals have devised a simple way to educate physicians about the cost of pricey implants: using color-coded stickers to indicate the level of a device's price.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130215/MAGAZINE/302169953"
+                        "url": "http://www.crainsdetroit.com/article/20130215/MAGAZINE/302169953"
                     }
                 },
                 {
                     "id": "302159988",
                     "title": "Illinois Senate OKs doctors' license fees hike",
-                    "link": "http://stage.crainsdetroit.com/article/20130215/INFO/302159988/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130215/INFO/302159988/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU04WGZCRGh3bEJOTHN6ck9WYXBw",
                     "image": "",
                     "pubDate": "Fri, 15 Feb 2013 15:45:00 EST",
                     "description": "The Illinois Senate approved a measure Thursday to raise physicians' licensing fees to $700 to help the state rehire workers who license and investigate doctors.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130215/INFO/302159988"
+                        "url": "http://www.crainsdetroit.com/article/20130215/INFO/302159988"
                     }
                 },
                 {
                     "id": "302159934",
                     "title": "Video Feature: Gerald DeSilva, corporate vice president of supply chain management at NYU Langone Medical Center",
-                    "link": "http://stage.crainsdetroit.com/article/20130215/VIDEO/302159934/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130215/VIDEO/302159934/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU05cllCaklRaUJCSnNEN0NWYXRpMXc9PQ==",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130215/VIDEO/302159934/AR/0/AR-302159934.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130215/VIDEO/302159934/AR/0/AR-302159934.jpg",
                     "pubDate": "Fri, 15 Feb 2013 12:45:00 EST",
                     "description": "Gerald DeSilva, corporate vice president of supply chain management at NYU Langone Medical Center, talks to Modern Healthcare Reporter Jaimy Lee about how the New York hospital has reduced the costs of its medical supplies, including pricey devices...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130215/VIDEO/302159934"
+                        "url": "http://www.crainsdetroit.com/article/20130215/VIDEO/302159934"
                     }
                 },
                 {
                     "id": "302159977",
                     "title": "Doctors, lawyers support Ore. medical errors bill",
-                    "link": "http://stage.crainsdetroit.com/article/20130215/INFO/302159977/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130215/INFO/302159977/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU04WGZCRGh3bEJOTHN6ck9WYVZt",
                     "image": "",
                     "pubDate": "Fri, 15 Feb 2013 10:00:00 EST",
                     "description": "Usually staunch adversaries, doctors and trial lawyers have both gotten behind an Oregon bill creating a new mediation process for patients injured by medical mistakes. Gov. John Kitzhaber, a doctor, called their agreement \"the holy grail of medical...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130215/INFO/302159977"
+                        "url": "http://www.crainsdetroit.com/article/20130215/INFO/302159977"
                     }
                 },
                 {
                     "id": "302149955",
                     "title": "AI system outperforms docs: researchers",
-                    "link": "http://stage.crainsdetroit.com/article/20130214/NEWS/302149955/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130214/NEWS/302149955/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVk04TFVGU1J3bEJOTHN6dk9WYWRr",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130214/NEWS/302149955/AR/0/Kris-Hauser,-Casey-Bennett.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130214/NEWS/302149955/AR/0/Kris-Hauser,-Casey-Bennett.jpg",
                     "pubDate": "Thu, 14 Feb 2013 14:15:00 EST",
                     "description": "A pair of Indiana University computer scientists set out to devise a computer-based, artificial intelligence system that could \"think like a doctor.\" But what they created may be even better, producing a system that could outperform...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130214/NEWS/302149955"
+                        "url": "http://www.crainsdetroit.com/article/20130214/NEWS/302149955"
                     }
                 },
                 {
                     "id": "302149953",
                     "title": "eHealth Initiative offers cancer resource guide",
-                    "link": "http://stage.crainsdetroit.com/article/20130214/NEWS/302149953/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130214/NEWS/302149953/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVk04TFVGU1J3bEJOTHN6dk9WYWRp",
                     "image": "",
                     "pubDate": "Thu, 14 Feb 2013 13:00:00 EST",
                     "description": "The eHealth Initiative, a Washington-based not-for-profit, has released a guide for patients and families detailing the available digital tools and technologies for cancer care.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130214/NEWS/302149953"
+                        "url": "http://www.crainsdetroit.com/article/20130214/NEWS/302149953"
                     }
                 },
                 {
                     "id": "302149976",
                     "title": "Doctors' advice about obesity: It's personal",
-                    "link": "http://stage.crainsdetroit.com/article/20130214/INFO/302149976/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130214/INFO/302149976/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVk04WGZCRGh3bEJOTHN6dk9WYVZu",
                     "image": "",
                     "pubDate": "Thu, 14 Feb 2013 09:15:00 EST",
                     "description": "Doctors are people too, and their advice to patients about obesity may be colored by their own views on what's responsible for weight gain.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130214/INFO/302149976"
+                        "url": "http://www.crainsdetroit.com/article/20130214/INFO/302149976"
                     }
                 },
                 {
                     "id": "302139950",
                     "title": "FTC green-lights Okla. physician-hospital network",
-                    "link": "http://stage.crainsdetroit.com/article/20130213/NEWS/302139950/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130213/NEWS/302139950/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwU004TFVGU1J3bEJOTHN6ek9WYWRo",
-                    "image": "http://stage.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130213/NEWS/302139950/AR/0/AR-302139950.jpg",
+                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130213/NEWS/302139950/AR/0/AR-302139950.jpg",
                     "pubDate": "Wed, 13 Feb 2013 18:30:00 EST",
                     "description": "The FTC has bestowed rare approval on a proposed arrangement between a large group of Oklahoma doctors and a local hospital, even though those involved admit planning to raise some prices.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130213/NEWS/302139950"
+                        "url": "http://www.crainsdetroit.com/article/20130213/NEWS/302139950"
                     }
                 },
                 {
                     "id": "302139987",
                     "title": "S.D. bill could allow insured patients to see any doc",
-                    "link": "http://stage.crainsdetroit.com/article/20130213/INFO/302139987/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130213/INFO/302139987/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwU004WGZCRGh3bEJOTHN6ek9WYXBt",
                     "image": "",
                     "pubDate": "Wed, 13 Feb 2013 11:00:00 EST",
                     "description": "Physicians and other healthcare providers should be allowed to deliver services to patients enrolled in any insurance plans in South Dakota, if the providers are willing to meet the plans' terms and conditions, a legislative panel decided.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130213/INFO/302139987"
+                        "url": "http://www.crainsdetroit.com/article/20130213/INFO/302139987"
                     }
                 },
                 {
                     "id": "302139977",
                     "title": "Calif. lacks doctors to meet demand of reform law",
-                    "link": "http://stage.crainsdetroit.com/article/20130213/INFO/302139977/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.crainsdetroit.com/article/20130213/INFO/302139977/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwU004WGZCRGh3bEJOTHN6ek9WYVZt",
                     "image": "",
                     "pubDate": "Wed, 13 Feb 2013 09:30:00 EST",
                     "description": "As the state moves to expand healthcare coverage to millions of Californians under President Obama's healthcare law, it faces a major obstacle: There aren't enough doctors to treat a crush of newly insured patients.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://stage.crainsdetroit.com/article/20130213/INFO/302139977"
+                        "url": "http://www.crainsdetroit.com/article/20130213/INFO/302139977"
                     }
                 }
             ]

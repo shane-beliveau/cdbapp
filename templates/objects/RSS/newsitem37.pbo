@@ -11,7 +11,7 @@
             "link": "<%cci_shortBypassLink$r("/article/=/app/js/feeds/article.js?AID=/")r("\?AllowView=&AllowView")%>&sectioncat=nitf2&template=nitf2",[%{cd_isblog=1|byline}
             "kicker" : [%{cd_isblog=1}<%BlogCategoryToAuthor$K$S("AppDescriptionJsonEncode.php5","PHPScript")%>%|%<%byline$S("AppDescriptionJsonEncode.php5","PHPScript")%>%],%][%
             "page" : "<%field_page%>",%][%{imagelink|cd_isblog=1}
-            "image" : "[%{imagelink}http://stage.crainsdetroit.com<%Imagelink$r("http://CDweb.cr.atl.publicus.com=")r("'=%27")%>&MaxW=490%|%[%{cd_isblog=1}http://stage.crainsdetroit.com/Assets/cd/blogs/square/<%category%>.png%]%]",[%
+            "image" : "[%{imagelink}http://www.crainsdetroit.com<%Imagelink$r("http://CDweb.cr.atl.publicus.com=")r("'=%27")%>&MaxW=490%|%[%{cd_isblog=1}http://www.crainsdetroit.com/Assets/cd/blogs/square/<%category%>.png%]%]",[%
             "caption" : <%CaptionBody$t$S("AppDescriptionJsonEncode.php5","PHPScript")%>,%]
             "picOrientation" : "[%{ImageLink}[%{ImageWidth<490}small%|%large%]%|%[%{cd_isblog=1}small%]%]",[%{ImageLink&ImageWidth<490|!ImageLink&cd_isblog=1}
             "picWidth" : "[%<%ImageWidth%>%|%[%{cd_isblog=1}200%]%]",
