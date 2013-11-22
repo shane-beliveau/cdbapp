@@ -15,7 +15,7 @@
             "caption" : <%CaptionBody$t$S("AppDescriptionJsonEncode.php5","PHPScript")%>,%]
             "picOrientation" : "[%{ImageLink}[%{ImageWidth<490}small%|%large%]%|%[%{cd_isblog=1}small%]%]",[%{ImageLink&ImageWidth<490|!ImageLink&cd_isblog=1}
             "picWidth" : "[%<%ImageWidth%>%|%[%{cd_isblog=1}200%]%]",
-            "picHeight" : "[%<%ImageHeight%>%|%[%{cd_isblog=1}200%]%]",%]%]
+            "picHeight" : "[%{ImageHeight}[%{ImageHeight>330}330%|%<%ImageHeight%>%]%|%[%{cd_isblog=1}200%]%]",%]%]
             "pubDate" : "<%ISOPubDateTime$d("ddd, d mmm yyyy hh:nn:ss")%> EST",
             "description": [%<%Summary$t$w(0,500)$S("AppDescriptionJsonEncode.php5","PHPScript")%>%|%null%]
           }[%{islastitem!1},%]

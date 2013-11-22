@@ -53,7 +53,7 @@ define([
 		**/
 		extAPI : function() 
 		{
-            return 'http://home.www.crainsdetroit.com' + this.get('extAPIPath');
+            return 'https://home.crainsdetroit.com' + this.get('extAPIPath');
 		},
 
 		/** 

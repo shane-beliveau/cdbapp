@@ -1,4 +1,4 @@
-<%?categories="NEWS%,BLOG%,AWARDS%,FEATURE%,VIDEO,AUDIO,LIST"%>
+<%?categories="NEWS%,BLOG%,AWARDS%,FEATURE%,CUSTOM%,VIDEO,AUDIO,LIST"%>
 {
   "rss": {
     "channel": {
