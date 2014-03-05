@@ -7,7 +7,7 @@ define([
     return Backbone.Collection.extend({
 
       storageKey: function (key) {
-        return this.storageKey = 'CD.ArticlesCollection.' + key;
+        return this.storageKey = 'MH.ArticlesCollection.' + key;
       },
 
       model: SingleStoryModel,
@@ -52,8 +52,6 @@ define([
         this.each(function(model){
           items.push({
             id: model.get('id'),
-            videoid: model.get('videoid'),
-            videoStill: model.get('videoStill'),
             title: model.get('title'),
             description: model.get('description'),
             pubDate: moment(model.get('pubDate')).format('dddd, MMMM Do YYYY'),

@@ -3,15 +3,15 @@
     "rss": {
         "channel": {
             "title": "Modern Healthcare My Topics JSON Feed",
-            "link": "http://www.crainsdetroit.com",
+            "link": "http://www.modernhealthcare.com",
             "description": "Latest News from Modern Healthcare",
             "language": "en-us",
             "image": {
                 "title": "Modern Healthcare",
                 "width": "144",
                 "height": "21",
-                "link": "http://www.crainsdetroit.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
-                "url": "http://www.crainsdetroit.com/graphics/icons/rss.gif"
+                "link": "http://www.modernhealthcare.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
+                "url": "http://www.modernhealthcare.com/graphics/icons/rss.gif"
             },
             "topics": [
                 {

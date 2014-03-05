@@ -18,7 +18,6 @@ define([
         this.mainView.on('updateLayout', this.refreshScrollers, this);
 
         this.render();
-        this.renderAccordion();
       },
 
       initializeScroller: function (container, opts) {
@@ -107,28 +106,6 @@ define([
 
         this.updateFeedbackLabel();
       },
-
-      renderAccordion: function () {
-        $(".expand_object").each(function() {
-          $(this).prepend('<div class="expand_item"><a href="#">' + $(this).data("title") + '</a></div>');
-          if ($(this).data("defaultstate") == "expanded") {
-            $(this).children(".expand_contents").show(function() {
-              $(this).parent().children(".expand_item").children("a").css("background-image", "url(/Assets/cd/minus_grey.png)");
-            })
-          }
-        });
-        $(".expand_item a").click(function(e) {
-          e.preventDefault();
-          $(this).parent().parent().children(".expand_contents").slideToggle(function() {     
-            if ($(this).is(":hidden")) {
-              $(this).parent().children(".expand_item").children("a").css("background-image", "url(/Assets/cd/plus_grey.png)");
-            } else {
-              $(this).parent().children(".expand_item").children("a").css("background-image", "url(/Assets/cd/minus_grey.png)");
-            }
-          });
-        });
-      },
-
 
       updateFeedbackLabel: function () {
         var label = 'Send Us your Feedback';

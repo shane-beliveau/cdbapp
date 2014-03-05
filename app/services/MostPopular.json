@@ -3,210 +3,210 @@
     "rss": {
         "channel": {
             "title": "Modern Healthcare Most Popular JSON Feed",
-            "link": "http://www.crainsdetroit.com",
+            "link": "http://www.modernhealthcare.com",
             "description": "Latest News from Modern Healthcare",
             "language": "en-us",
             "image": {
                 "title": "Modern Healthcare",
                 "width": "144",
                 "height": "21",
-                "link": "http://www.crainsdetroit.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
-                "url": "http://www.crainsdetroit.com/graphics/icons/rss.gif"
+                "link": "http://www.modernhealthcare.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
+                "url": "http://www.modernhealthcare.com/graphics/icons/rss.gif"
             },
             "items": [
                 {
                     "id": "302169971",
                     "title": "Balancing high costs, potential savings",
-                    "link": "http://www.crainsdetroit.com/article/20130215/MAGAZINE/302169971/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130215/MAGAZINE/302169971/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Fri, 15 Feb 2013 00:00:00 EST",
                     "description": "While several of the technologies cited on the Top 10 C-Suite Watch List have appeared in previous years, much of the focus this year is on the...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130215/MAGAZINE/302169971"
+                        "url": "http://www.modernhealthcare.com/article/20130215/MAGAZINE/302169971"
                     }
                 },
                 {
                     "id": "302179998",
                     "title": "Ky. insurance exchange grows into $39.5M operation",
-                    "link": "http://www.crainsdetroit.com/article/20130218/INFO/302179998/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130218/INFO/302179998/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Mon, 18 Feb 2013 00:00:00 EST",
                     "description": "Federal healthcare reforms have led to the creation of a government agency in Kentucky that will be comparable in staffing to the secretary of...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130218/INFO/302179998"
+                        "url": "http://www.modernhealthcare.com/article/20130218/INFO/302179998"
                     }
                 },
                 {
                     "id": "302179997",
                     "title": "States' choices set up national health experiment",
-                    "link": "http://www.crainsdetroit.com/article/20130217/INFO/302179997/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130217/INFO/302179997/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Sun, 17 Feb 2013 00:00:00 EST",
                     "description": "President Barack Obama's healthcare overhaul is unfolding as a national experiment with American consumers as the guinea pigs: Who will do a better...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130217/INFO/302179997"
+                        "url": "http://www.modernhealthcare.com/article/20130217/INFO/302179997"
                     }
                 },
                 {
                     "id": "302169953",
                     "title": "Losing preferential treatment",
-                    "link": "http://www.crainsdetroit.com/article/20130215/MAGAZINE/302169953/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130215/MAGAZINE/302169953/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Fri, 15 Feb 2013 00:00:00 EST",
                     "description": "Gagged by their supply contracts, some hospitals have devised a simple way to educate physicians about the cost of pricey implants: using color-coded...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130215/MAGAZINE/302169953"
+                        "url": "http://www.modernhealthcare.com/article/20130215/MAGAZINE/302169953"
                     }
                 },
                 {
                     "id": "302179996",
                     "title": "Indiana prepares to battle feds over reform",
-                    "link": "http://www.crainsdetroit.com/article/20130217/INFO/302179996/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130217/INFO/302179996/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Sun, 17 Feb 2013 00:00:00 EST",
                     "description": "Indiana leaders are gearing up for a new battle with Washington over how to expand Medicaid and comply with the federal healthcare law.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130217/INFO/302179996"
+                        "url": "http://www.modernhealthcare.com/article/20130217/INFO/302179996"
                     }
                 },
                 {
                     "id": "302179995",
                     "title": "For Brooklyn hospitals, it's all about the payer mix",
-                    "link": "http://www.crainsdetroit.com/article/20130217/INFO/302179995/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130217/INFO/302179995/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Sun, 17 Feb 2013 00:00:00 EST",
                     "description": "Why aren't Brooklyn hospitals like Manhattan ones? Payer mix makes all the difference.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130217/INFO/302179995"
+                        "url": "http://www.modernhealthcare.com/article/20130217/INFO/302179995"
                     }
                 },
                 {
                     "id": "302149955",
                     "title": "AI system outperforms docs: researchers",
-                    "link": "http://www.crainsdetroit.com/article/20130214/NEWS/302149955/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130214/NEWS/302149955/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Thu, 14 Feb 2013 00:00:00 EST",
                     "description": "A pair of Indiana University computer scientists set out to devise a computer-based, artificial intelligence system that could \"think like a...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130214/NEWS/302149955"
+                        "url": "http://www.modernhealthcare.com/article/20130214/NEWS/302149955"
                     }
                 },
                 {
                     "id": "302089949",
                     "title": "White House warns of sequester's healthcare impact",
-                    "link": "http://www.crainsdetroit.com/article/20130208/NEWS/302089949/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130208/NEWS/302089949/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Fri, 8 Feb 2013 00:00:00 EST",
                     "description": "The Obama administration is warning that budget cuts scheduled for March 1 would hit especially hard in mental healthcare, medical research and the...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130208/NEWS/302089949"
+                        "url": "http://www.modernhealthcare.com/article/20130208/NEWS/302089949"
                     }
                 },
                 {
                     "id": "302159959",
                     "title": "CMS issues proposed Medicare Advantage, Part D regs",
-                    "link": "http://www.crainsdetroit.com/article/20130215/NEWS/302159959/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130215/NEWS/302159959/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Fri, 15 Feb 2013 00:00:00 EST",
                     "description": "The CMS issued proposed terms for insurers participating in the Medicare Advantage Part C insurance program -- including a growth percentage...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130215/NEWS/302159959"
+                        "url": "http://www.modernhealthcare.com/article/20130215/NEWS/302159959"
                     }
                 },
                 {
                     "id": "302169990",
                     "title": "The charity offering",
-                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169990/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169990/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Sat, 16 Feb 2013 00:00:00 EST",
                     "description": "In 2010, Memorial Medical Center, a small hospital in rural San Augustine, Texas, saw its financial losses grow along with demand from patients who...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169990"
+                        "url": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169990"
                     }
                 },
                 {
                     "id": "302109999",
                     "title": "No single fix for readmissions epidemic",
-                    "link": "http://www.crainsdetroit.com/article/20130210/INFO/302109999/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130210/INFO/302109999/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Sun, 10 Feb 2013 00:00:00 EST",
                     "description": "More than 1 million Americans wind up back in the hospital only weeks after they left for reasons that could have been prevented -- a revolving...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130210/INFO/302109999"
+                        "url": "http://www.modernhealthcare.com/article/20130210/INFO/302109999"
                     }
                 },
                 {
                     "id": "302159994",
                     "title": "Cleveland Clinic to join CliniSync electronic medical records exchange",
-                    "link": "http://www.crainsdetroit.com/article/20130215/INFO/302159994/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130215/INFO/302159994/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Fri, 15 Feb 2013 00:00:00 EST",
                     "description": "Soon, the Cleveland Clinic will be able to share electronic medical records with University Hospitals Health System and other Ohio hospitals.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130215/INFO/302159994"
+                        "url": "http://www.modernhealthcare.com/article/20130215/INFO/302159994"
                     }
                 },
                 {
                     "id": "302169992",
                     "title": "Corrections and clarifications: Catholic Health Initiatives deal mistakenly reported as final",
-                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169992/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169992/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Sat, 16 Feb 2013 00:00:00 EST",
                     "description": "Catholic Health Initiatives' deal to acquire insurer Sound Path Health has not yet closed. A story in the Feb. 11 issue (\"A change in spending...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169992"
+                        "url": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169992"
                     }
                 },
                 {
                     "id": "302169988",
                     "title": "Opt out at your own peril",
-                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169988/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169988/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Sat, 16 Feb 2013 00:00:00 EST",
                     "description": "There's no shortage of ironies when it comes to healthcare reform. The latest comes from the decision by over two dozen states to opt out of starting...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169988"
+                        "url": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169988"
                     }
                 },
                 {
                     "id": "302049986",
                     "title": "Obamacare transforms med school",
-                    "link": "http://www.crainsdetroit.com/article/20130204/INFO/302049986/1138/nitf2&template=nitf&mime=application%2Fjson%>",
+                    "link": "http://www.modernhealthcare.com/article/20130204/INFO/302049986/1138/nitf2&template=nitf&mime=application%2Fjson%>",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrTT0=",
                     "image": "",
                     "pubDate": "Mon, 4 Feb 2013 00:00:00 EST",
                     "description": "Medical students typically have been left to figure out how to work with nurses and other health professionals, usually by osmosis in their third and...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130204/INFO/302049986"
+                        "url": "http://www.modernhealthcare.com/article/20130204/INFO/302049986"
                     }
                 }
             ]

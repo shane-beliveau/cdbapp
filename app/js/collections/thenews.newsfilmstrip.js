@@ -8,7 +8,7 @@ define([
     return Backbone.Collection.extend({
 
       storageKey: function (key) {
-        return this.storageKey = 'CD.ArticlesCollection.' + key;
+        return this.storageKey = 'MH.ArticlesCollection.' + key;
       },
 
       isFetched: false,
@@ -19,23 +19,18 @@ define([
         switch (feed) {
           case 'BreakingNews' :
             this.storageKey('BreakingNews');
-            return 'http://www.crainsdetroit.com/app/js/feeds/main.js';
-            break;
-          case 'TOC' :
-            this.storageKey('TOC');
-            return 'http://www.crainsdetroit.com/app/js/feeds/main.js?section=toc';
-            break;
-          case 'Blogs' :
-            this.storageKey('Blogs');
-            return 'http://www.crainsdetroit.com/app/js/feeds/main.js?section=blogs';
+            return 'http://www.modernhealthcare.com/app/js/feeds/main.js?_=' + timestamp.getTime();
+            // return 'services/BreakingNews.json'
             break;
           case 'TopStories' :
             this.storageKey('TopStories');
-            return 'http://www.crainsdetroit.com/app/js/feeds/main.js?section=topstories';
+            return 'http://www.modernhealthcare.com/app/js/feeds/main.js?topstories=1&_=' + timestamp.getTime();
+            // return 'services/TopStories.json';
             break;
           case 'MostPopular' :
             this.storageKey('MostPopular');
-            return 'http://www.crainsdetroit.com/app/js/feeds/main.js?section=mostread';
+            return 'http://www.modernhealthcare.com/app/js/feeds/main.js?mostread=1&_=' + timestamp.getTime();
+            // return 'services/MostPopular.json';
             break;
         };
       },
@@ -109,14 +104,10 @@ define([
           items.push({
             id: model.get('id'),
             title: model.get('title'),
-            kicker: model.get('kicker'),
-            page: model.get('page'),
             description: model.get('description'),
             pubDate: moment(model.get('pubDate')).format('dddd, MMMM Do YYYY'),
             image: model.get('image'),
             picOrientation: model.get('picOrientation'),
-            picWidth: model.get('picWidth'),
-            picHeight: model.get('picHeight'),
             link: model.get('link'),
             article: (model.get('article')) ? model.get('article') : ''
           });

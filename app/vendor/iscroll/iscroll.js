@@ -999,7 +999,7 @@ iScroll.prototype = {
 
 		that.stop();
 
-		if (typeof step == 'undefined' || !step.length) step = [{ x: x, y: y, time: time, relative: relative }];
+		if (!step.length) step = [{ x: x, y: y, time: time, relative: relative }];
 		
 		for (i=0, l=step.length; i<l; i++) {
 			if (step[i].relative) { step[i].x = that.x - step[i].x; step[i].y = that.y - step[i].y; }

@@ -17,8 +17,8 @@ define([
 
       parse: function ( model ) {
         return { 
-          profile_image_url: model.user.profile_image_url,
-          from_user_name: model.user.screen_name,
+          profile_image_url: model.profile_image_url,
+          from_user_name: model.from_user_name,
           created_at: model.created_at,
           text: this.formatTweet(model.text)
         };

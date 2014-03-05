@@ -1,40 +1,79 @@
 {
   "authors" : [
   {
-    "name": "Crain's Detroit Business",
-    "twitter": "crainsdetroit"
+    "name": "Modern Healthcare",
+    "twitter": "modrnhealthcr"
   },{
-    "name": "Mary Kramer",
-    "twitter": "Mkramercrain"
+    "name": "Merrill Goozner",
+    "twitter": "MHGoozner"
   },{
-    "name": "Bob Allen",
-    "twitter": "tzarbob"
+    "name": "John Thomas",
+    "twitter": "MHJThomas"
   },{
-    "name": "Dan Duggan",
-    "twitter": "d_duggan"
+    "name": "Joe Carlson",
+    "twitter": "MHJCarlson"
   },{
-    "name": "Chris Gautz",
-    "twitter": "ChrisGautz"
+    "name": "Joseph Conn",
+    "twitter": "MHJConn"
   },{
-    "name": "Jay Greene",
-    "twitter": "jaybgreene"
+    "name": "MH Outliers",
+    "twitter": "MHOutliers"
   },{
-    "name": "Chad Halcom",
-    "twitter": "chadhalcom"
+    "name": "Jaimy Lee",
+    "twitter": "MHjlee"
   },{
-    "name": "Tom Henderson",
-    "twitter": "tomhenderson2"
+    "name": "Melanie Evans",
+    "twitter": "MHmevans"
   },{
-    "name": "Bill Shea",
-    "twitter": "bill_shea19"
+    "name": "Maureen McKinney",
+    "twitter": "MHMMcKinney"
   },{
-    "name": "Nathan Skid",
-    "twitter": "nateskid"
+    "name": "Andis Robeznieks",
+    "twitter": "MHARobeznieks"
   },{
-    "name": "Dustin Walsh",
-    "twitter": "dustinpwalsh"
+    "name": "Ashok Selvam",
+    "twitter": "MH_aselvam"
   },{
-    "name": "Sherri Welch",
-    "twitter": "sherriwelch"
+    "name": "Gregory Blesch",
+    "twitter": "MHgblesch"
+  },{
+    "name": "Rich Daly",
+    "twitter": "MHrdaly"
+  },{
+    "name": "Dave May",
+    "twitter": "MHdmay"
+  },{
+    "name": "Jessica Zigmond",
+    "twitter": "MHjzigmond"
+  },{
+    "name": "Rebecca Mielcarski",
+    "twitter": "MHrmielcarski"
+  },{
+    "name": "Patrick Shrader",
+    "twitter": "MHpshrader"
+  },{
+    "name": "Supriya Doshi",
+    "twitter": "MHsdoshi"
+  },{
+    "name": "Beth Kutscher",
+    "twitter": "MHbkutscher"
+  },{
+    "name": "Eric Semelroth",
+    "twitter": "MHesemelroth"
+  },{
+    "name": "Douglas Backstrom",
+    "twitter": "MHdbackstrom"
+  },{
+    "name": "Keith Horist",
+    "twitter": "MHkhorist"
+  },{
+    "name": "Rachel Landen",
+    "twitter": "MHrlanden"
+  },{
+    "name": "Jonathan Block",
+    "twitter": "MHjblock"
+  },{
+    "name": "MH Research",
+    "twitter": "MHresearch"
   }]
 }

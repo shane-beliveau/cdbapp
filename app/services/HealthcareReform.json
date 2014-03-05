@@ -3,7 +3,7 @@
     "rss": {
         "channel": {
             "title": "Modern Healthcare Healthcare Reform JSON Feed",
-            "link": "http://www.crainsdetroit.com",
+            "link": "http://www.modernhealthcare.com",
             "description": "Latest News from Modern Healthcare - Healthcare Reform",
             "language": "en-us",
             "category": "Healthcare Reform",
@@ -11,203 +11,203 @@
                 "title": "Modern Healthcare",
                 "width": "144",
                 "height": "21",
-                "link": "http://www.crainsdetroit.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
-                "url": "http://www.crainsdetroit.com/graphics/icons/rss.gif"
+                "link": "http://www.modernhealthcare.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
+                "url": "http://www.modernhealthcare.com/graphics/icons/rss.gif"
             },
             "items": [
                 {
                     "id": "302179997",
                     "title": "States' choices set up national health experiment ",
-                    "link": "http://www.crainsdetroit.com/article/20130217/INFO/302179997/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130217/INFO/302179997/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwV004WGZCRGh3bEJOTHN6ak9WYXRt",
                     "image": "",
                     "pubDate": "Sun, 17 Feb 2013 11:15:00 EST",
                     "description": "President Barack Obama's healthcare overhaul is unfolding as a national experiment with American consumers as the guinea pigs: Who will do a better job getting uninsured people covered, the states or the feds?",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130217/INFO/302179997"
+                        "url": "http://www.modernhealthcare.com/article/20130217/INFO/302179997"
                     }
                 },
                 {
                     "id": "302179996",
                     "title": "Indiana prepares to battle feds over reform",
-                    "link": "http://www.crainsdetroit.com/article/20130217/INFO/302179996/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130217/INFO/302179996/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwV004WGZCRGh3bEJOTHN6ak9WYXRu",
                     "image": "",
                     "pubDate": "Sun, 17 Feb 2013 11:00:00 EST",
                     "description": "Indiana leaders are gearing up for a new battle with Washington over how to expand Medicaid and comply with the federal healthcare law.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130217/INFO/302179996"
+                        "url": "http://www.modernhealthcare.com/article/20130217/INFO/302179996"
                     }
                 },
                 {
                     "id": "302169976",
                     "title": "There's a catch",
-                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169976/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169976/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwWE04SFFCVFlGN20wOHJUekhYcU5uMm5MRDhBPT0=",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169976/AR/0/John-Kasich.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169976/AR/0/John-Kasich.jpg",
                     "pubDate": "Sat, 16 Feb 2013 00:01:00 EST",
                     "description": "The Obama administration and healthcare reform advocates celebrated after a number of Republican-run states decided to expand Medicaid. Their celebrations may have been premature, however.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169976"
+                        "url": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169976"
                     }
                 },
                 {
                     "id": "302169984",
                     "title": "Late News: CHA welcomes HHS' latest rules on contraception coverage",
-                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169984/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169984/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwWE04SFFCVFlGN20wOHJUekhYcU5uMm5MTThnPT0=",
                     "image": "",
                     "pubDate": "Sat, 16 Feb 2013 00:01:00 EST",
                     "description": "The Catholic Health Association says the latest federal rules on birth control coverage are an improvement. But the trade group for Roman Catholic hospitals said it won't make a final judgment until it canvasses its members. Religious leaders have...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169984"
+                        "url": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169984"
                     }
                 },
                 {
                     "id": "302169977",
                     "title": "'Read between the lines'",
-                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169977/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169977/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwWE04SFFCVFlGN20wOHJUekhYcU5uMm5MRDhRPT0=",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169977/AR/0/President-Barack-Obama.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169977/AR/0/President-Barack-Obama.jpg",
                     "pubDate": "Sat, 16 Feb 2013 00:01:00 EST",
                     "description": "President Barack Obama's blink-and-you'll-miss-it mention of healthcare in his State of the Union address left industry leaders to speculate how far the administration will go toward reforming Medicare to reduce the nation's deficit -- and which...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169977"
+                        "url": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169977"
                     }
                 },
                 {
                     "id": "302169975",
                     "title": "Breaking the mold",
-                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169975/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169975/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwWE04SFFCVFlGN20wOHJUekhYcU5uMm5MRDh3PT0=",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169975/AR/0/Joseph-Swedish.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169975/AR/0/Joseph-Swedish.jpg",
                     "pubDate": "Sat, 16 Feb 2013 00:01:00 EST",
                     "description": "If the business model for the health insurance industry has to change, so should its leadership. That's the strategy that WellPoint is taking by tapping a hospital executive as its new CEO.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169975"
+                        "url": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169975"
                     }
                 },
                 {
                     "id": "302169988",
                     "title": "Opt out at your own peril",
-                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169988/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169988/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwWE04SFFCVFlGN20wOHJUekhYcU5uMm5MTS9nPT0=",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169988/AR/0/Merrill-Goozner.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169988/AR/0/Merrill-Goozner.jpg",
                     "pubDate": "Sat, 16 Feb 2013 00:01:00 EST",
                     "description": "There's never a shortage of ironies when it comes to healthcare reform. The latest comes from the decision by more than two dozen states to opt out of starting their own health insurance exchanges (the exact number won't be known until after this...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169988"
+                        "url": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169988"
                     }
                 },
                 {
                     "id": "302169962",
                     "title": "Outliers: Quotable",
-                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169962/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169962/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwWE04SFFCVFlGN20wOHJUekhYcU5uMm5MQzlBPT0=",
                     "image": "",
                     "pubDate": "Sat, 16 Feb 2013 00:01:00 EST",
                     "description": "\"The audacity of the government telling the church how to do healthcare ... we've been doing it 2,000 years longer than any government.\"",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169962"
+                        "url": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169962"
                     }
                 },
                 {
                     "id": "302169970",
                     "title": "Investors eye behavioral health",
-                    "link": "http://www.crainsdetroit.com/article/20130215/MAGAZINE/302169970/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130215/MAGAZINE/302169970/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU04SFFCVFlGN20wOHJUekhYcU5uMm5MRDlnPT0=",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130215/MAGAZINE/302169970/AR/0/Castlewood-.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130215/MAGAZINE/302169970/AR/0/Castlewood-.jpg",
                     "pubDate": "Fri, 15 Feb 2013 00:01:00 EST",
                     "description": "At Castlewood Treatment Center, patients with eating disorders receive intensive, one-on-one therapy at three estate-like residential campuses nestled in the hills of St. Louis.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130215/MAGAZINE/302169970"
+                        "url": "http://www.modernhealthcare.com/article/20130215/MAGAZINE/302169970"
                     }
                 },
                 {
                     "id": "302149969",
                     "title": "Baucus demands details on progress toward insurance exchanges ",
-                    "link": "http://www.crainsdetroit.com/article/20130214/NEWS/302149969/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130214/NEWS/302149969/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVk04TFVGU1J3bEJOTHN6dk9WYVJv",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130214/NEWS/302149969/AR/0/Max-Baucus.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130214/NEWS/302149969/AR/0/Max-Baucus.jpg",
                     "pubDate": "Thu, 14 Feb 2013 14:15:00 EST",
                     "description": "Despite renewed assurances that the federal government will have its insurance exchanges ready to begin enrollments Oct. 1, the senior Senate health policy Democrat demanded more details on the secretive effort.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130214/NEWS/302149969"
+                        "url": "http://www.modernhealthcare.com/article/20130214/NEWS/302149969"
                     }
                 },
                 {
                     "id": "302149968",
                     "title": "Nurses union moves to boost clout by teaming up with teachers ",
-                    "link": "http://www.crainsdetroit.com/article/20130214/NEWS/302149968/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130214/NEWS/302149968/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVk04TFVGU1J3bEJOTHN6dk9WYVJw",
                     "image": "",
                     "pubDate": "Thu, 14 Feb 2013 15:45:00 EST",
                     "description": "Members of the National Federation of Nurses said affiliating with the American Federation of Teachers will give them the leverage they need to improve working conditions and protect themselves from unfair attacks from hospital management.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130214/NEWS/302149968"
+                        "url": "http://www.modernhealthcare.com/article/20130214/NEWS/302149968"
                     }
                 },
                 {
                     "id": "302149978",
                     "title": "Catholic hospitals: Progress in birth control rule ",
-                    "link": "http://www.crainsdetroit.com/article/20130214/INFO/302149978/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130214/INFO/302149978/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVk04WGZCRGh3bEJOTHN6dk9WYVZw",
                     "image": "",
                     "pubDate": "Thu, 14 Feb 2013 08:00:00 EST",
                     "description": "A trade group for Roman Catholic hospitals says the latest federal rules on birth control coverage are an improvement.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130214/INFO/302149978"
+                        "url": "http://www.modernhealthcare.com/article/20130214/INFO/302149978"
                     }
                 },
                 {
                     "id": "302139967",
                     "title": "Ill. joins feds as exchange deadline nears",
-                    "link": "http://www.crainsdetroit.com/article/20130213/NEWS/302139967/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130213/NEWS/302139967/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwU004TFVGU1J3bEJOTHN6ek9WYVJt",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130213/NEWS/302139967/AR/0/AR-302139967.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130213/NEWS/302139967/AR/0/AR-302139967.jpg",
                     "pubDate": "Wed, 13 Feb 2013 15:00:00 EST",
                     "description": "Illinois became the third state to receive conditional approval to launch a health insurance exchange in partnership with the federal government less than eight months from now.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130213/NEWS/302139967"
+                        "url": "http://www.modernhealthcare.com/article/20130213/NEWS/302139967"
                     }
                 },
                 {
                     "id": "302139983",
                     "title": "Wis. governor won't expand Medicaid",
-                    "link": "http://www.crainsdetroit.com/article/20130213/INFO/302139983/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130213/INFO/302139983/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwU004WGZCRGh3bEJOTHN6ek9WYXBp",
                     "image": "",
                     "pubDate": "Wed, 13 Feb 2013 09:00:00 EST",
                     "description": "Wisconsin Gov. Scott Walker announced Wednesday that he won't propose expanding Medicaid services in the state, breaking with other Republican governors who decided to accept federal money for an expansion as offered under the healthcare overhaul...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130213/INFO/302139983"
+                        "url": "http://www.modernhealthcare.com/article/20130213/INFO/302139983"
                     }
                 },
                 {
                     "id": "302139957",
                     "title": "Obama address light on details for reforming Medicare",
-                    "link": "http://www.crainsdetroit.com/article/20130213/NEWS/302139957/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130213/NEWS/302139957/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwU004TFVGU1J3bEJOTHN6ek9WYWRt",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130213/NEWS/302139957/AR/0/Barack-Obama-.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130213/NEWS/302139957/AR/0/Barack-Obama-.jpg",
                     "pubDate": "Wed, 13 Feb 2013 00:15:00 EST",
                     "description": "In the first State of the Union address of his second term, President Barack Obama acknowledged the biggest driver of the nation's long-term debt is the rising cost of healthcare for an aging population, but proceeded to offer very few specifics on...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130213/NEWS/302139957"
+                        "url": "http://www.modernhealthcare.com/article/20130213/NEWS/302139957"
                     }
                 }
             ]

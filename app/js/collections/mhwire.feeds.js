@@ -7,9 +7,8 @@ define([
     return Backbone.Collection.extend({
 
       url: function(){
-        return 'http://'+ document.location.host +'/section/App-Twitter-OAuth?url=search%2Ftweets.json%3Fq%3D' + this.twitterID;
+        return 'http://search.twitter.com/search.json?q=' + this.twitterID;
       },
-
       model: MhWireFeedModel,
 
       initialize: function () {
@@ -23,7 +22,7 @@ define([
       fetch: function (options) {
         var config = _.extend({
           type: 'GET',
-          dataType: 'json',
+          dataType: 'jsonp',
           url: this.url(),
           processData: true
         }, options);
@@ -32,7 +31,7 @@ define([
       },
 
       parse: function ( response ) {
-        return response.statuses;
+        return response.results;
       },
 
       contentToArray: function() {

@@ -3,7 +3,7 @@
     "rss": {
         "channel": {
             "title": "Modern Healthcare Quality JSON Feed",
-            "link": "http://www.crainsdetroit.com",
+            "link": "http://www.modernhealthcare.com",
             "description": "Latest News from Modern Healthcare - Quality",
             "language": "en-us",
             "category": "Quality",
@@ -11,203 +11,203 @@
                 "title": "Modern Healthcare",
                 "width": "144",
                 "height": "21",
-                "link": "http://www.crainsdetroit.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
-                "url": "http://www.crainsdetroit.com/graphics/icons/rss.gif"
+                "link": "http://www.modernhealthcare.com/?utm_source=tagid-rss&amp;utm_medium=rss&amp;utm_campaign=tagid-rss",
+                "url": "http://www.modernhealthcare.com/graphics/icons/rss.gif"
             },
             "items": [
                 {
                     "id": "302169973",
                     "title": "All over the map",
-                    "link": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169973/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169973/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwWE04SFFCVFlGN20wOHJUekhYcU5uMm5MRDlRPT0=",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169973/AR/0/Chart--Medicare-readmission.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130216/MAGAZINE/302169973/AR/0/Chart--Medicare-readmission.jpg",
                     "pubDate": "Sat, 16 Feb 2013 00:01:00 EST",
                     "description": "It's all about location. A Medicare patient discharged after surgery in Bend, Ore., has a 7.6% chance of ending up back in the hospital within 30 days. But if that patient calls the Bronx in New York City home, the likelihood that he or she will be...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130216/MAGAZINE/302169973"
+                        "url": "http://www.modernhealthcare.com/article/20130216/MAGAZINE/302169973"
                     }
                 },
                 {
                     "id": "302159950",
                     "title": "Budget fights could hinder action on SGR repeal ",
-                    "link": "http://www.crainsdetroit.com/article/20130215/NEWS/302159950/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130215/NEWS/302159950/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU04TFVGU1J3bEJOTHN6ck9WYWRo",
                     "image": "",
                     "pubDate": "Fri, 15 Feb 2013 19:15:00 EST",
                     "description": "Momentum is building among House leaders to draft and introduce legislation this year that would repeal Medicare's troublesome sustainable growth-rate formula used to pay physicians, but upcoming budget battles could thwart those efforts.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130215/NEWS/302159950"
+                        "url": "http://www.modernhealthcare.com/article/20130215/NEWS/302159950"
                     }
                 },
                 {
                     "id": "302159959",
                     "title": "CMS issues proposed Medicare Advantage, Part D regs ",
-                    "link": "http://www.crainsdetroit.com/article/20130215/NEWS/302159959/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130215/NEWS/302159959/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU04TFVGU1J3bEJOTHN6ck9WYWRv",
                     "image": "",
                     "pubDate": "Fri, 15 Feb 2013 19:00:00 EST",
                     "description": "The CMS issued proposed terms for insurers participating in the Medicare Advantage Part C insurance program -- including a growth percentage benchmark of negative 2.2% that will be used to help determine 2014 capitation rates.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130215/NEWS/302159959"
+                        "url": "http://www.modernhealthcare.com/article/20130215/NEWS/302159959"
                     }
                 },
                 {
                     "id": "302159954",
                     "title": "Too soon to gauge success of meaningful-use push: ex-ONC chief",
-                    "link": "http://www.crainsdetroit.com/article/20130215/NEWS/302159954/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130215/NEWS/302159954/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVU04TFVGU1J3bEJOTHN6ck9WYWRs",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130215/NEWS/302159954/AR/0/AR-302159954.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130215/NEWS/302159954/AR/0/AR-302159954.jpg",
                     "pubDate": "Fri, 15 Feb 2013 15:00:00 EST",
                     "description": "Has the federal government's investment of more than $10 billion in meaningful-use payments been worth it, or has the program been slow to promote electronic health record interoperability? That's the question Dr. David Blumenthal, former head of...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130215/NEWS/302159954"
+                        "url": "http://www.modernhealthcare.com/article/20130215/NEWS/302159954"
                     }
                 },
                 {
                     "id": "302149949",
                     "title": "Children's hospital becomes sixth ACO accredited by NCQA",
-                    "link": "http://www.crainsdetroit.com/article/20130214/NEWS/302149949/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130214/NEWS/302149949/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwVk04TFVGU1J3bEJOTHN6dk9WYVpv",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130214/NEWS/302149949/AR/0/AR-302149949.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130214/NEWS/302149949/AR/0/AR-302149949.jpg",
                     "pubDate": "Thu, 14 Feb 2013 21:00:00 EST",
                     "description": "The Children's Hospital of Philadelphia is the first children's hospital to earn the National Committee for Quality Assurance's accreditation as an accountable care organization.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130214/NEWS/302149949"
+                        "url": "http://www.modernhealthcare.com/article/20130214/NEWS/302149949"
                     }
                 },
                 {
                     "id": "302139968",
                     "title": "Global solution needed for illegitimate meds: IOM",
-                    "link": "http://www.crainsdetroit.com/article/20130213/NEWS/302139968/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130213/NEWS/302139968/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwU004TFVGU1J3bEJOTHN6ek9WYVJw",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130213/NEWS/302139968/AR/0/AR-302139968.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130213/NEWS/302139968/AR/0/AR-302139968.jpg",
                     "pubDate": "Wed, 13 Feb 2013 00:01:00 EST",
                     "description": "The trade in illegitimate medications is a global public health problem that requires a global solution, according to a nearly 300-page report from the Institute of Medicine.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130213/NEWS/302139968"
+                        "url": "http://www.modernhealthcare.com/article/20130213/NEWS/302139968"
                     }
                 },
                 {
                     "id": "302139957",
                     "title": "Obama address light on details for reforming Medicare",
-                    "link": "http://www.crainsdetroit.com/article/20130213/NEWS/302139957/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130213/NEWS/302139957/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwU004TFVGU1J3bEJOTHN6ek9WYWRt",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130213/NEWS/302139957/AR/0/Barack-Obama-.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130213/NEWS/302139957/AR/0/Barack-Obama-.jpg",
                     "pubDate": "Wed, 13 Feb 2013 00:15:00 EST",
                     "description": "In the first State of the Union address of his second term, President Barack Obama acknowledged the biggest driver of the nation's long-term debt is the rising cost of healthcare for an aging population, but proceeded to offer very few specifics on...",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130213/NEWS/302139957"
+                        "url": "http://www.modernhealthcare.com/article/20130213/NEWS/302139957"
                     }
                 },
                 {
                     "id": "302119959",
                     "title": "ER crowding may spur PTSD symptoms in heart patients: study ",
-                    "link": "http://www.crainsdetroit.com/article/20130211/NEWS/302119959/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130211/NEWS/302119959/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVgwUU04TFVGU1J3bEJOTHN6N09WYWRv",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130211/NEWS/302119959/AR/0/AR-302119959.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130211/NEWS/302119959/AR/0/AR-302119959.jpg",
                     "pubDate": "Mon, 11 Feb 2013 17:30:00 EST",
                     "description": "A crowded emergency department may be causing problems beyond the logistics of triaging and treating those patients. It may be causing new medical conditions for some patients, researchers found.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130211/NEWS/302119959"
+                        "url": "http://www.modernhealthcare.com/article/20130211/NEWS/302119959"
                     }
                 },
                 {
                     "id": "302089949",
                     "title": "White House warns of sequester's healthcare impact ",
-                    "link": "http://www.crainsdetroit.com/article/20130208/NEWS/302089949/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130208/NEWS/302089949/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3Wk04TFVGU1J3bEJOTHNqZk9WYVpv",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130208/NEWS/302089949/AR/0/AR-302089949.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130208/NEWS/302089949/AR/0/AR-302089949.jpg",
                     "pubDate": "Fri, 8 Feb 2013 19:15:00 EST",
                     "description": "The Obama administration is warning that budget cuts scheduled for March 1 would hit especially hard in mental healthcare, medical research and the drug approval process.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130208/NEWS/302089949"
+                        "url": "http://www.modernhealthcare.com/article/20130208/NEWS/302089949"
                     }
                 },
                 {
                     "id": "302089985",
                     "title": "Meningitis outbreak prompted electronic access to patient records ",
-                    "link": "http://www.crainsdetroit.com/article/20130208/INFO/302089985/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130208/INFO/302089985/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3Wk04WGZCRGh3bEJOTHNqZk9WYXBr",
                     "image": "",
                     "pubDate": "Fri, 8 Feb 2013 19:45:00 EST",
                     "description": "Tennessee Health Department workers visited multiple hospitals daily during the early weeks of a deadly fungal meningitis outbreak, picking up stacks of printed patient records to be entered into databases by hand.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130208/INFO/302089985"
+                        "url": "http://www.modernhealthcare.com/article/20130208/INFO/302089985"
                     }
                 },
                 {
                     "id": "302079955",
                     "title": "AHRQ, CMS unveil children's EHR format",
-                    "link": "http://www.crainsdetroit.com/article/20130207/NEWS/302079955/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130207/NEWS/302079955/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYWRr",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130207/NEWS/302079955/AR/0/AR-302079955.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130207/NEWS/302079955/AR/0/AR-302079955.jpg",
                     "pubDate": "Thu, 7 Feb 2013 13:45:00 EST",
                     "description": "The Agency for Healthcare Research and Quality and the CMS have unveiled a new electronic health-record format for children's healthcare, which the agencies say will help EHR vendors to create customized modules for pediatric patients.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130207/NEWS/302079955"
+                        "url": "http://www.modernhealthcare.com/article/20130207/NEWS/302079955"
                     }
                 },
                 {
                     "id": "302079959",
                     "title": "Lighter fare offers heftier profits for eateries: study",
-                    "link": "http://www.crainsdetroit.com/article/20130207/NEWS/302079959/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130207/NEWS/302079959/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3V004TFVGU1J3bEJOTHNqak9WYWRv",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130207/NEWS/302079959/AR/0/Hank-Cardello.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130207/NEWS/302079959/AR/0/Hank-Cardello.jpg",
                     "pubDate": "Thu, 7 Feb 2013 00:01:00 EST",
                     "description": "Lower-calorie foods are more profitable for restaurants than higher calorie foods, a study finds. The authors say the results give health officials ammo to push national chains to cut calories.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130207/NEWS/302079959"
+                        "url": "http://www.modernhealthcare.com/article/20130207/NEWS/302079959"
                     }
                 },
                 {
                     "id": "302069949",
                     "title": "Lawmakers offer dueling approaches on fixing doc pay ",
-                    "link": "http://www.crainsdetroit.com/article/20130206/NEWS/302069949/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130206/NEWS/302069949/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3WE04TFVGU1J3bEJOTHNqbk9WYVpv",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130206/NEWS/302069949/AR/0/AR-302069949.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130206/NEWS/302069949/AR/0/AR-302069949.jpg",
                     "pubDate": "Wed, 6 Feb 2013 16:45:00 EST",
                     "description": "Dueling legislative approaches to overhaul the Medicare physician payment formula emerged this week as the CBO revised the 10-year cost of fixing it down by more than 40%, to $138 billion from $245 billion.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130206/NEWS/302069949"
+                        "url": "http://www.modernhealthcare.com/article/20130206/NEWS/302069949"
                     }
                 },
                 {
                     "id": "302069965",
                     "title": "NQF, Joint Commission award top quality and safety performers",
-                    "link": "http://www.crainsdetroit.com/article/20130206/NEWS/302069965/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130206/NEWS/302069965/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3WE04TFVGU1J3bEJOTHNqbk9WYVJr",
                     "image": "",
                     "pubDate": "Wed, 6 Feb 2013 14:30:00 EST",
                     "description": "A Houston-based health system and an Oakland, Calif.-based integrated health plan are among the three 2012 recipients of the John M. Eisenberg Patient Safety and Quality Awards, given jointly by the National Quality Forum and the Joint Commission.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130206/NEWS/302069965"
+                        "url": "http://www.modernhealthcare.com/article/20130206/NEWS/302069965"
                     }
                 },
                 {
                     "id": "302059958",
                     "title": "Cleveland Clinic-VHA venture seeks to curb supply costs",
-                    "link": "http://www.crainsdetroit.com/article/20130205/NEWS/302059958/1138/nitf2&template=nitf&mime=application%2Fjson",
+                    "link": "http://www.modernhealthcare.com/article/20130205/NEWS/302059958/1138/nitf2&template=nitf&mime=application%2Fjson",
                     "allowView": "RlpoVmo1bW1GYlBacFgzaEs4YW5PUjN4MmgxSVRyNE9TRmhWR25vSEtLbUtGcmxZWG5UWlVrR28yNVNyNVh3VU04TFVGU1J3bEJOTHNqck9WYWRw",
-                    "image": "http://www.crainsdetroit.com/apps/pbcsi.dll/storyimage/CH/20130205/NEWS/302059958/AR/0/AR-302059958.jpg",
+                    "image": "http://www.modernhealthcare.com/apps/pbcsi.dll/storyimage/CH/20130205/NEWS/302059958/AR/0/AR-302059958.jpg",
                     "pubDate": "Tue, 5 Feb 2013 17:00:00 EST",
                     "description": "The Cleveland Clinic is the latest hospital system to form a joint venture that aims to address the rising costs of hip and knee implants, stents and other pricey physician preference items.",
                     "guid": {
                         "isPermaLink": "true",
-                        "url": "http://www.crainsdetroit.com/article/20130205/NEWS/302059958"
+                        "url": "http://www.modernhealthcare.com/article/20130205/NEWS/302059958"
                     }
                 }
             ]
