@@ -262,8 +262,7 @@ define([
 
       showLoading: function () {
         this.loading = true;
-        $('#loading-screen').show();
-
+        //$('#loading-screen').show();
         return this;
       },
 

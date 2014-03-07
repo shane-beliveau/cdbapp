@@ -36,12 +36,13 @@ define([
         this.fetch({
           update: true,
           silent: true,
-          timeout: 5000,
+          timeout: 10000,
           success: function ( collection, response, options ) {
             collection.trigger('ready');
           },
           error: function ( collection, xhr, options ) {
-            collection.trigger('ready');
+            //collection.trigger('ready');
+            console.log(collection);
           }
         });
       },

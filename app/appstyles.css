@@ -442,11 +442,9 @@ span.breadcrumb-small-label { display: none; }
 
 .loading-screen .loading-icon{
   height:80px;
-  /*padding-top:50px;*/
 }
 
 .loading-screen .loading-icon .wrap{ 
-  background:#b51218;
   border-radius:25px;
   width:50px;
   height:50px;
