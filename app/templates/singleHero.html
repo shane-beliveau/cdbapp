@@ -1,8 +1,9 @@
 {{#items}}
 <div class="hero scroll-item" data-id="{{id}}">
-  {{#image}}<div style="background-image:url({{image}});" class="hero-img" data-id="{{id}}"></div>{{/image}}
+  {{#image}}<div style="background-image:url({{image}});{{#picWidth}} width:{{picWidth}}px;{{/picWidth}}{{#picHeight}} height:{{picHeight}}px;{{/picHeight}}" class="hero-img {{picOrientation}}" data-id="{{id}}"></div>{{/image}}
   <div class="article-content">
     <h1 data-id="{{id}}">{{title}}</h1>
+    <span class="kicker" data-id="{{id}}">{{kicker}}</span>
     <p><span class="date">{{pubDate}}</span></p>
     <p data-id="{{id}}">{{description}}</p>
     <span data-id="{{id}}" class="button">Read More</span>

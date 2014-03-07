@@ -7,15 +7,15 @@ function(Backbone, _) {
 		defaults: {
 			adHTML: '',
 			OAS_url: 'http://oascnx09006.247realmedia.com/RealMedia/ads/',
-			OAS_sitepage: 'www.modernhealthcare.com/app'.toLowerCase(),
-			OAS_listpos: 'x90,x91,x92,x93,x94,x95,x96',
+			OAS_sitepage: 'www.detroitbusiness.com/app'.toLowerCase(),
+			OAS_listpos: 'x85,x86,x87,x88,x89,x90,x91,x94,x95,x96',
 			OAS_query: '',
 			OAS_target: '_blank',
 			OAS_rns: Math.floor((Math.random() * 999999999) + 100000000),
 			pos: '',
 			is_open: false,
 			isOffline: false,
-			ad_key: 'MH.Advertisements.',
+			ad_key: 'CD.Advertisements.',
 			showStored: true,
 			stored: '',
 			countImpression: false

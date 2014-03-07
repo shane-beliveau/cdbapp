@@ -8,7 +8,7 @@ define([
     return Backbone.Collection.extend({
 
       storageKey: function (key) {
-        return this.storageKey = 'MH.ArticlesCollection.' + key;
+        return this.storageKey = 'CD.ArticlesCollection.' + key;
       },
 
       isFetched: false,
@@ -19,18 +19,23 @@ define([
         switch (feed) {
           case 'BreakingNews' :
             this.storageKey('BreakingNews');
-            return 'http://www.modernhealthcare.com/app/js/feeds/main.js?_=' + timestamp.getTime();
-            // return 'services/BreakingNews.json'
+            return 'http://'+ document.location.host +'/app/js/feeds/main.js?_=' + timestamp.getTime();
+            break;
+          case 'TOC' :
+            this.storageKey('TOC');
+            return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=toc?_=' + timestamp.getTime();
+            break;
+          case 'Blogs' :
+            this.storageKey('Blogs');
+            return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=blogs?_=' + timestamp.getTime();
             break;
           case 'TopStories' :
             this.storageKey('TopStories');
-            return 'http://www.modernhealthcare.com/app/js/feeds/main.js?topstories=1&_=' + timestamp.getTime();
-            // return 'services/TopStories.json';
+            return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=topstories?_=' + timestamp.getTime();
             break;
           case 'MostPopular' :
             this.storageKey('MostPopular');
-            return 'http://www.modernhealthcare.com/app/js/feeds/main.js?mostread=1&_=' + timestamp.getTime();
-            // return 'services/MostPopular.json';
+            return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=mostread?_=' + timestamp.getTime();
             break;
         };
       },
@@ -104,14 +109,20 @@ define([
           items.push({
             id: model.get('id'),
             title: model.get('title'),
+            kicker: model.get('kicker'),
+            page: model.get('page'),
             description: model.get('description'),
             pubDate: moment(model.get('pubDate')).format('dddd, MMMM Do YYYY'),
             image: model.get('image'),
             picOrientation: model.get('picOrientation'),
+            picWidth: model.get('picWidth'),
+            picHeight: model.get('picHeight'),
             link: model.get('link'),
             article: (model.get('article')) ? model.get('article') : ''
           });
         });
+        
+        items = _.sortBy(items, function(i){ return Math.floor(i.id) * -1; });
 
         return items;
       }

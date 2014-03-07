@@ -6,12 +6,10 @@ define([
   function (Backbone, _, MyTopicsModel, NewsFilmstripCollection) {
 
     return Backbone.Collection.extend({
-      storageKey: 'MH.MyTopics',
-      mainStorageKey: 'MH.ArticlesCollection.',
+      storageKey: 'CD.MyTopics',
+      mainStorageKey: 'CD.ArticlesCollection.',
 
-      url: 'http://www.modernhealthcare.com/app/js/feeds/main.js?mytopics=1',
-      // url: 'http://www.modernhealthcare.com/section/rss36&mytopics=1&mime=application%2Fjson',
-      // url: 'services/MyTopics.json',
+      url: 'http://'+ document.location.host +'/app/js/feeds/main.js?section=mytopics?_=' + new Date().getTime(),
       model: MyTopicsModel,
 
       parse: function (response) {
@@ -53,7 +51,7 @@ define([
         if ( model.get('subscribed') ) {
           collection = new NewsFilmstripCollection(model.get('items'), model.get('id'));
           collection.storageKey(model.get('id'));
-          collection.url = model.get('feedlink');
+          collection.url = model.get('feedlink') + '?_=' + new Date().getTime();
           collection.query();
         } else {
           localStorage.removeItem(this.mainStorageKey + model.get('id'));

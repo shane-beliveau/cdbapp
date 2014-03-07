@@ -1,17 +1,30 @@
 <div class="towerad ad" data-position=""></div>
 <div class="article-content">
-  <h1>{{title}}</h1>
+  {{#article.blogLanding}}
+  <div class="blogHeader" style="background-image: url('/Assets/cd/blogs/cropped/{{article.blogLanding}}.png');">
+    <span><strong>{{article.blogTitle}}</strong></span>
+  </div>
+  {{/article.blogLanding}}
+  <h1>{{article.title}}</h1>
   {{#article.shareUrl}}
   <div class="social-media-sharing">
-    {{#linkedin}}<a href="{{linkedin}}" class="linkedin"><i></i>Linkedin</a>{{/linkedin}}
-    {{#twitter}}<a href="{{twitter}}" class="twitter"><i></i>Twitter</a>{{/twitter}}
-    {{#facebook}}<a href="{{facebook}}" class="facebook"><i></i>Facebook</a>{{/facebook}}
-    {{#google}}<a href="{{google}}" class="google"><i></i>Google+</a>{{/google}}
-    {{#email}}<a href="{{email}}" class="email"><i></i>Email</a>{{/email}}
+    <ul class="social-share">
+      <li class="linkedin">{{#linkedin}}<a href="{{linkedin}}" class="linkedin">Linkedin</a>{{/linkedin}}</li>
+      <li class="twitter">{{#twitter}}<a href="{{twitter}}" class="twitter">Twitter</a>{{/twitter}}</li>
+      <li class="facebook">{{#facebook}}<a href="{{facebook}}" class="facebook">Facebook</a>{{/facebook}}</li>
+      <li class="email">{{#email}}<a href="{{email}}" class="email">Email</a>{{/email}}</li>
+    </ul>
   </div>
   {{/article.shareUrl}}
   <span class="author">{{article.author}}</span>
-  {{#image}}<img src="{{image}}" class="article-image" />{{/image}}
+  {{#videoid}}<div class="widescreenVideo">
+    <a href="/video_player?bcpid={{playerID}}&bckey={{playerKey}}&bctid={{videoid}}&linkBaseURL={{encodedLink}}">
+      <img src="{{videoStill}}" style="width: 100%;" alt="" />
+      <div class="playButton"><img src="/Assets/cd/Play.png" alt="Play"></div>
+    </a>
+  </div>{{/videoid}}
+  {{#mp3audio}}<audio controls style="width:100%"><source src="{{mp3audio}}" type="audio/mpeg" style="width:100%"><a href="{{mp3audio}}" target="_blank">Click here to download</a></audio>{{/mp3audio}}
+  {{#article.image}}<img src="{{article.image}}" class="article-image" />{{/article.image}}
   {{#article.paragraphs}}
     <p>{{{.}}}</p>
   {{/article.paragraphs}}

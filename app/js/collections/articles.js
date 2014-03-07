@@ -7,7 +7,7 @@ define([
     return Backbone.Collection.extend({
 
       storageKey: function (key) {
-        return this.storageKey = 'MH.ArticlesCollection.' + key;
+        return this.storageKey = 'CD.ArticlesCollection.' + key;
       },
 
       model: SingleStoryModel,
@@ -52,11 +52,16 @@ define([
         this.each(function(model){
           items.push({
             id: model.get('id'),
+            videoid: model.get('videoid'),
+            playerID: model.get('playerID'),
+            playerKey: model.get('playerKey'),
+            videoStill: model.get('videoStill'),
             title: model.get('title'),
             description: model.get('description'),
             pubDate: moment(model.get('pubDate')).format('dddd, MMMM Do YYYY'),
             image: model.get('image'),
             link: model.get('link'),
+            encodedLink: model.get('encodedLink'),
             article: (model.get('article')) ? model.get('article') : ''
           });
         });

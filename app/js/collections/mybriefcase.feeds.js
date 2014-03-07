@@ -6,7 +6,7 @@ define([
   function (Backbone, _, Moment, SingleStoryModel, Utils) {
 
     return Backbone.Collection.extend({
-      storageKey: 'MH.ArticlesCollection.MyBriefcase',
+      storageKey: 'CD.ArticlesCollection.MyBriefcase',
       model: SingleStoryModel,
 
       initialize: function () {

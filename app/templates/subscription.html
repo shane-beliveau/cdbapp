@@ -1,25 +1,57 @@
-<div class="new-member">
-  <h3>SELECT SUBSCRIPTION</h3>
-    <p>Please select one of the subscriptions below.</p>
-    <div class="offer1">
-      <img src="images/offer1.png" />
-      <p>Premium Web: Digital Magazine + Research + Data<br/>
-      <a href="#" class="button white">$399/Year</a></p> 
+<div class="scroller">
+  <a class="closesubscription">Close</a>
+  <script>
+      $('a.closesubscription').click(function() {
+          $('#subscription').slideUp();
+      });
+  </script>
+  <div class="new-member">
+    <h3>SELECT SUBSCRIPTION</h3>
+      <p>Please select one of the subscriptions below.</p>
+      <div class="offer1">
+        <a href="https://sec.crain.com/CD/QuickOrder.aspx?PromotionCode=W3CDWWBN" target="_blank"><img src="images/subscribe01.png" /></a>
+        <p>Subscribe to the Online Edition<br/>
+        <a href="https://sec.crain.com/CD/QuickOrder.aspx?PromotionCode=W3CDWWBN" target="_blank" class="button white">$36/year</a></p> 
+      </div>
+      <div class="offer2">
+        <a href="https://sec.crain.com/CD/QuickOrder.aspx?PromotionCode=W3CDWBN" target="_blank"><img src="images/subscribe02.png"/></a>
+        <p>Subscribe to the Print Edition<br/>
+        <a href="https://sec.crain.com/CD/QuickOrder.aspx?PromotionCode=W3CDWBN" target="_blank" class="button white">$59/Year</a>
+        </p>
+      </div>
+  </div>
+  <div class="already-a-member">
+    
+    <h3>ALREADY A CRAINSDETROIT.COM MEMBER?</h3>
+    <p>Please login below.</p>
+
+    <div id="CSLogin" class="login form">
+
+        <form name="CSLogin">
+            <div class="field">
+                <label for="CSUsername">
+                    Username        
+                </label>
+                <input id="CSUsername" name="CSUsername" type="email" placeholder="you@youremail.com" autocomplete="off">
+            </div>
+            <div class="field">
+                <label for="CSPassword">
+                    Password
+                </label>
+                <input id="CSPassword" name="CSPassword" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+            </div>
+            <div class="field submit">
+                <input class="button white" type="submit" value="Login">
+            </div>
+              <div class="register-links">
+                  <a href="https://home.crainsdetroit.com/clickshare/addAccountMetered.do?CSProduct=crainsdetroit-metered" target="_blank">Register now!</a> | <a href="https://home.crainsdetroit.com/clickshare/resetPassword.do" target="_blank">Forgot password?</a>
+              </div>
+        </form>    
+
+        <div class="errorMsg" style="color: red;">{{errorMsg}}</div>
+
     </div>
-    <div class="offer2">
-      <img src="images/offer2.png"/>
-      <p>Print + Digital Magazine + Web <br/>
-      <a href="#" class="button white">$164/Year</a>
-      </p>
-    </div>
+
+  </div>
+  <div class="clearfix"></div>
 </div>
-<div class="already-a-member">
-  <h3>ALREADY A SUBSCRIBER?</h3>
-    <p>Existing Modern Healthcare subscribers can activate their subscriptions by using one of the methods below.</p>
-    <p>
-      <a href="#" class="button white">Print Subscription</a>
-      <a href="#" class="button white">Digital Subscription</a>
-      <a href="#" class="button white">Premium Web Subscription</a>
-    </p>
-</div>
-<div class="clearfix"></div>
