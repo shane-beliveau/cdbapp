@@ -53,6 +53,7 @@ define([
         this.BlogsCollection.url = this.BlogsCollection.getUrl('Blogs');
         this.BlogsCollection.query();
 
+        /*
         this.MostPopularCollection = new TheNewsCollection();
         this.MostPopularCollection.on('reset', function() {
           this.render();
@@ -60,6 +61,7 @@ define([
         }, this);
         this.MostPopularCollection.url = this.MostPopularCollection.getUrl('MostPopular');
         this.MostPopularCollection.query();
+        */
 
         this.TopStoriesCollection = new TheNewsCollection();
         this.TopStoriesCollection.on('reset', function() {
@@ -117,7 +119,7 @@ define([
       },
 
       render: function() {
-        if (!(this.MostPopularCollection.isFetched &&
+        if (!(/* this.MostPopularCollection.isFetched && */
           this.BreakingNewsCollection.isFetched &&
           this.BlogsCollection.isFetched &&
           this.TOCCollection.isFetched &&
@@ -145,9 +147,9 @@ define([
             TOCFeeds = Mustache.to_html(SingleFeedTemplate, {
               items: this.TOCCollection.contentToArray()
             }),
-            TopStoriesFeeds = Mustache.to_html(SingleFeedTemplate, {
+            /*TopStoriesFeeds = Mustache.to_html(SingleFeedTemplate, {
               items: this.MostPopularCollection.contentToArray()
-            }),
+            }),*/
             dots = [],
             i = this.TopStoriesCollection.length - 1,
             parsedDots, filmStrip, parsedTemplate, parsedAdPlaceholder;
@@ -175,11 +177,11 @@ define([
               filmStipID: 'Blogs',
               title: 'Blogs',
               content: BlogsFeeds || ''
-            }, {
+            }/*, {
               filmStipID: 'MostPopular',
               title: 'Most Popular',
               content: TopStoriesFeeds || ''
-            }]
+            }*/]
           });
           parsedTemplate = Mustache.to_html(MainTemplate, {
             heroArticle: heros,
@@ -246,7 +248,7 @@ define([
         'click #BreakingNews div.story': 'loadBreakingNews',
         'click #Blogs div.story': 'loadBlogs',
         'click #TOC div.story': 'loadTOC',
-        'click #MostPopular div.story': 'loadMostPopularStories',
+        /*'click #MostPopular div.story': 'loadMostPopularStories',*/
       },
 
       loadBreakingNews: function(e) {
@@ -312,7 +314,7 @@ define([
           });
         }
       },
-
+      /*
       loadMostPopularStories: function(e) {
         var article = $(e.currentTarget);
         if (article.attr('data-id')) {
@@ -328,7 +330,7 @@ define([
           });
         }
       },
-
+      */
       saveAllArticlesToLocalStorage: function(collection, sk) 
       {
         var articles = collection.models,

@@ -56,6 +56,7 @@ define([
             playerID: model.get('playerID'),
             playerKey: model.get('playerKey'),
             videoStill: model.get('videoStill'),
+            soundcloudEmbed: model.get('soundcloudEmbed'),
             title: model.get('title'),
             description: model.get('description'),
             pubDate: moment(model.get('pubDate')).format('dddd, MMMM Do YYYY'),

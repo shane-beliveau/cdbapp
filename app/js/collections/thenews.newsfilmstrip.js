@@ -33,10 +33,12 @@ define([
             this.storageKey('TopStories');
             return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=topstories?_=' + timestamp.getTime();
             break;
+          /*
           case 'MostPopular' :
             this.storageKey('MostPopular');
             return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=mostread?_=' + timestamp.getTime();
             break;
+          */
         };
       },
 
