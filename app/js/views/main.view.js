@@ -155,7 +155,9 @@ define([
           // Get the form values and pass to method
           _this.doUserLogin({
             CSUsername: $this.find('[name="CSUsername"]').val(),
-            CSPassword: $this.find('[name="CSPassword"]').val()
+            CSPassword: $this.find('[name="CSPassword"]').val(),
+            CSDropAuthCookieSpecified: 1,
+            CSDropAuthCookie: +$('#CSDropAuthCookie').is(':checked')
           });
 
           // Show authenticating message while loading

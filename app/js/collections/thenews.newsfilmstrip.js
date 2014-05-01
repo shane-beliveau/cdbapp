@@ -33,12 +33,10 @@ define([
             this.storageKey('TopStories');
             return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=topstories?_=' + timestamp.getTime();
             break;
-          /*
           case 'MostPopular' :
             this.storageKey('MostPopular');
             return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=mostread?_=' + timestamp.getTime();
             break;
-          */
         };
       },
 
@@ -50,7 +48,7 @@ define([
       query: function (opts) {
         var stored = localStorage.getItem(this.storageKey);
 
-        if (stored) {
+        if (stored && !window.navigator.onLine) {
           this.reset(JSON.parse(stored), { silent: true });
         }
 
