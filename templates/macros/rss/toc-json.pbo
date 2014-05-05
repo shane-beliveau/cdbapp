@@ -4,15 +4,15 @@
   "rss": {
     "channel": {
       "title": "Crain's Detroit Business This Week's Issue JSON Feed",
-     "link": "http://stage.crainsdetroit.com",
+     "link": "http://www.crainsdetroit.com",
       "description": "Latest News from Crain's Detroit Business",
       "language": "en-us",
       "image": {
         "title": "Crain's Detroit Business",
         "width": "144",
         "height": "21",
-        "link": "http://stage.crainsdetroit.com/",
-        "url": "http://stage.crainsdetroit.com/Assets/cd/rss.gif"
+        "link": "http://www.crainsdetroit.com/",
+        "url": "http://www.crainsdetroit.com/Assets/cd/rss.gif"
       },
       "items":[
 <pbs:newslist startDate="<%startDate%>" endDate="<%endDate%>" start=1 count=100 leadin=500 priosort=1 useobjects=1 categories="<%categories%>" taxonomywords="19005015,19005875,19005540,19005539,19005541,19005111,19005879,19005031,19005878,19005094,19005120,19005035,19005033,19005533,19005366,19005371,19005019,19005030,19005016,19005037,19005027,19005028,19005029,19005024,19005023,19005022,19005287,19005119,19005039,19005014,19005017,19005025,19005036,19005034,19005013,19005552" kwor=1 Multimedia=1 objectclass=36 ExtraSortField=1 ExtraSortFieldOrder="asc" fields="Page,VideoID,VideoDescription,VideoIndividual">

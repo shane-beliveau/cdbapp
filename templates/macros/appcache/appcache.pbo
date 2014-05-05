@@ -1,7 +1,6 @@
-<%?categories="SUB,NEWS%,BLOG%,AWARDS%,FEATURE%,CRAINSEVENTS,VIDEO,AUDIO,SECTIONFRONT,LIST"%>
 CACHE MANIFEST
 
-# Version <%currentdate$c(1,12)%>
+# Version <%currentdate%>
 
 CACHE:
 favicon.ico
@@ -20,6 +19,9 @@ images/landscape.jpg
 images/loading.gif
 images/logo-white.png
 images/logo.png
+images/logo_mobile.png
+images/subscribe01.png
+images/subscribe02.png
 images/podcast-icon.gif
 images/portrait.jpg
 images/social-share-sprite.png
@@ -90,9 +92,6 @@ js/router.js
 
 #Feeds
 js/feeds/main.js?section=mytopics
-
-#Stories
-#<!-- pbs:newslist categories="<%categories%>" days=7 count=100 useobjects=1 objectclass=3 --> 
 
 #BlogImages
 <pbs:cce module=330 class=3301 Types="33011,33012" fields="landing,blogdescription" count=99 objectclass=1 DateRange=20120821 fields="landing">

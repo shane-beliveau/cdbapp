@@ -7,10 +7,10 @@
             "videoid" : "<%field_videoid%>",
             "videoindividual" : "[%<%field_Videoindividual%>%|%single%]",%]
             "title" : [%<%Title$t$S("AppDescriptionJsonEncode.php5","PHPScript")%>%|%null%],
-            "link": "<%cci_shortBypassLink$r("/article/=/app/js/feeds/article.js?AID=/")r("\?AllowView=&AllowView")%>&sectioncat=nitf2&template=nitf2",[%{cd_isblog=1|Heading2}
-            "kicker" : "[%{cd_isblog=1}<%BlogCategoryToAuthor$K%>%|%<%Heading2%>%]",%][%
+            "link": "<%cci_shortBypassLink$r("/article/=/app/js/feeds/article.js?AID=/")r("\?AllowView=&AllowView")%>&sectioncat=nitf2&template=nitf2",[%{cd_isblog=1|byline}
+            "kicker" : [%{cd_isblog=1}<%BlogCategoryToAuthor$K$S("AppDescriptionJsonEncode.php5","PHPScript")%>%|%<%byline$S("AppDescriptionJsonEncode.php5","PHPScript")%>%],%][%
             "page" : "<%field_Page$f("0")%>",%][%{imagelink|cd_isblog=1|category=audio}
-            "image" : "[%{imagelink}http://stage.crainsdetroit.com<%Imagelink$r("http://CDweb.cr.atl.publicus.com=")r("'=%27")%>[%{ImageOrientation=L}&MaxW=256&ImageVersion=thenews%|%&MaxW=128%]%|%[%{cd_isblog=1}http://stage.crainsdetroit.com/Assets/cd/blogs/square/<%category%>.png%|%[%{category=audio}http://stage.crainsdetroit.com/app/images/podcast-icon.gif%]%]%]",[%
+            "image" : "[%{imagelink}http://www.crainsdetroit.com<%Imagelink$r("http://CDweb.cr.atl.publicus.com=")r("'=%27")%>[%{ImageOrientation=L}&MaxW=256&ImageVersion=thenews%|%&MaxW=128%]%|%[%{cd_isblog=1}http://www.crainsdetroit.com/Assets/cd/blogs/square/<%category%>.png%|%[%{category=audio}http://www.crainsdetroit.com/app/images/podcast-icon.gif%]%]%]",[%
             "caption" : <%CaptionBody$t$S("AppDescriptionJsonEncode.php5","PHPScript")%>,%]
             "picOrientation" : "[%<%ImageOrientation$r("L=horizontal")$r("P=vertical")%>%|%[%{cd_isblog=1|category=audio}blog%]%]",%][%
             "mp3audio" : "<%MultiMediaItem%>",%]
