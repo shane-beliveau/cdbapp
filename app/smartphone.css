@@ -24,10 +24,11 @@ body .loading-screen .logo span{
 	}
  
 body .loading-screen .logo {
- background-size:300px auto !important;
- font-size: 14px;
- margin: 25px 0;
- padding: 225px 0 0;
+    background: #f4f4f4 url(images/logo_mobile.png) no-repeat center top;
+    background-size:300px auto !important;
+    font-size: 14px;
+    margin: 25px 0;
+    padding: 70px 0 0 0;
 }
 body .loading-screen .loading-icon {
  margin: 40px 0 0 0;
@@ -35,8 +36,10 @@ body .loading-screen .loading-icon {
 
 
 body.landscape .loading-screen .logo {
- margin: 20px 0;
- display:none;
+    background-size: 300px auto; 
+    padding: 70px 0 0 0; 
+    background: #f4f4f4 url(images/logo_mobile.png) no-repeat center top;
+    margin: 20px 0;
 }
 body.landscape .loading-screen .loading-icon {
  margin: 70px 0 20px;

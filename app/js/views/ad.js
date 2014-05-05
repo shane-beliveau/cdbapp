@@ -18,7 +18,8 @@ define([
       this.model = new AdModel({
         pos: opts.position,
         is_open: opts.is_open,
-        OAS_rns: rns
+        OAS_rns: rns,
+        serveDXAd: true
       });
     },
 

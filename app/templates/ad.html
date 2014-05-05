@@ -2,9 +2,14 @@
   <a class="close"><span>Close</span></a>
 {{/close}}
 {{#ad}}
-  <a href="{{OAS_url}}click_nx.ads/{{OAS_sitepage}}/1{{OAS_rns}}@{{pos}}?{{OAS_query}}" target="{{OAS_target}}">
     {{#hasLabel}}<span class="ad-overlay">Advertisement</span>{{/hasLabel}}
-    <img class="adImage onlineAdImage" src="{{OAS_url}}adstream_nx.ads/{{OAS_sitepage}}/1{{OAS_rns}}@{{pos}}?{{OAS_query}}" />
-  </a>
+    {{#Text}}
+        {{{Text}}}
+    {{/Text}}
+    {{^Text}}
+    <a href="{{OAS_url}}click_nx.ads/{{OAS_sitepage}}/1{{OAS_rns}}@{{pos}}?{{OAS_query}}" target="{{OAS_target}}">
+        <img class="adImage onlineAdImage" src="{{OAS_url}}adstream_nx.ads/{{OAS_sitepage}}/1{{OAS_rns}}@{{pos}}?{{OAS_query}}" />
+    </a>
+    {{/Text}}
     <img class="adImage offlineAdImage" src="{{stored}}" />
 {{/ad}}

@@ -1,9 +1,15 @@
 <!doctype html>
 <html lang="en" manifest=".appcache">
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# detroitbusiness: http://ogp.me/ns/fb/detroitbusiness#">
 <meta charset="iso-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Crain's Detroit Business Daily News</title>
+<meta property="fb:app_id" content="112806662066559" /> 
+<meta property="og:type" content="detroitbusiness:app" /> 
+<meta property="og:url" content="http://www.crainsdetroit.com/app/" /> 
+<meta property="og:title" content="Crain's Detroit Business Daily News Reader" /> 
+<meta property="og:image" content="http://www.crainsdetroit.com/app/images/logo.png" />
+<meta property="og:description" content="Daily news and features from crainsdetroit.com and from the weekly newspaper Crain's Detroit Business. RSS feeds for breaking news and the Detroit automotive, technology, health care, manufacturing, sports, real estate, nonprofit and government sectors" />
 <link href="appstyles.css" rel="stylesheet" />
 <link href="responsive.css" rel="stylesheet" />
 <link href="smartphone.css" rel="stylesheet" />
@@ -25,7 +31,7 @@ var s_account="craindetroit";
 var s_firstPartyTracking = false;
 var s_loggedInCookie = "CSDemos";
 </script>
-<script src="http://www.crainsdetroit.com/global/js/omniture/s_crainsc.js?ver=V19"></script>
+<script src="/global/js/omniture/s_crainsc.js?ver=V19"></script>
 <script>
 var _cci_sc_eventsArr = [];
 s_crainsc.pageName = "app:frontpage";
@@ -40,14 +46,10 @@ var s_code=s_crainsc.t();
 if(s_code)document.write(s_code);
 </script>
 <!-- End SiteCatalyst code version: H.25.4. -->
-<link rel="stylesheet" href="add2home.css">
-<script src="vendor/add2home/add2home.js"></script>
 </head>
 <body>
 <div id="app-wrapper">
-  <!-- Loading Screen -->
   <div id="loading-screen" class="loading-screen app-page-fixed">
-    <a href="#" class="refresh"></a>
     <div id="loading-screen-content">
     <div class="loading-icon">
       <div class="wrap">
@@ -72,7 +74,7 @@ if(s_code)document.write(s_code);
         <a href="#mytopics">MY TOPICS</a>
         <a href="##editTopics">EDIT TOPICS</a>
         <a href="#mybriefcase">MY BRIEFCASE</a>
-        <a href="#mhwire">CDB TWEETS</a>
+        <a href="http://www.crainsdetroit.com" target="_blank">FULL SITE</a>
         <a href="#" id="subscribe-toggle-nav">SUBSCRIBE / LOGIN</a>
         <!-- For now, disable these
         <a href="#settings">SETTINGS</a>
@@ -90,7 +92,7 @@ if(s_code)document.write(s_code);
             <li><a class="section-link" href="#thenews">THE NEWS</a></li>
             <li><a class="section-link" href="#mytopics">MY TOPICS</a></li>
             <li><a class="section-link" href="#mybriefcase">MY BRIEFCASE</a></li>
-            <li><a class="section-link" href="#mhwire">CDB TWEETS</a></li>
+            <li><a href="http://www.crainsdetroit.com" target="_blank">FULL SITE</a></li>
             <li class="utility">
               <a href="#" class="refresh side-option"></a>
               <a href="#settings" class="settings section-link"></a>
@@ -100,9 +102,9 @@ if(s_code)document.write(s_code);
         <div class="breadcrumbs">
           <div id="breadcrumbs-container" class="links"></div>
           <div class="subscribe">
-            <a href="#mytopics" class="button hide" id="backToMyTopics"><em></em>Back to My Topics</a>
-            <a href="#editTopics" class="button hide section-link" id="editTopics"><em></em>Edit Topics</a>
-            <a href="#" class="button" id="subscribe-toggle">Subscribe / Login</a>
+            <a href="#mytopics" class="button hide" id="backToMyTopics"><i></i>Back to My Topics</a>
+            <a href="#editTopics" class="button hide section-link" id="editTopics"><i></i>Edit Topics</a>
+            <a href="#" class="button" id="subscribe-toggle"><i></i>Subscribe / Login</a>
           </div>
         </div>
       </div>
@@ -142,50 +144,10 @@ loadingScreenContent.style.marginTop = (Math.floor( htmlHeight - loadingScreenCo
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
+<div id="iPadMessage"></div>
 <script data-main="js/config" src="vendor/require/require-jquery.js"></script>
-<script>
-$('.menu-icon').click(function() {
-  if ($("#smartphone-nav").is(":hidden")) {
-    $("#smartphone-nav").slideDown();
-  } else {
-    $("#smartphone-nav").hide();
-  }
-});
-
-$('#smartphone-nav a').click(function() {
-  $('#smartphone-nav').slideUp();
-});
-
-$('#subscribe-toggle-nav').click(function() {
-  if ($("#subscription").is(":hidden")) {
-    $("#subscription").slideDown(function(){
-
-      if( !$(this).hasClass('has-scroller') )
-      {
-        $('#subscription > div.scroller').css({
-          height: $('#subscription:visible').outerHeight(true) + 'px'
-        });
-
-        $('#subscription').css({
-          height: ($('html')[0].clientHeight - 100) + 'px'
-        });
-
-        var subScroll = new iScroll($('#subscription')[0],{
-          momentum: true,
-          hScrollbar: false,
-          vScrollbar: false,
-          hScroll: false
-        });
-
-        $(this).addClass('has-scroller');
-      }
-      
-    
-    });
-  } else {
-    $("#subscription").hide();
-  }
-});
-</script>
+<script src="vendor/modal/jquery.easyModal.js"></script>
+<script src="vendor/modal/add2home.js"></script>
+<script src="bottomscripts.js"></script>
 </body>
 </html>

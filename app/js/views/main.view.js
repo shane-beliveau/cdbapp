@@ -155,7 +155,9 @@ define([
           // Get the form values and pass to method
           _this.doUserLogin({
             CSUsername: $this.find('[name="CSUsername"]').val(),
-            CSPassword: $this.find('[name="CSPassword"]').val()
+            CSPassword: $this.find('[name="CSPassword"]').val(),
+            CSDropAuthCookieSpecified: 1,
+            CSDropAuthCookie: +$('#CSDropAuthCookie').is(':checked')
           });
 
           // Show authenticating message while loading
@@ -251,7 +253,8 @@ define([
 
           var adModel = new AdModel(_.extend({
               pos: position,
-              OAS_rns: rns
+              OAS_rns: rns,
+              serveDXAd: true
             }, opts));
 
           var adTemplateParsed = Mustache.to_html(AdTemplate, { ad: adModel.attributes });
@@ -262,8 +265,7 @@ define([
 
       showLoading: function () {
         this.loading = true;
-        $('#loading-screen').show();
-
+        //$('#loading-screen').show();
         return this;
       },
 

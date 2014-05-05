@@ -342,7 +342,8 @@ define([
           
           this.fullPageAdView = new FullPageAdView({
             position: $('body').hasClass('landscape') ? this.adZone.fullPage : this.adZone.fullPagePortrait,
-            is_open: true
+            is_open: true,
+            serveDXAd: true
           });
 
           if(this.renderAds) this.fullPageAdView.render();

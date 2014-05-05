@@ -19,23 +19,23 @@ define([
         switch (feed) {
           case 'BreakingNews' :
             this.storageKey('BreakingNews');
-            return 'http://stage.crainsdetroit.com/app/js/feeds/main.js';
+            return 'http://'+ document.location.host +'/app/js/feeds/main.js?_=' + timestamp.getTime();
             break;
           case 'TOC' :
             this.storageKey('TOC');
-            return 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=toc';
+            return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=toc?_=' + timestamp.getTime();
             break;
           case 'Blogs' :
             this.storageKey('Blogs');
-            return 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=blogs';
+            return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=blogs?_=' + timestamp.getTime();
             break;
           case 'TopStories' :
             this.storageKey('TopStories');
-            return 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=topstories';
+            return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=topstories?_=' + timestamp.getTime();
             break;
           case 'MostPopular' :
             this.storageKey('MostPopular');
-            return 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=mostread';
+            return 'http://'+ document.location.host +'/app/js/feeds/main.js?section=mostread?_=' + timestamp.getTime();
             break;
         };
       },
@@ -48,7 +48,7 @@ define([
       query: function (opts) {
         var stored = localStorage.getItem(this.storageKey);
 
-        if (stored) {
+        if (stored && !window.navigator.onLine) {
           this.reset(JSON.parse(stored), { silent: true });
         }
 
@@ -121,6 +121,8 @@ define([
             article: (model.get('article')) ? model.get('article') : ''
           });
         });
+        
+        items = _.sortBy(items, function(i){ return Math.floor(i.id) * -1; });
 
         return items;
       }

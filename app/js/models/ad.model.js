@@ -17,8 +17,12 @@ function(Backbone, _) {
 			isOffline: false,
 			ad_key: 'CD.Advertisements.',
 			showStored: true,
+            serveDXAd: false,
 			stored: '',
-			countImpression: false
+			countImpression: false,
+            FileUrl: '',
+            ImpUrl: '',
+            Text: ''
 		},
 
 		url: function() {
@@ -27,19 +31,84 @@ function(Backbone, _) {
 
 		initialize: function() {
 
-			if( this.get('pos') !== '' )
-			{
-				if( $('body').hasClass('isOffline') )
-				{
-					this.set('isOffline', true);
-					this.set('countImpression', true);
-				}
-				
-				this.showStored();
-			}
-			
+            if( this.get('pos') !== '' )
+            {
+                if( $('body').hasClass('isOffline') )
+                {
+                    this.set('isOffline', true);
+                    this.set('countImpression', true);
+                }
+                else
+                {
+                    if( this.get('serveDXAd') === true ) {
+                        this.serveDXAd();
+                    }
+                }
+                
+                this.showStored();
 
-		},
+            }
+            
+
+        },
+
+        serveDXAd: function() {
+
+            // Get the item from localStorage
+            var _this = this,
+                pos = this.get('pos'),
+                ad_key = this.get('ad_key'),
+                OAS_url = this.get('OAS_url'),
+                OAS_sitepage = this.get('OAS_sitepage'),
+                OAS_query = this.get('OAS_query'),
+                rns = Math.floor((Math.random() * 999999999) + 100000000),
+                ad = localStorage.getItem(ad_key + pos) || 0,
+                imp_url;
+
+            if (ad) {
+                // Parse JSON
+                ad = $.parseJSON(ad);
+
+                // Get number of impressions + impression URL
+                imp_url = ad.ImpUrl;
+
+                // Set the values of the object
+                _this.set('FileUrl', ad.FileUrl);
+                _this.set('ImpUrl', imp_url);
+                _this.set('Text', ad.Text);
+
+                // Send impressions to OAS
+                $.post(imp_url);
+            }
+            else
+            {
+                // Make another ad call if the ad doesn't exist
+                $.ajax({
+                    url: OAS_url + 'adstream_dx.ads/json/' + OAS_sitepage + '/' + rns + '/@' + pos + '?' + OAS_query,
+                    type: 'get',
+                    dataType: 'json',
+                    success: function(data) {
+                        
+                        var Ad = data.Ad;
+
+                        if(Ad.length)
+                        {
+                            Ad = Ad[0];
+                            imp_url = Ad.ImpUrl;
+
+                            // Set the values of the object
+                            _this.set('FileUrl', Ad.FileUrl);
+                            _this.set('ImpUrl', imp_url);
+                            _this.set('Text', Ad.Text);
+
+                            // Send impressions to OAS
+                            $.post(imp_url);
+                        }
+                    }
+                });
+            }
+
+        },
 
 		fetchAds: function() {
 

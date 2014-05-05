@@ -9,9 +9,7 @@ define([
       storageKey: 'CD.MyTopics',
       mainStorageKey: 'CD.ArticlesCollection.',
 
-      url: 'http://stage.crainsdetroit.com/app/js/feeds/main.js?section=mytopics',
-      // url: 'http://stage.crainsdetroit.com/section/rss36&mytopics=1&mime=application%2Fjson',
-      // url: 'services/MyTopics.json',
+      url: 'http://'+ document.location.host +'/app/js/feeds/main.js?section=mytopics?_=' + new Date().getTime(),
       model: MyTopicsModel,
 
       parse: function (response) {
@@ -38,12 +36,13 @@ define([
         this.fetch({
           update: true,
           silent: true,
-          timeout: 5000,
+          timeout: 10000,
           success: function ( collection, response, options ) {
             collection.trigger('ready');
           },
           error: function ( collection, xhr, options ) {
-            collection.trigger('ready');
+            //collection.trigger('ready');
+            console.log(collection);
           }
         });
       },
@@ -53,7 +52,7 @@ define([
         if ( model.get('subscribed') ) {
           collection = new NewsFilmstripCollection(model.get('items'), model.get('id'));
           collection.storageKey(model.get('id'));
-          collection.url = model.get('feedlink');
+          collection.url = model.get('feedlink') + '?_=' + new Date().getTime();
           collection.query();
         } else {
           localStorage.removeItem(this.mainStorageKey + model.get('id'));

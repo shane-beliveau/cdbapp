@@ -53,12 +53,16 @@ define([
           items.push({
             id: model.get('id'),
             videoid: model.get('videoid'),
-            videostill: model.get('videostill'),
+            playerID: model.get('playerID'),
+            playerKey: model.get('playerKey'),
+            videoStill: model.get('videoStill'),
+            soundcloudEmbed: model.get('soundcloudEmbed'),
             title: model.get('title'),
             description: model.get('description'),
             pubDate: moment(model.get('pubDate')).format('dddd, MMMM Do YYYY'),
             image: model.get('image'),
             link: model.get('link'),
+            encodedLink: model.get('encodedLink'),
             article: (model.get('article')) ? model.get('article') : ''
           });
         });

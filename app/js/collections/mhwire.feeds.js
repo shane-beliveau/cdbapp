@@ -7,7 +7,8 @@ define([
     return Backbone.Collection.extend({
 
       url: function(){
-        return 'http://'+ document.location.host +'/section/App-Twitter-OAuth?url=search%2Ftweets.json%3Fq%3D' + this.twitterID;
+        var timestamp = new Date();
+        return 'http://'+ document.location.host +'/section/App-Twitter-OAuth?url=search%2Ftweets.json%3Fq%3Dfrom%253A' + this.twitterID + '&_=' + timestamp.getTime();
       },
 
       model: MhWireFeedModel,
